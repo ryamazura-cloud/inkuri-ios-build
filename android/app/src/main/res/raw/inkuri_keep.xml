@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Referenced by name from Dart, so the Android resource shrinker cannot
+     discover this notification icon through a native resource reference. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_stat_inkuri" />

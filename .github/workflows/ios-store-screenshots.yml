@@ -1,0 +1,64 @@
+name: Inkuri iOS store screenshots
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: macos-26
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [iphone, ipad, iphone-medium]
+    env:
+      SCREENSHOT_OUTPUT_DIR: ${{ github.workspace }}/store-screenshots/${{ matrix.device }}
+      DEVICE_LABEL: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Flutter
+        run: |
+          git clone --depth 1 --branch 3.47.9 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - name: Install Firebase build resource
+        env:
+          IOS_FIREBASE_CONFIG_BASE64: ${{ secrets.IOS_FIREBASE_CONFIG_BASE64 }}
+        run: |
+          test -n "$IOS_FIREBASE_CONFIG_BASE64"
+          printf '%s' "$IOS_FIREBASE_CONFIG_BASE64" | base64 --decode > ios/Runner/GoogleService-Info.plist
+      - name: Boot screenshot simulator
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          devices = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '--json']))['devices']
+          candidates = []
+          for runtime, entries in sorted(devices.items(), reverse=True):
+              if '.iOS-' not in runtime:
+                  continue
+              for entry in entries:
+                  name = entry['name']
+                  if (os.environ['DEVICE_LABEL'] == 'iphone' and 'iPhone' in name and 'Pro Max' in name) or (os.environ['DEVICE_LABEL'] == 'iphone-medium' and 'iPhone' in name and 'Pro' in name and 'Max' not in name) or (os.environ['DEVICE_LABEL'] == 'ipad' and 'iPad Pro' in name and '13' in name):
+                      candidates.append(entry)
+          assert candidates, 'Required screenshot simulator not found'
+          device = candidates[0]
+          if device['state'] != 'Booted':
+              subprocess.run(['xcrun', 'simctl', 'boot', device['udid']], check=True)
+          subprocess.run(['xcrun', 'simctl', 'bootstatus', device['udid'], '-b'], check=True)
+          subprocess.run(['xcrun', 'simctl', 'status_bar', device['udid'], 'override', '--time', '9:41', '--batteryState', 'charged', '--batteryLevel', '100'], check=True)
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write('SCREENSHOT_DEVICE=' + device['udid'] + '\n')
+          print('Screenshot simulator: ' + device['name'])
+          PY
+      - name: Capture current application UI
+        run: |
+          flutter pub get --enforce-lockfile
+          flutter drive -d "$SCREENSHOT_DEVICE" --driver=tools/store_screenshot_driver.dart --target=integration_test/store_screenshots_test.dart --no-pub
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inkuri-ios-store-screenshots-${{ matrix.device }}
+          path: store-screenshots/${{ matrix.device }}/*.png
+          if-no-files-found: warn
+          retention-days: 14

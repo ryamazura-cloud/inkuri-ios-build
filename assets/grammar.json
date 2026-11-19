@@ -1,0 +1,5539 @@
+{
+  "schemaVersion": 1,
+  "referenceUrl": "https://english.005net.com/youten.php",
+  "editorialNote": "文法項目の構成を参考に、インクリ用の問題・例文・解説を独自作成。関係代名詞1・2は主格・目的格に分けて整理。",
+  "units": [
+    {
+      "id": "be",
+      "title": "be動詞",
+      "group": "中学1年生文法",
+      "pattern": "主語 + am / is / are + 状態・名前",
+      "hint": "「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。",
+      "questionIds": [
+        "grammar-be-01",
+        "grammar-be-02",
+        "grammar-be-03",
+        "grammar-be-04",
+        "grammar-be-05",
+        "grammar-be-06",
+        "grammar-be-07",
+        "grammar-be-08",
+        "grammar-be-09",
+        "grammar-be-10"
+      ]
+    },
+    {
+      "id": "verbs",
+      "title": "一般動詞",
+      "group": "中学1年生文法",
+      "pattern": "主語 + 動作を表す動詞",
+      "hint": "「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。",
+      "questionIds": [
+        "grammar-verbs-01",
+        "grammar-verbs-02",
+        "grammar-verbs-03",
+        "grammar-verbs-04",
+        "grammar-verbs-05",
+        "grammar-verbs-06",
+        "grammar-verbs-07",
+        "grammar-verbs-08",
+        "grammar-verbs-09",
+        "grammar-verbs-10"
+      ]
+    },
+    {
+      "id": "questions-negatives",
+      "title": "疑問文・否定文",
+      "group": "中学1年生文法",
+      "pattern": "be動詞を前へ / do not / Do + 主語 + 動詞",
+      "hint": "be動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。",
+      "questionIds": [
+        "grammar-questions-negatives-01",
+        "grammar-questions-negatives-02",
+        "grammar-questions-negatives-03",
+        "grammar-questions-negatives-04",
+        "grammar-questions-negatives-05",
+        "grammar-questions-negatives-06",
+        "grammar-questions-negatives-07",
+        "grammar-questions-negatives-08",
+        "grammar-questions-negatives-09",
+        "grammar-questions-negatives-10"
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "疑問詞",
+      "group": "中学1年生文法",
+      "pattern": "What / Who / Where / When / Why / How",
+      "hint": "知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。",
+      "questionIds": [
+        "grammar-question-words-01",
+        "grammar-question-words-02",
+        "grammar-question-words-03",
+        "grammar-question-words-04",
+        "grammar-question-words-05",
+        "grammar-question-words-06",
+        "grammar-question-words-07",
+        "grammar-question-words-08",
+        "grammar-question-words-09",
+        "grammar-question-words-10"
+      ]
+    },
+    {
+      "id": "imperatives",
+      "title": "命令文",
+      "group": "中学1年生文法",
+      "pattern": "動詞の原形 / Do not + 動詞の原形 / Let us",
+      "hint": "主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。",
+      "questionIds": [
+        "grammar-imperatives-01",
+        "grammar-imperatives-02",
+        "grammar-imperatives-03",
+        "grammar-imperatives-04",
+        "grammar-imperatives-05",
+        "grammar-imperatives-06",
+        "grammar-imperatives-07",
+        "grammar-imperatives-08",
+        "grammar-imperatives-09",
+        "grammar-imperatives-10"
+      ]
+    },
+    {
+      "id": "third-person",
+      "title": "三人称単数現在",
+      "group": "中学1年生文法",
+      "pattern": "he / she / it + 動詞のs形",
+      "hint": "主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。",
+      "questionIds": [
+        "grammar-third-person-01",
+        "grammar-third-person-02",
+        "grammar-third-person-03",
+        "grammar-third-person-04",
+        "grammar-third-person-05",
+        "grammar-third-person-06",
+        "grammar-third-person-07",
+        "grammar-third-person-08",
+        "grammar-third-person-09",
+        "grammar-third-person-10"
+      ]
+    },
+    {
+      "id": "present-progressive",
+      "title": "現在進行形",
+      "group": "中学1年生文法",
+      "pattern": "am / is / are + 動詞のing形",
+      "hint": "「今まさに〜している」を表します。be動詞とing形の両方を使います。",
+      "questionIds": [
+        "grammar-present-progressive-01",
+        "grammar-present-progressive-02",
+        "grammar-present-progressive-03",
+        "grammar-present-progressive-04",
+        "grammar-present-progressive-05",
+        "grammar-present-progressive-06",
+        "grammar-present-progressive-07",
+        "grammar-present-progressive-08",
+        "grammar-present-progressive-09",
+        "grammar-present-progressive-10"
+      ]
+    },
+    {
+      "id": "can",
+      "title": "can",
+      "group": "中学1年生文法",
+      "pattern": "can + 動詞の原形",
+      "hint": "「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。",
+      "questionIds": [
+        "grammar-can-01",
+        "grammar-can-02",
+        "grammar-can-03",
+        "grammar-can-04",
+        "grammar-can-05",
+        "grammar-can-06",
+        "grammar-can-07",
+        "grammar-can-08",
+        "grammar-can-09",
+        "grammar-can-10"
+      ]
+    },
+    {
+      "id": "past-verbs",
+      "title": "一般動詞の過去",
+      "group": "中学1年生文法",
+      "pattern": "動詞の過去形 / did not + 原形",
+      "hint": "「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。",
+      "questionIds": [
+        "grammar-past-verbs-01",
+        "grammar-past-verbs-02",
+        "grammar-past-verbs-03",
+        "grammar-past-verbs-04",
+        "grammar-past-verbs-05",
+        "grammar-past-verbs-06",
+        "grammar-past-verbs-07",
+        "grammar-past-verbs-08",
+        "grammar-past-verbs-09",
+        "grammar-past-verbs-10"
+      ]
+    },
+    {
+      "id": "plurals",
+      "title": "名詞の複数形",
+      "group": "中学1年生文法",
+      "pattern": "数 + 名詞の複数形",
+      "hint": "2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。",
+      "questionIds": [
+        "grammar-plurals-01",
+        "grammar-plurals-02",
+        "grammar-plurals-03",
+        "grammar-plurals-04",
+        "grammar-plurals-05",
+        "grammar-plurals-06",
+        "grammar-plurals-07",
+        "grammar-plurals-08",
+        "grammar-plurals-09",
+        "grammar-plurals-10"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "title": "代名詞",
+      "group": "中学1年生文法",
+      "pattern": "I / my / me / mine などの使い分け",
+      "hint": "「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。",
+      "questionIds": [
+        "grammar-pronouns-01",
+        "grammar-pronouns-02",
+        "grammar-pronouns-03",
+        "grammar-pronouns-04",
+        "grammar-pronouns-05",
+        "grammar-pronouns-06",
+        "grammar-pronouns-07",
+        "grammar-pronouns-08",
+        "grammar-pronouns-09",
+        "grammar-pronouns-10"
+      ]
+    },
+    {
+      "id": "past-be",
+      "title": "be動詞の過去",
+      "group": "中学1年生文法",
+      "pattern": "was / were + 状態・場所",
+      "hint": "過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。",
+      "questionIds": [
+        "grammar-past-be-01",
+        "grammar-past-be-02",
+        "grammar-past-be-03",
+        "grammar-past-be-04",
+        "grammar-past-be-05",
+        "grammar-past-be-06",
+        "grammar-past-be-07",
+        "grammar-past-be-08",
+        "grammar-past-be-09",
+        "grammar-past-be-10"
+      ]
+    },
+    {
+      "id": "past-progressive",
+      "title": "過去進行形",
+      "group": "中学1年生文法",
+      "pattern": "was / were + 動詞のing形",
+      "hint": "過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。",
+      "questionIds": [
+        "grammar-past-progressive-01",
+        "grammar-past-progressive-02",
+        "grammar-past-progressive-03",
+        "grammar-past-progressive-04",
+        "grammar-past-progressive-05",
+        "grammar-past-progressive-06",
+        "grammar-past-progressive-07",
+        "grammar-past-progressive-08",
+        "grammar-past-progressive-09",
+        "grammar-past-progressive-10"
+      ]
+    },
+    {
+      "id": "future",
+      "title": "未来",
+      "group": "中学2年生文法",
+      "pattern": "will + 原形 / be going to + 原形",
+      "hint": "これからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。",
+      "questionIds": [
+        "grammar-future-01",
+        "grammar-future-02",
+        "grammar-future-03",
+        "grammar-future-04",
+        "grammar-future-05",
+        "grammar-future-06",
+        "grammar-future-07",
+        "grammar-future-08",
+        "grammar-future-09",
+        "grammar-future-10"
+      ]
+    },
+    {
+      "id": "gerunds",
+      "title": "動名詞",
+      "group": "中学2年生文法",
+      "pattern": "動詞のing形を名詞として使う",
+      "hint": "「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。",
+      "questionIds": [
+        "grammar-gerunds-01",
+        "grammar-gerunds-02",
+        "grammar-gerunds-03",
+        "grammar-gerunds-04",
+        "grammar-gerunds-05",
+        "grammar-gerunds-06",
+        "grammar-gerunds-07",
+        "grammar-gerunds-08",
+        "grammar-gerunds-09",
+        "grammar-gerunds-10"
+      ]
+    },
+    {
+      "id": "infinitives",
+      "title": "不定詞",
+      "group": "中学2年生文法",
+      "pattern": "to + 動詞の原形",
+      "hint": "「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。",
+      "questionIds": [
+        "grammar-infinitives-01",
+        "grammar-infinitives-02",
+        "grammar-infinitives-03",
+        "grammar-infinitives-04",
+        "grammar-infinitives-05",
+        "grammar-infinitives-06",
+        "grammar-infinitives-07",
+        "grammar-infinitives-08",
+        "grammar-infinitives-09",
+        "grammar-infinitives-10"
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "助動詞",
+      "group": "中学2年生文法",
+      "pattern": "must / should / may など + 原形",
+      "hint": "義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。",
+      "questionIds": [
+        "grammar-modals-01",
+        "grammar-modals-02",
+        "grammar-modals-03",
+        "grammar-modals-04",
+        "grammar-modals-05",
+        "grammar-modals-06",
+        "grammar-modals-07",
+        "grammar-modals-08",
+        "grammar-modals-09",
+        "grammar-modals-10"
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "比較",
+      "group": "中学2年生文法",
+      "pattern": "比較級 + than / the + 最上級 / as ... as",
+      "hint": "2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。",
+      "questionIds": [
+        "grammar-comparison-01",
+        "grammar-comparison-02",
+        "grammar-comparison-03",
+        "grammar-comparison-04",
+        "grammar-comparison-05",
+        "grammar-comparison-06",
+        "grammar-comparison-07",
+        "grammar-comparison-08",
+        "grammar-comparison-09",
+        "grammar-comparison-10"
+      ]
+    },
+    {
+      "id": "there",
+      "title": "there is / there are",
+      "group": "中学1年生文法",
+      "pattern": "There is + 単数 / There are + 複数",
+      "hint": "「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。",
+      "questionIds": [
+        "grammar-there-01",
+        "grammar-there-02",
+        "grammar-there-03",
+        "grammar-there-04",
+        "grammar-there-05",
+        "grammar-there-06",
+        "grammar-there-07",
+        "grammar-there-08",
+        "grammar-there-09",
+        "grammar-there-10"
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "接続詞",
+      "group": "中学2年生文法",
+      "pattern": "and / but / because / when / if / that",
+      "hint": "言葉や文をつなぎ、理由・時・条件などの関係を表します。",
+      "questionIds": [
+        "grammar-conjunctions-01",
+        "grammar-conjunctions-02",
+        "grammar-conjunctions-03",
+        "grammar-conjunctions-04",
+        "grammar-conjunctions-05",
+        "grammar-conjunctions-06",
+        "grammar-conjunctions-07",
+        "grammar-conjunctions-08",
+        "grammar-conjunctions-09",
+        "grammar-conjunctions-10"
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "受け身",
+      "group": "中学2年生文法",
+      "pattern": "be動詞 + 過去分詞",
+      "hint": "「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。",
+      "questionIds": [
+        "grammar-passive-01",
+        "grammar-passive-02",
+        "grammar-passive-03",
+        "grammar-passive-04",
+        "grammar-passive-05",
+        "grammar-passive-06",
+        "grammar-passive-07",
+        "grammar-passive-08",
+        "grammar-passive-09",
+        "grammar-passive-10"
+      ]
+    },
+    {
+      "id": "perfect-continuation",
+      "title": "現在完了：継続",
+      "group": "中学3年生文法",
+      "pattern": "have / has + 過去分詞 + for / since",
+      "hint": "過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。",
+      "questionIds": [
+        "grammar-perfect-continuation-01",
+        "grammar-perfect-continuation-02",
+        "grammar-perfect-continuation-03",
+        "grammar-perfect-continuation-04",
+        "grammar-perfect-continuation-05",
+        "grammar-perfect-continuation-06",
+        "grammar-perfect-continuation-07",
+        "grammar-perfect-continuation-08",
+        "grammar-perfect-continuation-09",
+        "grammar-perfect-continuation-10"
+      ]
+    },
+    {
+      "id": "perfect-experience",
+      "title": "現在完了：経験",
+      "group": "中学3年生文法",
+      "pattern": "have / has + 過去分詞 + before / ever / never",
+      "hint": "今までにしたことがある経験を表します。回数やneverも一緒に使えます。",
+      "questionIds": [
+        "grammar-perfect-experience-01",
+        "grammar-perfect-experience-02",
+        "grammar-perfect-experience-03",
+        "grammar-perfect-experience-04",
+        "grammar-perfect-experience-05",
+        "grammar-perfect-experience-06",
+        "grammar-perfect-experience-07",
+        "grammar-perfect-experience-08",
+        "grammar-perfect-experience-09",
+        "grammar-perfect-experience-10"
+      ]
+    },
+    {
+      "id": "perfect-completion",
+      "title": "現在完了：完了・結果",
+      "group": "中学3年生文法",
+      "pattern": "have / has + 過去分詞 + just / already / yet",
+      "hint": "「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。",
+      "questionIds": [
+        "grammar-perfect-completion-01",
+        "grammar-perfect-completion-02",
+        "grammar-perfect-completion-03",
+        "grammar-perfect-completion-04",
+        "grammar-perfect-completion-05",
+        "grammar-perfect-completion-06",
+        "grammar-perfect-completion-07",
+        "grammar-perfect-completion-08",
+        "grammar-perfect-completion-09",
+        "grammar-perfect-completion-10"
+      ]
+    },
+    {
+      "id": "perfect-progressive",
+      "title": "現在完了進行形",
+      "group": "中学3年生文法",
+      "pattern": "have / has been + 動詞のing形",
+      "hint": "過去から今まで続けている動作を表します。have beenとing形を組み合わせます。",
+      "questionIds": [
+        "grammar-perfect-progressive-01",
+        "grammar-perfect-progressive-02",
+        "grammar-perfect-progressive-03",
+        "grammar-perfect-progressive-04",
+        "grammar-perfect-progressive-05",
+        "grammar-perfect-progressive-06",
+        "grammar-perfect-progressive-07",
+        "grammar-perfect-progressive-08",
+        "grammar-perfect-progressive-09",
+        "grammar-perfect-progressive-10"
+      ]
+    },
+    {
+      "id": "infinitives-advanced",
+      "title": "不定詞の応用",
+      "group": "中学3年生文法",
+      "pattern": "how to / ask 人 to / It is ... to / too ... to",
+      "hint": "疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。",
+      "questionIds": [
+        "grammar-infinitives-advanced-01",
+        "grammar-infinitives-advanced-02",
+        "grammar-infinitives-advanced-03",
+        "grammar-infinitives-advanced-04",
+        "grammar-infinitives-advanced-05",
+        "grammar-infinitives-advanced-06",
+        "grammar-infinitives-advanced-07",
+        "grammar-infinitives-advanced-08",
+        "grammar-infinitives-advanced-09",
+        "grammar-infinitives-advanced-10"
+      ]
+    },
+    {
+      "id": "bare-infinitives",
+      "title": "原形不定詞",
+      "group": "中学3年生文法",
+      "pattern": "let / make / help + 人 + 動詞の原形",
+      "hint": "let・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。",
+      "questionIds": [
+        "grammar-bare-infinitives-01",
+        "grammar-bare-infinitives-02",
+        "grammar-bare-infinitives-03",
+        "grammar-bare-infinitives-04",
+        "grammar-bare-infinitives-05",
+        "grammar-bare-infinitives-06",
+        "grammar-bare-infinitives-07",
+        "grammar-bare-infinitives-08",
+        "grammar-bare-infinitives-09",
+        "grammar-bare-infinitives-10"
+      ]
+    },
+    {
+      "id": "participles",
+      "title": "分詞",
+      "group": "中学3年生文法",
+      "pattern": "動詞のing形 / 過去分詞で名詞を説明",
+      "hint": "「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。",
+      "questionIds": [
+        "grammar-participles-01",
+        "grammar-participles-02",
+        "grammar-participles-03",
+        "grammar-participles-04",
+        "grammar-participles-05",
+        "grammar-participles-06",
+        "grammar-participles-07",
+        "grammar-participles-08",
+        "grammar-participles-09",
+        "grammar-participles-10"
+      ]
+    },
+    {
+      "id": "indirect-questions",
+      "title": "間接疑問",
+      "group": "中学3年生文法",
+      "pattern": "疑問詞 + 主語 + 動詞",
+      "hint": "疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。",
+      "questionIds": [
+        "grammar-indirect-questions-01",
+        "grammar-indirect-questions-02",
+        "grammar-indirect-questions-03",
+        "grammar-indirect-questions-04",
+        "grammar-indirect-questions-05",
+        "grammar-indirect-questions-06",
+        "grammar-indirect-questions-07",
+        "grammar-indirect-questions-08",
+        "grammar-indirect-questions-09",
+        "grammar-indirect-questions-10"
+      ]
+    },
+    {
+      "id": "relative-subject",
+      "title": "関係代名詞：主格",
+      "group": "中学3年生文法",
+      "pattern": "名詞 + who / which / that + 動詞",
+      "hint": "人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。",
+      "questionIds": [
+        "grammar-relative-subject-01",
+        "grammar-relative-subject-02",
+        "grammar-relative-subject-03",
+        "grammar-relative-subject-04",
+        "grammar-relative-subject-05",
+        "grammar-relative-subject-06",
+        "grammar-relative-subject-07",
+        "grammar-relative-subject-08",
+        "grammar-relative-subject-09",
+        "grammar-relative-subject-10"
+      ]
+    },
+    {
+      "id": "relative-object",
+      "title": "関係代名詞：目的格",
+      "group": "中学3年生文法",
+      "pattern": "名詞 + that / which + 主語 + 動詞",
+      "hint": "「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。",
+      "questionIds": [
+        "grammar-relative-object-01",
+        "grammar-relative-object-02",
+        "grammar-relative-object-03",
+        "grammar-relative-object-04",
+        "grammar-relative-object-05",
+        "grammar-relative-object-06",
+        "grammar-relative-object-07",
+        "grammar-relative-object-08",
+        "grammar-relative-object-09",
+        "grammar-relative-object-10"
+      ]
+    },
+    {
+      "id": "subjunctive",
+      "title": "仮定法",
+      "group": "中学3年生文法",
+      "pattern": "If + 主語 + 過去形, 主語 + would / could + 原形",
+      "hint": "今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。",
+      "questionIds": [
+        "grammar-subjunctive-01",
+        "grammar-subjunctive-02",
+        "grammar-subjunctive-03",
+        "grammar-subjunctive-04",
+        "grammar-subjunctive-05",
+        "grammar-subjunctive-06",
+        "grammar-subjunctive-07",
+        "grammar-subjunctive-08",
+        "grammar-subjunctive-09",
+        "grammar-subjunctive-10"
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "形容詞",
+      "group": "中学1年生文法",
+      "pattern": "形容詞 + 名詞 / be動詞 + 形容詞",
+      "hint": "物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。",
+      "questionIds": [
+        "grammar-adjectives-01",
+        "grammar-adjectives-02",
+        "grammar-adjectives-03",
+        "grammar-adjectives-04",
+        "grammar-adjectives-05",
+        "grammar-adjectives-06",
+        "grammar-adjectives-07",
+        "grammar-adjectives-08",
+        "grammar-adjectives-09",
+        "grammar-adjectives-10"
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "副詞",
+      "group": "中学1年生文法",
+      "pattern": "動作・程度・頻度などを説明する語",
+      "hint": "「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。",
+      "questionIds": [
+        "grammar-adverbs-01",
+        "grammar-adverbs-02",
+        "grammar-adverbs-03",
+        "grammar-adverbs-04",
+        "grammar-adverbs-05",
+        "grammar-adverbs-06",
+        "grammar-adverbs-07",
+        "grammar-adverbs-08",
+        "grammar-adverbs-09",
+        "grammar-adverbs-10"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "grammar-be-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "私は今、家にいます。",
+      "answers": [
+        {
+          "text": "I am at home now."
+        },
+        {
+          "text": "I'm at home now.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "場所を表すat homeの前にもbe動詞を置きます。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "この箱は軽いです。",
+      "answers": [
+        {
+          "text": "This box is light."
+        }
+      ],
+      "note": "1つの箱なのでisです。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "あなたは親切です。",
+      "answers": [
+        {
+          "text": "You are kind."
+        }
+      ],
+      "note": "youにはareを使います。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "私たちは同じクラスです。",
+      "answers": [
+        {
+          "text": "We are in the same class."
+        },
+        {
+          "text": "We're in the same class.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "weは複数なのでareです。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "彼は私の隣人です。",
+      "answers": [
+        {
+          "text": "He is my neighbor."
+        }
+      ],
+      "note": "人を紹介する文にもisを使います。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "これらの靴は新しいです。",
+      "answers": [
+        {
+          "text": "These shoes are new."
+        }
+      ],
+      "note": "shoesは複数なのでareです。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "私は少し眠いです。",
+      "answers": [
+        {
+          "text": "I am a little sleepy."
+        }
+      ],
+      "note": "状態を表すsleepyの前はamです。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "その図書館は駅の近くです。",
+      "answers": [
+        {
+          "text": "The library is near the station."
+        }
+      ],
+      "note": "nearは「〜の近くに」です。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "私の妹は7歳です。",
+      "answers": [
+        {
+          "text": "My sister is seven years old."
+        }
+      ],
+      "note": "年齢もbe動詞で表せます。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-be-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "be",
+      "topic": "be動詞",
+      "japanese": "彼らは庭にいます。",
+      "answers": [
+        {
+          "text": "They are in the garden."
+        }
+      ],
+      "note": "theyにはareを使います。\n\n基本の形：主語 + am / is / are + 状態・名前\n「〜です」「〜にいます」を表します。Iにはam、1人・1つにはis、youや複数にはareを使います。"
+    },
+    {
+      "id": "grammar-verbs-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私は朝に水を飲みます。",
+      "answers": [
+        {
+          "text": "I drink water in the morning."
+        }
+      ],
+      "note": "drinkは「飲む」です。amは足しません。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私たちは放課後にテニスをします。",
+      "answers": [
+        {
+          "text": "We play tennis after school."
+        }
+      ],
+      "note": "スポーツをする時はplayを使えます。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私は青いペンを持っています。",
+      "answers": [
+        {
+          "text": "I have a blue pen."
+        }
+      ],
+      "note": "haveは「持っている」です。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "あなたは毎日ここで働きます。",
+      "answers": [
+        {
+          "text": "You work here every day."
+        }
+      ],
+      "note": "習慣なので現在形です。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "彼らは日曜日に公園を訪れます。",
+      "answers": [
+        {
+          "text": "They visit the park on Sundays."
+        }
+      ],
+      "note": "on Sundaysで日曜日の習慣を表します。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私は夜に本を読みます。",
+      "answers": [
+        {
+          "text": "I read books at night."
+        }
+      ],
+      "note": "at nightは「夜に」です。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私たちは昼食を一緒に食べます。",
+      "answers": [
+        {
+          "text": "We eat lunch together."
+        }
+      ],
+      "note": "eatの前にareは置きません。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "私は音楽を聴きます。",
+      "answers": [
+        {
+          "text": "I listen to music."
+        }
+      ],
+      "note": "listenはtoと組み合わせます。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "あなたはこの町に住んでいます。",
+      "answers": [
+        {
+          "text": "You live in this town."
+        }
+      ],
+      "note": "住む場所はlive inで表せます。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-verbs-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "verbs",
+      "topic": "一般動詞",
+      "japanese": "彼らは毎朝、教室を掃除します。",
+      "answers": [
+        {
+          "text": "They clean the classroom every morning."
+        }
+      ],
+      "note": "every morningは「毎朝」です。\n\n基本の形：主語 + 動作を表す動詞\n「読む」「持っている」などの動作や習慣は一般動詞で表します。まずI・you・we・theyの形を練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "あなたは今、忙しいですか。",
+      "answers": [
+        {
+          "text": "Are you busy now?"
+        }
+      ],
+      "note": "be動詞areを主語youの前に置きます。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "この道は安全ではありません。",
+      "answers": [
+        {
+          "text": "This road is not safe."
+        }
+      ],
+      "note": "be動詞isの後ろにnotを置きます。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "あなたは朝食を家で食べますか。",
+      "answers": [
+        {
+          "text": "Do you eat breakfast at home?"
+        }
+      ],
+      "note": "一般動詞の疑問文はDoを前に置きます。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "私は辛い食べ物を食べません。",
+      "answers": [
+        {
+          "text": "I do not eat spicy food."
+        },
+        {
+          "text": "I don't eat spicy food.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "do notの後ろは動詞の原形です。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "彼らはあなたの友達ですか。",
+      "answers": [
+        {
+          "text": "Are they your friends?"
+        }
+      ],
+      "note": "theyのbe動詞はareです。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "私たちは今日は疲れていません。",
+      "answers": [
+        {
+          "text": "We are not tired today."
+        },
+        {
+          "text": "We're not tired today.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "areの後ろにnotを置きます。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "あなたは毎日バスを使いますか。",
+      "answers": [
+        {
+          "text": "Do you take the bus every day?"
+        }
+      ],
+      "note": "take the busでバスを利用すると言えます。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "私は日曜日には働きません。",
+      "answers": [
+        {
+          "text": "I do not work on Sundays."
+        }
+      ],
+      "note": "習慣の否定はdo notです。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "その店は今、開いていますか。",
+      "answers": [
+        {
+          "text": "Is the shop open now?"
+        }
+      ],
+      "note": "openはここでは状態を表す形容詞です。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-questions-negatives-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "questions-negatives",
+      "topic": "疑問文・否定文",
+      "japanese": "彼らはテレビをあまり見ません。",
+      "answers": [
+        {
+          "text": "They do not watch TV much."
+        }
+      ],
+      "note": "muchを否定文で使うと「あまり〜ない」です。\n\n基本の形：be動詞を前へ / do not / Do + 主語 + 動詞\nbe動詞の文と一般動詞の文で作り方が違います。「〜ではない」「〜しますか」を区別して練習します。"
+    },
+    {
+      "id": "grammar-question-words-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "これは何ですか。",
+      "answers": [
+        {
+          "text": "What is this?"
+        }
+      ],
+      "note": "物について尋ねる時はwhatです。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたのかばんはどこですか。",
+      "answers": [
+        {
+          "text": "Where is your bag?"
+        }
+      ],
+      "note": "場所はwhereで尋ねます。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたの誕生日はいつですか。",
+      "answers": [
+        {
+          "text": "When is your birthday?"
+        }
+      ],
+      "note": "時を尋ねる語はwhenです。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あの女性は誰ですか。",
+      "answers": [
+        {
+          "text": "Who is that woman?"
+        }
+      ],
+      "note": "人を尋ねる語はwhoです。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたはどうやって学校へ行きますか。",
+      "answers": [
+        {
+          "text": "How do you go to school?"
+        }
+      ],
+      "note": "交通手段をhowで尋ねています。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたはなぜ英語を勉強するのですか。",
+      "answers": [
+        {
+          "text": "Why do you study English?"
+        }
+      ],
+      "note": "理由を尋ねる語はwhyです。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたは何時に起きますか。",
+      "answers": [
+        {
+          "text": "What time do you get up?"
+        }
+      ],
+      "note": "具体的な時刻はwhat timeで尋ねます。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "この帽子はいくらですか。",
+      "answers": [
+        {
+          "text": "How much is this hat?"
+        }
+      ],
+      "note": "値段はhow muchで尋ねます。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたは何冊の本を持っていますか。",
+      "answers": [
+        {
+          "text": "How many books do you have?"
+        }
+      ],
+      "note": "数えられる物の数はhow many + 複数形です。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-question-words-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "question-words",
+      "topic": "疑問詞",
+      "japanese": "あなたはどちらの色が好きですか。",
+      "answers": [
+        {
+          "text": "Which color do you like?"
+        }
+      ],
+      "note": "選択肢の中から選ぶ時はwhichです。\n\n基本の形：What / Who / Where / When / Why / How\n知りたいことに合わせて「何・誰・どこ・いつ・なぜ・どのように」を文の先頭に置きます。"
+    },
+    {
+      "id": "grammar-imperatives-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "どうぞ中に入ってください。",
+      "answers": [
+        {
+          "text": "Please come in."
+        }
+      ],
+      "note": "pleaseを付けると丁寧な依頼になります。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "窓を閉めてください。",
+      "answers": [
+        {
+          "text": "Please close the window."
+        }
+      ],
+      "note": "closeを原形のまま使います。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "ここでは走らないでください。",
+      "answers": [
+        {
+          "text": "Do not run here."
+        }
+      ],
+      "note": "禁止はDo not + 原形です。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "気をつけてください。",
+      "answers": [
+        {
+          "text": "Be careful."
+        }
+      ],
+      "note": "be動詞の命令文はBeから始めます。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "一緒に昼食を作りましょう。",
+      "answers": [
+        {
+          "text": "Let us make lunch together."
+        },
+        {
+          "text": "Let's make lunch together.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "Let usは一緒に何かをする誘いです。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "ここにあなたの名前を書いてください。",
+      "answers": [
+        {
+          "text": "Please write your name here."
+        }
+      ],
+      "note": "writeは「書く」です。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "その熱いお皿に触らないでください。",
+      "answers": [
+        {
+          "text": "Do not touch the hot plate."
+        }
+      ],
+      "note": "否定の命令文でも動詞は原形です。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "この歌を聴いてください。",
+      "answers": [
+        {
+          "text": "Please listen to this song."
+        }
+      ],
+      "note": "命令文でもlisten toのtoは必要です。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "今日は早く帰りましょう。",
+      "answers": [
+        {
+          "text": "Let us go home early today."
+        },
+        {
+          "text": "Let's go home early today.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "go homeの間にtoは置きません。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-imperatives-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "imperatives",
+      "topic": "命令文",
+      "japanese": "授業中は静かにしてください。",
+      "answers": [
+        {
+          "text": "Please be quiet during class."
+        }
+      ],
+      "note": "状態を求める時はbe + 形容詞です。\n\n基本の形：動詞の原形 / Do not + 動詞の原形 / Let us\n主語のyouを言わずに動詞から始めます。Pleaseで丁寧にし、禁止はDo not、誘いはLet usで表せます。"
+    },
+    {
+      "id": "grammar-third-person-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "私の兄は毎日泳ぎます。",
+      "answers": [
+        {
+          "text": "My brother swims every day."
+        }
+      ],
+      "note": "brotherは1人なのでswimsです。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "彼女は小さな犬を飼っています。",
+      "answers": [
+        {
+          "text": "She has a small dog."
+        }
+      ],
+      "note": "haveは三人称単数ではhasになります。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "彼は放課後に英語を勉強します。",
+      "answers": [
+        {
+          "text": "He studies English after school."
+        }
+      ],
+      "note": "studyは子音字+yなのでstudiesになります。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "このバスは駅に停まります。",
+      "answers": [
+        {
+          "text": "This bus stops at the station."
+        }
+      ],
+      "note": "1台のバスなのでstopsです。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "私の母は日曜日に料理をします。",
+      "answers": [
+        {
+          "text": "My mother cooks on Sundays."
+        }
+      ],
+      "note": "cookにsを付けます。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "彼女は毎朝テレビを見ます。",
+      "answers": [
+        {
+          "text": "She watches TV every morning."
+        }
+      ],
+      "note": "watchにはesを付けます。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "彼は自転車で仕事に行きます。",
+      "answers": [
+        {
+          "text": "He goes to work by bike."
+        }
+      ],
+      "note": "goはgoesになります。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "私の父はコーヒーが好きではありません。",
+      "answers": [
+        {
+          "text": "My father does not like coffee."
+        },
+        {
+          "text": "My father doesn't like coffee.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "does notの後ろではsを外してlikeに戻します。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "彼女はこの店で働いていますか。",
+      "answers": [
+        {
+          "text": "Does she work at this shop?"
+        }
+      ],
+      "note": "Doesを使う時、workは原形です。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-third-person-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "third-person",
+      "topic": "三人称単数現在",
+      "japanese": "あなたの弟は朝食に何を食べますか。",
+      "answers": [
+        {
+          "text": "What does your brother eat for breakfast?"
+        }
+      ],
+      "note": "doesがあるのでeatにsを付けません。\n\n基本の形：he / she / it + 動詞のs形\n主語がI・you以外の1人や1つで、現在の習慣を表す時は動詞にsやesを付けます。"
+    },
+    {
+      "id": "grammar-present-progressive-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "私は今、夕食を作っています。",
+      "answers": [
+        {
+          "text": "I am making dinner now."
+        },
+        {
+          "text": "I'm making dinner now.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "makeはeを取ってmakingになります。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "彼女は電話で話しています。",
+      "answers": [
+        {
+          "text": "She is talking on the phone."
+        },
+        {
+          "text": "She's talking on the phone.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "is + talkingで進行中の動作です。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "私たちはバスを待っています。",
+      "answers": [
+        {
+          "text": "We are waiting for the bus."
+        }
+      ],
+      "note": "wait forは「〜を待つ」です。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "その赤ちゃんは今、眠っています。",
+      "answers": [
+        {
+          "text": "The baby is sleeping now."
+        }
+      ],
+      "note": "主語が1人なのでisを使います。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "彼らは川で泳いでいます。",
+      "answers": [
+        {
+          "text": "They are swimming in the river."
+        }
+      ],
+      "note": "swimはmを重ねてswimmingです。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "あなたは何を探していますか。",
+      "answers": [
+        {
+          "text": "What are you looking for?"
+        }
+      ],
+      "note": "look forは「〜を探す」です。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "私は今、テレビを見ていません。",
+      "answers": [
+        {
+          "text": "I am not watching TV now."
+        }
+      ],
+      "note": "be動詞の後ろにnotを入れます。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "彼は今、走っていますか。",
+      "answers": [
+        {
+          "text": "Is he running now?"
+        }
+      ],
+      "note": "isを主語heの前に置きます。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "猫は窓の近くに座っています。",
+      "answers": [
+        {
+          "text": "The cat is sitting near the window."
+        }
+      ],
+      "note": "sitはtを重ねてsittingです。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-present-progressive-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "present-progressive",
+      "topic": "現在進行形",
+      "japanese": "あなたたちは今、英語を練習しているのですか。",
+      "answers": [
+        {
+          "text": "Are you practicing English now?"
+        }
+      ],
+      "note": "複数のyouにもareを使います。\n\n基本の形：am / is / are + 動詞のing形\n「今まさに〜している」を表します。be動詞とing形の両方を使います。"
+    },
+    {
+      "id": "grammar-can-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "私は100メートル泳げます。",
+      "answers": [
+        {
+          "text": "I can swim one hundred meters."
+        }
+      ],
+      "note": "canの後ろのswimは原形です。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "彼女はスペイン語を話せます。",
+      "answers": [
+        {
+          "text": "She can speak Spanish."
+        }
+      ],
+      "note": "主語がsheでもcanは変わりません。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "私は今日は車を運転できません。",
+      "answers": [
+        {
+          "text": "I cannot drive today."
+        },
+        {
+          "text": "I can't drive today.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "cannotは1語で書くのが基本です。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "あなたはピアノを弾けますか。",
+      "answers": [
+        {
+          "text": "Can you play the piano?"
+        }
+      ],
+      "note": "canを主語の前に置いて尋ねます。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "彼はこの重い箱を持ち上げられます。",
+      "answers": [
+        {
+          "text": "He can lift this heavy box."
+        }
+      ],
+      "note": "liftは「持ち上げる」です。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "この写真を見てもいいですか。",
+      "answers": [
+        {
+          "text": "Can I look at this photo?"
+        }
+      ],
+      "note": "Can Iで許可を求められます。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "私たちはここで昼食を食べられます。",
+      "answers": [
+        {
+          "text": "We can eat lunch here."
+        }
+      ],
+      "note": "可能なことをcanで表しています。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "ドアを開けてもらえますか。",
+      "answers": [
+        {
+          "text": "Can you open the door?"
+        }
+      ],
+      "note": "Can youは依頼にも使えます。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "その鳥は飛べません。",
+      "answers": [
+        {
+          "text": "The bird cannot fly."
+        },
+        {
+          "text": "The bird can't fly.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "否定でもflyは原形です。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-can-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "can",
+      "topic": "can",
+      "japanese": "あなたの妹は自転車に乗れますか。",
+      "answers": [
+        {
+          "text": "Can your sister ride a bike?"
+        }
+      ],
+      "note": "主語がyour sisterでもCanから始めます。\n\n基本の形：can + 動詞の原形\n「〜できる」という能力や、Can youで依頼を表します。主語がheでもcanにsは付きません。"
+    },
+    {
+      "id": "grammar-past-verbs-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "私は昨日、友達を訪ねました。",
+      "answers": [
+        {
+          "text": "I visited my friend yesterday."
+        }
+      ],
+      "note": "visitにedを付けます。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "彼女は昨夜、魚を料理しました。",
+      "answers": [
+        {
+          "text": "She cooked fish last night."
+        }
+      ],
+      "note": "cookの過去形はcookedです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "私たちは先週、映画を見ました。",
+      "answers": [
+        {
+          "text": "We watched a movie last week."
+        }
+      ],
+      "note": "watchの過去形はwatchedです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "私は今朝、鍵をなくしました。",
+      "answers": [
+        {
+          "text": "I lost my keys this morning."
+        }
+      ],
+      "note": "loseの過去形はlostです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "彼は昨日、早く家に帰りました。",
+      "answers": [
+        {
+          "text": "He went home early yesterday."
+        }
+      ],
+      "note": "goの過去形はwentです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "私は昼食にサンドイッチを食べました。",
+      "answers": [
+        {
+          "text": "I ate a sandwich for lunch."
+        }
+      ],
+      "note": "eatの過去形はateです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "彼らは去年、新しい家を買いました。",
+      "answers": [
+        {
+          "text": "They bought a new house last year."
+        }
+      ],
+      "note": "buyの過去形はboughtです。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "私は昨夜、よく眠れませんでした。",
+      "answers": [
+        {
+          "text": "I did not sleep well last night."
+        }
+      ],
+      "note": "did notの後ろはsleepの原形です。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "あなたは昨日、宿題を終えましたか。",
+      "answers": [
+        {
+          "text": "Did you finish your homework yesterday?"
+        }
+      ],
+      "note": "Didを使うのでfinishは原形です。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-past-verbs-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-verbs",
+      "topic": "一般動詞の過去",
+      "japanese": "あなたは先週末、どこへ行きましたか。",
+      "answers": [
+        {
+          "text": "Where did you go last weekend?"
+        }
+      ],
+      "note": "疑問詞の後ろもdid + 主語 + 原形です。\n\n基本の形：動詞の過去形 / did not + 原形\n「昨日〜した」など過去の動作を表します。規則的なed形と不規則な形があります。"
+    },
+    {
+      "id": "grammar-plurals-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "私は鉛筆を3本持っています。",
+      "answers": [
+        {
+          "text": "I have three pencils."
+        }
+      ],
+      "note": "pencilにsを付けます。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "テーブルの上に箱が2つあります。",
+      "answers": [
+        {
+          "text": "There are two boxes on the table."
+        }
+      ],
+      "note": "boxはesを付けてboxesです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "子どもたちは公園にいます。",
+      "answers": [
+        {
+          "text": "The children are in the park."
+        }
+      ],
+      "note": "childの複数形はchildrenです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "これらのいちごは甘いです。",
+      "answers": [
+        {
+          "text": "These strawberries are sweet."
+        }
+      ],
+      "note": "strawberryはyをiesに変えます。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "私は歯を毎日磨きます。",
+      "answers": [
+        {
+          "text": "I brush my teeth every day."
+        }
+      ],
+      "note": "toothの複数形はteethです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "その棚には腕時計が4つあります。",
+      "answers": [
+        {
+          "text": "There are four watches on the shelf."
+        }
+      ],
+      "note": "watchはesを付けます。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "私たちはバスを2台必要としています。",
+      "answers": [
+        {
+          "text": "We need two buses."
+        }
+      ],
+      "note": "busの複数形はbusesです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "あの女性たちは先生です。",
+      "answers": [
+        {
+          "text": "Those women are teachers."
+        }
+      ],
+      "note": "womanの複数形はwomenです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "私の足は冷たいです。",
+      "answers": [
+        {
+          "text": "My feet are cold."
+        }
+      ],
+      "note": "footの複数形はfeetです。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-plurals-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "plurals",
+      "topic": "名詞の複数形",
+      "japanese": "この町には図書館が5つあります。",
+      "answers": [
+        {
+          "text": "There are five libraries in this town."
+        }
+      ],
+      "note": "libraryはlibrariesになります。\n\n基本の形：数 + 名詞の複数形\n2つ以上の数えられる物にはsやesを付けます。childなど不規則に変わる名詞もあります。"
+    },
+    {
+      "id": "grammar-pronouns-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "私は彼を知っています。",
+      "answers": [
+        {
+          "text": "I know him."
+        }
+      ],
+      "note": "動詞knowの相手は目的格himです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "これは彼女のかばんです。",
+      "answers": [
+        {
+          "text": "This is her bag."
+        }
+      ],
+      "note": "名詞bagの前は所有格herです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "その赤い自転車は私のものです。",
+      "answers": [
+        {
+          "text": "The red bike is mine."
+        }
+      ],
+      "note": "mineだけで「私のもの」を表します。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "どうか私たちを手伝ってください。",
+      "answers": [
+        {
+          "text": "Please help us."
+        }
+      ],
+      "note": "helpの相手はusです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "私は彼らの名前を覚えています。",
+      "answers": [
+        {
+          "text": "I remember their names."
+        }
+      ],
+      "note": "namesの前はtheirです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "この席はあなたのものです。",
+      "answers": [
+        {
+          "text": "This seat is yours."
+        }
+      ],
+      "note": "yoursの後ろに名詞は足しません。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "彼女は私にお茶をくれます。",
+      "answers": [
+        {
+          "text": "She gives me tea."
+        }
+      ],
+      "note": "「私に」は目的格meです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "私はそれを毎日使います。",
+      "answers": [
+        {
+          "text": "I use it every day."
+        }
+      ],
+      "note": "物を受ける目的格もitです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "これらの本は彼らのものです。",
+      "answers": [
+        {
+          "text": "These books are theirs."
+        }
+      ],
+      "note": "theirsで「彼らのもの」です。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-pronouns-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "pronouns",
+      "topic": "代名詞",
+      "japanese": "私たちの先生は彼女を知っています。",
+      "answers": [
+        {
+          "text": "Our teacher knows her."
+        }
+      ],
+      "note": "文の最初はOur、動詞の相手はherです。\n\n基本の形：I / my / me / mine などの使い分け\n「私は・私の・私を・私のもの」のように、文の中での役割に合わせて代名詞の形を変えます。"
+    },
+    {
+      "id": "grammar-past-be-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "私は昨日、家にいました。",
+      "answers": [
+        {
+          "text": "I was at home yesterday."
+        }
+      ],
+      "note": "Iの過去のbe動詞はwasです。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "その部屋は昨夜、寒かったです。",
+      "answers": [
+        {
+          "text": "The room was cold last night."
+        }
+      ],
+      "note": "roomは単数なのでwasです。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "私たちは先週、忙しかったです。",
+      "answers": [
+        {
+          "text": "We were busy last week."
+        }
+      ],
+      "note": "weにはwereを使います。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "彼女はその時、とても幸せでした。",
+      "answers": [
+        {
+          "text": "She was very happy then."
+        }
+      ],
+      "note": "thenは「その時」です。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "あなたは昨日、学校にいましたか。",
+      "answers": [
+        {
+          "text": "Were you at school yesterday?"
+        }
+      ],
+      "note": "wereをyouの前に置きます。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "彼らは会議に遅れませんでした。",
+      "answers": [
+        {
+          "text": "They were not late for the meeting."
+        }
+      ],
+      "note": "wereの後ろにnotを置きます。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "私は昨日、疲れていませんでした。",
+      "answers": [
+        {
+          "text": "I was not tired yesterday."
+        }
+      ],
+      "note": "was notで過去の状態を否定します。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "その店は朝9時に開いていました。",
+      "answers": [
+        {
+          "text": "The shop was open at nine in the morning."
+        }
+      ],
+      "note": "openは形容詞として使っています。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "あなたの鍵はどこにありましたか。",
+      "answers": [
+        {
+          "text": "Where were your keys?"
+        }
+      ],
+      "note": "keysは複数なのでwereです。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-be-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-be",
+      "topic": "be動詞の過去",
+      "japanese": "その映画は面白かったですか。",
+      "answers": [
+        {
+          "text": "Was the movie interesting?"
+        }
+      ],
+      "note": "単数のmovieにはwasです。\n\n基本の形：was / were + 状態・場所\n過去の「〜だった」「〜にいた」はwas・wereです。I・he・she・itはwas、you・we・theyはwereです。"
+    },
+    {
+      "id": "grammar-past-progressive-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "私は昨夜8時に本を読んでいました。",
+      "answers": [
+        {
+          "text": "I was reading a book at eight last night."
+        }
+      ],
+      "note": "その時に続いていた動作です。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "彼女はその時、夕食を作っていました。",
+      "answers": [
+        {
+          "text": "She was making dinner then."
+        }
+      ],
+      "note": "過去なのでisではなくwasです。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "私たちはバス停で待っていました。",
+      "answers": [
+        {
+          "text": "We were waiting at the bus stop."
+        }
+      ],
+      "note": "weにはwereを使います。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "あなたが電話した時、私は眠っていました。",
+      "answers": [
+        {
+          "text": "I was sleeping when you called."
+        }
+      ],
+      "note": "when以下が過去の時点を表します。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "彼らはその時、庭で遊んでいました。",
+      "answers": [
+        {
+          "text": "They were playing in the garden then."
+        }
+      ],
+      "note": "theyにはwereです。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "彼は昨日の午後、勉強していましたか。",
+      "answers": [
+        {
+          "text": "Was he studying yesterday afternoon?"
+        }
+      ],
+      "note": "wasを主語heの前に置きます。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "私はその時、テレビを見ていませんでした。",
+      "answers": [
+        {
+          "text": "I was not watching TV then."
+        }
+      ],
+      "note": "wasの後ろにnotを入れます。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "あなたは昨夜9時に何をしていましたか。",
+      "answers": [
+        {
+          "text": "What were you doing at nine last night?"
+        }
+      ],
+      "note": "What + were + 主語 + doingです。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "雨が降り始めた時、私たちは歩いていました。",
+      "answers": [
+        {
+          "text": "We were walking when it started to rain."
+        }
+      ],
+      "note": "背景の動作を過去進行形で表します。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-past-progressive-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "past-progressive",
+      "topic": "過去進行形",
+      "japanese": "犬はドアの近くで寝ていました。",
+      "answers": [
+        {
+          "text": "The dog was sleeping near the door."
+        }
+      ],
+      "note": "主語が1匹なのでwasです。\n\n基本の形：was / were + 動詞のing形\n過去のある時点で「〜していた」を表します。過去の状態を示すbe動詞とing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-future-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私は明日、部屋を掃除するつもりです。",
+      "answers": [
+        {
+          "text": "I am going to clean my room tomorrow."
+        },
+        {
+          "text": "I'm going to clean my room tomorrow.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "前もって考えた予定を表します。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私たちは日曜日に祖母を訪ねる予定です。",
+      "answers": [
+        {
+          "text": "We are going to visit our grandmother on Sunday."
+        },
+        {
+          "text": "We're going to visit our grandmother on Sunday.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "主語weなのでare going toです。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "彼女は来月、カナダに引っ越す予定です。",
+      "answers": [
+        {
+          "text": "She is going to move to Canada next month."
+        }
+      ],
+      "note": "moveは「引っ越す」です。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私はあなたのかばんを運びますよ。",
+      "answers": [
+        {
+          "text": "I will carry your bag."
+        }
+      ],
+      "note": "その場で申し出るwillです。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "明日は寒くなるでしょう。",
+      "answers": [
+        {
+          "text": "It will be cold tomorrow."
+        }
+      ],
+      "note": "willの後ろのbeは原形です。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私はもう遅刻しません。",
+      "answers": [
+        {
+          "text": "I will not be late again."
+        }
+      ],
+      "note": "will notの後ろもbeです。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "あなたは今夜、料理する予定ですか。",
+      "answers": [
+        {
+          "text": "Are you going to cook tonight?"
+        }
+      ],
+      "note": "areを主語の前に置きます。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "彼らはいつ出発する予定ですか。",
+      "answers": [
+        {
+          "text": "When are they going to leave?"
+        }
+      ],
+      "note": "Whenで予定の時を尋ねます。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私たちは今日は外食しない予定です。",
+      "answers": [
+        {
+          "text": "We are not going to eat out today."
+        }
+      ],
+      "note": "be動詞の後ろにnotを置きます。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-future-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "future",
+      "topic": "未来",
+      "japanese": "私は後であなたに電話します。",
+      "answers": [
+        {
+          "text": "I will call you later."
+        }
+      ],
+      "note": "laterは「後で」です。\n\n基本の形：will + 原形 / be going to + 原形\nこれからのことを表します。willはその場の意思など、be going toは前からの予定などによく使います。"
+    },
+    {
+      "id": "grammar-gerunds-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "私は夕食を作ることを楽しんでいます。",
+      "answers": [
+        {
+          "text": "I enjoy making dinner."
+        }
+      ],
+      "note": "enjoyの後ろはing形です。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "早起きすることは私には難しいです。",
+      "answers": [
+        {
+          "text": "Getting up early is difficult for me."
+        }
+      ],
+      "note": "動名詞のまとまりを主語にしています。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "彼女は手紙を書くのをやめました。",
+      "answers": [
+        {
+          "text": "She stopped writing the letter."
+        }
+      ],
+      "note": "stop + ingは「〜するのをやめる」です。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "私たちは散歩することが好きです。",
+      "answers": [
+        {
+          "text": "We like taking walks."
+        }
+      ],
+      "note": "taking walksがlikeの目的語です。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "彼は泳ぐのが得意です。",
+      "answers": [
+        {
+          "text": "He is good at swimming."
+        },
+        {
+          "text": "He's good at swimming.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "前置詞atの後ろはing形です。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "私は新しい言語を学ぶことに興味があります。",
+      "answers": [
+        {
+          "text": "I am interested in learning new languages."
+        },
+        {
+          "text": "I'm interested in learning new languages.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "前置詞inの後ろに動名詞を置きます。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "朝食を食べずに外出しないでください。",
+      "answers": [
+        {
+          "text": "Do not go out without eating breakfast."
+        }
+      ],
+      "note": "withoutの後ろもing形です。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "助けてくれてありがとうございます。",
+      "answers": [
+        {
+          "text": "Thank you for helping me."
+        }
+      ],
+      "note": "forの後ろはhelpingです。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "彼女の趣味は鳥の写真を撮ることです。",
+      "answers": [
+        {
+          "text": "Her hobby is taking pictures of birds."
+        }
+      ],
+      "note": "「趣味は〜すること」を表します。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-gerunds-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "gerunds",
+      "topic": "動名詞",
+      "japanese": "あなたは歌うことを楽しんでいますか。",
+      "answers": [
+        {
+          "text": "Do you enjoy singing?"
+        }
+      ],
+      "note": "enjoyの後ろにsingingを置きます。\n\n基本の形：動詞のing形を名詞として使う\n「〜すること」をing形で表します。主語や目的語になり、前置詞の後ろにも置けます。"
+    },
+    {
+      "id": "grammar-infinitives-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私は新しい自転車を買いたいです。",
+      "answers": [
+        {
+          "text": "I want to buy a new bike."
+        }
+      ],
+      "note": "want toは「〜したい」です。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "彼女は医者になりたいです。",
+      "answers": [
+        {
+          "text": "She wants to be a doctor."
+        }
+      ],
+      "note": "beもtoの後ろでは原形です。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私たちは海を見るためにここへ来ました。",
+      "answers": [
+        {
+          "text": "We came here to see the sea."
+        }
+      ],
+      "note": "目的を表すto seeです。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私は何か食べるものが必要です。",
+      "answers": [
+        {
+          "text": "I need something to eat."
+        }
+      ],
+      "note": "to eatがsomethingを説明します。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "彼は勉強する時間がありません。",
+      "answers": [
+        {
+          "text": "He has no time to study."
+        }
+      ],
+      "note": "to studyがtimeを後ろから説明します。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私は朝に散歩することが好きです。",
+      "answers": [
+        {
+          "text": "I like to take a walk in the morning."
+        }
+      ],
+      "note": "to takeがlikeの目的語です。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "彼女は本を借りるために図書館へ行きました。",
+      "answers": [
+        {
+          "text": "She went to the library to borrow books."
+        }
+      ],
+      "note": "目的を表すto borrowです。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私はあなたに会えてうれしいです。",
+      "answers": [
+        {
+          "text": "I am happy to see you."
+        },
+        {
+          "text": "I'm happy to see you.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "うれしい理由をto seeで表します。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私には今日、することがたくさんあります。",
+      "answers": [
+        {
+          "text": "I have many things to do today."
+        }
+      ],
+      "note": "to doがthingsを説明します。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-infinitives-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives",
+      "topic": "不定詞",
+      "japanese": "私たちは一緒に働くことを決めました。",
+      "answers": [
+        {
+          "text": "We decided to work together."
+        }
+      ],
+      "note": "decideの後ろはto + 原形です。\n\n基本の形：to + 動詞の原形\n「〜すること」「〜するための」「〜するために」の3つの基本用法を、文の中で見分けます。"
+    },
+    {
+      "id": "grammar-modals-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "あなたはここで靴を脱がなければなりません。",
+      "answers": [
+        {
+          "text": "You must take off your shoes here."
+        }
+      ],
+      "note": "mustは強い必要や規則を表します。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "あなたはもっと休むべきです。",
+      "answers": [
+        {
+          "text": "You should rest more."
+        }
+      ],
+      "note": "shouldで助言しています。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "明日は雨が降るかもしれません。",
+      "answers": [
+        {
+          "text": "It may rain tomorrow."
+        }
+      ],
+      "note": "mayは可能性を表します。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "ここで泳いではいけません。",
+      "answers": [
+        {
+          "text": "You must not swim here."
+        }
+      ],
+      "note": "must notは「〜してはいけない」です。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "あなたは急ぐ必要はありません。",
+      "answers": [
+        {
+          "text": "You do not have to hurry."
+        },
+        {
+          "text": "You don't have to hurry.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "do not have toは「必要がない」です。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "私は明日、早く起きなければなりません。",
+      "answers": [
+        {
+          "text": "I have to get up early tomorrow."
+        }
+      ],
+      "note": "have toも必要を表します。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "彼女は今日は働かなければなりません。",
+      "answers": [
+        {
+          "text": "She has to work today."
+        }
+      ],
+      "note": "主語がsheなのでhas toです。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "窓を開けてもよろしいですか。",
+      "answers": [
+        {
+          "text": "May I open the window?"
+        }
+      ],
+      "note": "May Iは丁寧に許可を求める形です。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "あなたは心配するべきではありません。",
+      "answers": [
+        {
+          "text": "You should not worry."
+        }
+      ],
+      "note": "shouldの後ろにnotを置きます。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-modals-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "modals",
+      "topic": "助動詞",
+      "japanese": "ここで少し待っていてもらえますか。",
+      "answers": [
+        {
+          "text": "Could you wait here for a moment?"
+        }
+      ],
+      "note": "Could youは丁寧な依頼です。\n\n基本の形：must / should / may など + 原形\n義務・助言・可能性など、気持ちや判断を動詞に加えます。助動詞の後ろは原形です。"
+    },
+    {
+      "id": "grammar-comparison-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "この道はあの道より広いです。",
+      "answers": [
+        {
+          "text": "This road is wider than that one."
+        }
+      ],
+      "note": "wideはwiderになります。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "私のかばんはあなたのものより重いです。",
+      "answers": [
+        {
+          "text": "My bag is heavier than yours."
+        }
+      ],
+      "note": "heavyはheavierに変わります。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "彼女は私より速く走ります。",
+      "answers": [
+        {
+          "text": "She runs faster than I do."
+        }
+      ],
+      "note": "fastの比較級はfasterです。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "この本はあの本より面白いです。",
+      "answers": [
+        {
+          "text": "This book is more interesting than that one."
+        }
+      ],
+      "note": "長い形容詞ではmoreを使います。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "これはこの店で一番安いペンです。",
+      "answers": [
+        {
+          "text": "This is the cheapest pen in this shop."
+        }
+      ],
+      "note": "最上級の前にtheを付けます。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "彼は私たちのチームで一番背が高いです。",
+      "answers": [
+        {
+          "text": "He is the tallest player on our team."
+        },
+        {
+          "text": "He's the tallest player on our team.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "範囲はon our teamで表せます。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "この椅子はあの椅子と同じくらい快適です。",
+      "answers": [
+        {
+          "text": "This chair is as comfortable as that one."
+        }
+      ],
+      "note": "asとasの間は原級です。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "私は兄ほど早く起きません。",
+      "answers": [
+        {
+          "text": "I do not get up as early as my brother."
+        },
+        {
+          "text": "I don't get up as early as my brother.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "not as ... asで「〜ほどではない」です。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "今日は昨日より天気がよいです。",
+      "answers": [
+        {
+          "text": "The weather is better today than yesterday."
+        }
+      ],
+      "note": "goodの比較級はbetterです。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-comparison-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "comparison",
+      "topic": "比較",
+      "japanese": "あなたはどちらが好きですか、紅茶ですか、それともコーヒーですか。",
+      "answers": [
+        {
+          "text": "Which do you like better, tea or coffee?"
+        }
+      ],
+      "note": "2つの好みを尋ねる時はbetterを使います。\n\n基本の形：比較級 + than / the + 最上級 / as ... as\n2つを比べる時は比較級、範囲の中で一番なら最上級、同じ程度ならasを使います。"
+    },
+    {
+      "id": "grammar-there-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "ドアの近くに椅子があります。",
+      "answers": [
+        {
+          "text": "There is a chair near the door."
+        }
+      ],
+      "note": "chairは1脚なのでisです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "机の上にリンゴが3つあります。",
+      "answers": [
+        {
+          "text": "There are three apples on the desk."
+        }
+      ],
+      "note": "applesは複数なのでareです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "この近くに銀行はありますか。",
+      "answers": [
+        {
+          "text": "Is there a bank near here?"
+        }
+      ],
+      "note": "疑問文ではisをthereの前に置きます。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "この部屋には窓がありません。",
+      "answers": [
+        {
+          "text": "There are no windows in this room."
+        }
+      ],
+      "note": "no + 複数形で「1つもない」です。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "公園には子どもがたくさんいます。",
+      "answers": [
+        {
+          "text": "There are many children in the park."
+        }
+      ],
+      "note": "人がいることもthere areで言えます。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "かばんの中に水が少しあります。",
+      "answers": [
+        {
+          "text": "There is some water in the bag."
+        }
+      ],
+      "note": "waterは数えない名詞なのでisです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "駅の近くにはレストランが2軒あります。",
+      "answers": [
+        {
+          "text": "There are two restaurants near the station."
+        }
+      ],
+      "note": "two restaurantsなのでareです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "テーブルの下に猫はいますか。",
+      "answers": [
+        {
+          "text": "Is there a cat under the table?"
+        }
+      ],
+      "note": "1匹の猫がいるかを尋ねます。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "昨夜は空に星がたくさんありました。",
+      "answers": [
+        {
+          "text": "There were many stars in the sky last night."
+        }
+      ],
+      "note": "過去で複数なのでwereです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-there-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "there",
+      "topic": "there is / there are",
+      "japanese": "この町には昔、小さな映画館がありました。",
+      "answers": [
+        {
+          "text": "There was a small movie theater in this town."
+        }
+      ],
+      "note": "昔の存在なのでwasです。\n\n基本の形：There is + 単数 / There are + 複数\n「〜があります・います」と初めて紹介する時に使います。場所を表す言葉を後ろに置けます。"
+    },
+    {
+      "id": "grammar-conjunctions-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "私は紅茶とコーヒーが好きです。",
+      "answers": [
+        {
+          "text": "I like tea and coffee."
+        }
+      ],
+      "note": "andで並べます。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "私は疲れていますが、幸せです。",
+      "answers": [
+        {
+          "text": "I am tired, but I am happy."
+        },
+        {
+          "text": "I'm tired, but I am happy.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "butは反対の内容をつなぎます。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "雨が降っているので、私は家にいます。",
+      "answers": [
+        {
+          "text": "I am at home because it is raining."
+        },
+        {
+          "text": "I'm at home because it is raining.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "because以下が理由です。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "時間がある時、私は散歩をします。",
+      "answers": [
+        {
+          "text": "I take a walk when I have time."
+        }
+      ],
+      "note": "whenで「〜する時」を表します。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "明日晴れたら、私たちは外で食べます。",
+      "answers": [
+        {
+          "text": "If it is sunny tomorrow, we will eat outside."
+        }
+      ],
+      "note": "未来の条件でもifの中は現在形です。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "私は彼女が正しいと思います。",
+      "answers": [
+        {
+          "text": "I think that she is right."
+        }
+      ],
+      "note": "thatの後ろに主語と動詞が続きます。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "あなたはここで待つか、私と一緒に来ることができます。",
+      "answers": [
+        {
+          "text": "You can wait here or come with me."
+        }
+      ],
+      "note": "orで選択肢をつなぎます。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "寝る前に歯を磨いてください。",
+      "answers": [
+        {
+          "text": "Please brush your teeth before you go to bed."
+        }
+      ],
+      "note": "beforeは「〜する前に」です。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "昼食を食べた後、私は宿題をしました。",
+      "answers": [
+        {
+          "text": "I did my homework after I ate lunch."
+        }
+      ],
+      "note": "afterは「〜した後で」です。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-conjunctions-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "conjunctions",
+      "topic": "接続詞",
+      "japanese": "私が忙しかった時、彼は私を助けてくれました。",
+      "answers": [
+        {
+          "text": "He helped me when I was busy."
+        }
+      ],
+      "note": "when以下が時を表します。\n\n基本の形：and / but / because / when / if / that\n言葉や文をつなぎ、理由・時・条件などの関係を表します。"
+    },
+    {
+      "id": "grammar-passive-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "このドアは毎晩、鍵をかけられます。",
+      "answers": [
+        {
+          "text": "This door is locked every night."
+        }
+      ],
+      "note": "受け身はis + lockedです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "この絵は私の妹によって描かれました。",
+      "answers": [
+        {
+          "text": "This picture was drawn by my sister."
+        }
+      ],
+      "note": "drawの過去分詞はdrawnです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "英語は多くの国で話されています。",
+      "answers": [
+        {
+          "text": "English is spoken in many countries."
+        }
+      ],
+      "note": "speakの過去分詞はspokenです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "これらの椅子は木で作られています。",
+      "answers": [
+        {
+          "text": "These chairs are made of wood."
+        }
+      ],
+      "note": "複数なのでare、makeの過去分詞はmadeです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "私はそのパーティーに招待されました。",
+      "answers": [
+        {
+          "text": "I was invited to the party."
+        }
+      ],
+      "note": "inviteはinvitedになります。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "この部屋は毎日、掃除されます。",
+      "answers": [
+        {
+          "text": "This room is cleaned every day."
+        }
+      ],
+      "note": "習慣の受け身なのでis cleanedです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "その手紙は昨日、送られました。",
+      "answers": [
+        {
+          "text": "The letter was sent yesterday."
+        }
+      ],
+      "note": "sendの過去分詞はsentです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "この歌は誰によって書かれましたか。",
+      "answers": [
+        {
+          "text": "Who was this song written by?"
+        }
+      ],
+      "note": "writeの過去分詞はwrittenです。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "その窓は昨日、割られませんでした。",
+      "answers": [
+        {
+          "text": "The window was not broken yesterday."
+        }
+      ],
+      "note": "wasの後ろにnotを置きます。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-passive-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "passive",
+      "topic": "受け身",
+      "japanese": "その本は英語で書かれていますか。",
+      "answers": [
+        {
+          "text": "Is the book written in English?"
+        }
+      ],
+      "note": "isを主語の前に置きます。\n\n基本の形：be動詞 + 過去分詞\n「〜される・された」と、動作を受ける物や人を主語にして表します。be動詞で時制を変えます。"
+    },
+    {
+      "id": "grammar-perfect-continuation-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "私はこの町に5年間住んでいます。",
+      "answers": [
+        {
+          "text": "I have lived in this town for five years."
+        }
+      ],
+      "note": "5年間という期間なのでforです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "彼女は2020年からここで働いています。",
+      "answers": [
+        {
+          "text": "She has worked here since 2020."
+        }
+      ],
+      "note": "始まった年なのでsinceです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "私たちは子どもの頃から友達です。",
+      "answers": [
+        {
+          "text": "We have been friends since we were children."
+        }
+      ],
+      "note": "beの過去分詞はbeenです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "私は彼を3年間知っています。",
+      "answers": [
+        {
+          "text": "I have known him for three years."
+        }
+      ],
+      "note": "knowの過去分詞はknownです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "彼は先週の月曜日から病気です。",
+      "answers": [
+        {
+          "text": "He has been sick since last Monday."
+        }
+      ],
+      "note": "今も続く状態をhas beenで表します。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "あなたはどのくらいこの家に住んでいますか。",
+      "answers": [
+        {
+          "text": "How long have you lived in this house?"
+        }
+      ],
+      "note": "How longで継続期間を尋ねます。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "彼女は朝からずっと忙しいです。",
+      "answers": [
+        {
+          "text": "She has been busy since this morning."
+        }
+      ],
+      "note": "状態の継続はhas beenです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "私は長い間、この時計を持っています。",
+      "answers": [
+        {
+          "text": "I have had this watch for a long time."
+        }
+      ],
+      "note": "haveの過去分詞もhadです。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "私たちは10年間、お互いを知っています。",
+      "answers": [
+        {
+          "text": "We have known each other for ten years."
+        }
+      ],
+      "note": "each otherは「お互い」です。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-continuation-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-continuation",
+      "topic": "現在完了：継続",
+      "japanese": "彼は去年からこのクラブのメンバーです。",
+      "answers": [
+        {
+          "text": "He has been a member of this club since last year."
+        }
+      ],
+      "note": "始まった時をsinceで表します。\n\n基本の形：have / has + 過去分詞 + for / since\n過去に始まり、今も続く状態を表します。forは期間、sinceは始まった時点です。"
+    },
+    {
+      "id": "grammar-perfect-experience-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "私は北海道を2回訪れたことがあります。",
+      "answers": [
+        {
+          "text": "I have visited Hokkaido twice."
+        }
+      ],
+      "note": "twiceは「2回」です。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "あなたは今までにラクダに乗ったことがありますか。",
+      "answers": [
+        {
+          "text": "Have you ever ridden a camel?"
+        }
+      ],
+      "note": "everは疑問文で経験を尋ねる時によく使います。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "彼女は一度も雪を見たことがありません。",
+      "answers": [
+        {
+          "text": "She has never seen snow."
+        }
+      ],
+      "note": "neverで「一度もない」を表します。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "私は以前、この料理を作ったことがあります。",
+      "answers": [
+        {
+          "text": "I have made this dish before."
+        }
+      ],
+      "note": "makeの過去分詞はmadeです。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "私たちは一度、京都に行ったことがあります。",
+      "answers": [
+        {
+          "text": "We have been to Kyoto once."
+        }
+      ],
+      "note": "have been toで訪れた経験を表します。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "彼はこの映画を3回見たことがあります。",
+      "answers": [
+        {
+          "text": "He has seen this movie three times."
+        }
+      ],
+      "note": "3回以上は数 + timesを使えます。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "あなたは一度でも手紙を英語で書いたことがありますか。",
+      "answers": [
+        {
+          "text": "Have you ever written a letter in English?"
+        }
+      ],
+      "note": "writeの過去分詞はwrittenです。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "私は一度も一人で旅行したことがありません。",
+      "answers": [
+        {
+          "text": "I have never traveled alone."
+        }
+      ],
+      "note": "neverとnotはここでは重ねません。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "彼女は何度もこの歌を歌ったことがあります。",
+      "answers": [
+        {
+          "text": "She has sung this song many times."
+        }
+      ],
+      "note": "singの過去分詞はsungです。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-experience-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-experience",
+      "topic": "現在完了：経験",
+      "japanese": "あなたの父は外国に行ったことがありますか。",
+      "answers": [
+        {
+          "text": "Has your father ever been abroad?"
+        }
+      ],
+      "note": "主語your fatherにはHasを使います。\n\n基本の形：have / has + 過去分詞 + before / ever / never\n今までにしたことがある経験を表します。回数やneverも一緒に使えます。"
+    },
+    {
+      "id": "grammar-perfect-completion-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "私はちょうど昼食を食べ終えたところです。",
+      "answers": [
+        {
+          "text": "I have just finished lunch."
+        }
+      ],
+      "note": "justで「ちょうど〜した」を表します。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "彼女はもう宿題を終えました。",
+      "answers": [
+        {
+          "text": "She has already finished her homework."
+        }
+      ],
+      "note": "alreadyは「もう」です。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "私はまだかばんを準備していません。",
+      "answers": [
+        {
+          "text": "I have not packed my bag yet."
+        }
+      ],
+      "note": "否定文のyetは「まだ」です。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "あなたはもう窓を閉めましたか。",
+      "answers": [
+        {
+          "text": "Have you closed the window yet?"
+        }
+      ],
+      "note": "疑問文のyetは「もう」です。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "彼は鍵をなくしてしまいました。",
+      "answers": [
+        {
+          "text": "He has lost his keys."
+        }
+      ],
+      "note": "今も見つからない結果を表します。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "私たちはたった今、駅に着きました。",
+      "answers": [
+        {
+          "text": "We have just arrived at the station."
+        }
+      ],
+      "note": "arrivedはarriveの過去分詞です。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "電車はもう出発してしまいました。",
+      "answers": [
+        {
+          "text": "The train has already left."
+        }
+      ],
+      "note": "leaveの過去分詞はleftです。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "私はまだそのメールを読んでいません。",
+      "answers": [
+        {
+          "text": "I have not read that email yet."
+        }
+      ],
+      "note": "readの過去分詞もつづりはreadです。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "彼女はもう帰宅しましたか。",
+      "answers": [
+        {
+          "text": "Has she gone home yet?"
+        }
+      ],
+      "note": "主語sheにはHasです。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-completion-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-completion",
+      "topic": "現在完了：完了・結果",
+      "japanese": "私は腕を骨折してしまいました。",
+      "answers": [
+        {
+          "text": "I have broken my arm."
+        }
+      ],
+      "note": "今に影響する結果をhave brokenで表します。\n\n基本の形：have / has + 過去分詞 + just / already / yet\n「もう〜した」「ちょうど〜した」「まだ〜していない」など、今に関係する完了や結果を表します。"
+    },
+    {
+      "id": "grammar-perfect-progressive-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "私は1時間ずっと本を読んでいます。",
+      "answers": [
+        {
+          "text": "I have been reading a book for an hour."
+        }
+      ],
+      "note": "動作の継続をhave been readingで表します。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "彼女は朝からずっと料理をしています。",
+      "answers": [
+        {
+          "text": "She has been cooking since this morning."
+        }
+      ],
+      "note": "sheにはhas beenです。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "私たちは30分間バスを待ち続けています。",
+      "answers": [
+        {
+          "text": "We have been waiting for the bus for thirty minutes."
+        }
+      ],
+      "note": "wait forのforと期間のforは役割が違います。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "彼は2時間ずっと走っています。",
+      "answers": [
+        {
+          "text": "He has been running for two hours."
+        }
+      ],
+      "note": "runはrunningになります。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "あなたはどのくらい英語を勉強し続けていますか。",
+      "answers": [
+        {
+          "text": "How long have you been studying English?"
+        }
+      ],
+      "note": "継続期間をHow longで尋ねます。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "朝からずっと雨が降っています。",
+      "answers": [
+        {
+          "text": "It has been raining since this morning."
+        }
+      ],
+      "note": "天候の主語はitです。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "私は昨夜からずっとこの問題について考えています。",
+      "answers": [
+        {
+          "text": "I have been thinking about this problem since last night."
+        }
+      ],
+      "note": "think aboutは「〜について考える」です。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "彼らは1時間ずっとサッカーをしています。",
+      "answers": [
+        {
+          "text": "They have been playing soccer for an hour."
+        }
+      ],
+      "note": "複数のtheyにはhaveです。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "彼女は昼からずっと掃除をしていますか。",
+      "answers": [
+        {
+          "text": "Has she been cleaning since noon?"
+        }
+      ],
+      "note": "Hasを主語の前に置きます。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-perfect-progressive-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "perfect-progressive",
+      "topic": "現在完了進行形",
+      "japanese": "私は最近、毎日このアプリを使っています。",
+      "answers": [
+        {
+          "text": "I have been using this app every day recently."
+        }
+      ],
+      "note": "最近続けている習慣にも使えます。\n\n基本の形：have / has been + 動詞のing形\n過去から今まで続けている動作を表します。have beenとing形を組み合わせます。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "私はこのカメラの使い方を知っています。",
+      "answers": [
+        {
+          "text": "I know how to use this camera."
+        }
+      ],
+      "note": "how toは「〜の仕方」です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "彼女はどこで降りればよいかわかりません。",
+      "answers": [
+        {
+          "text": "She does not know where to get off."
+        },
+        {
+          "text": "She doesn't know where to get off.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "where toで「どこで〜するか」です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "私は彼に荷物を運ぶよう頼みました。",
+      "answers": [
+        {
+          "text": "I asked him to carry the bags."
+        }
+      ],
+      "note": "ask + 人 + to + 原形です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "母は私に牛乳を買うように言いました。",
+      "answers": [
+        {
+          "text": "My mother told me to buy milk."
+        }
+      ],
+      "note": "tellの過去形はtoldです。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "私はあなたにここにいてほしいです。",
+      "answers": [
+        {
+          "text": "I want you to stay here."
+        }
+      ],
+      "note": "want + 人 + toで「人に〜してほしい」です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "毎日朝食を食べることは大切です。",
+      "answers": [
+        {
+          "text": "It is important to eat breakfast every day."
+        }
+      ],
+      "note": "本当の主語の内容はto以下に置きます。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "私がこの本を読むのは簡単です。",
+      "answers": [
+        {
+          "text": "It is easy for me to read this book."
+        }
+      ],
+      "note": "for meはto以下をする人を表します。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "このスープは熱すぎて飲めません。",
+      "answers": [
+        {
+          "text": "This soup is too hot to drink."
+        }
+      ],
+      "note": "too + 形容詞 + toで「〜すぎて…できない」です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "彼女は何を着ればよいか知っています。",
+      "answers": [
+        {
+          "text": "She knows what to wear."
+        }
+      ],
+      "note": "what toで「何を〜するか」です。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-infinitives-advanced-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "infinitives-advanced",
+      "topic": "不定詞の応用",
+      "japanese": "私は疲れすぎて歩けません。",
+      "answers": [
+        {
+          "text": "I am too tired to walk."
+        },
+        {
+          "text": "I'm too tired to walk.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "too tired toで歩けないほど疲れたと言えます。\n\n基本の形：how to / ask 人 to / It is ... to / too ... to\n疑問詞や人を組み合わせた不定詞と、形式主語it、tooの表現を練習します。"
+    },
+    {
+      "id": "grammar-bare-infinitives-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "私にその箱を運ばせてください。",
+      "answers": [
+        {
+          "text": "Let me carry that box."
+        }
+      ],
+      "note": "Let meで自分がすることを申し出ます。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "その知らせは私を笑わせました。",
+      "answers": [
+        {
+          "text": "The news made me laugh."
+        }
+      ],
+      "note": "make + 人 + 原形で「人を〜させる」です。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "私たちをここで待たせてください。",
+      "answers": [
+        {
+          "text": "Let us wait here."
+        }
+      ],
+      "note": "letの後ろはus + waitです。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "私は妹が部屋を掃除するのを手伝いました。",
+      "answers": [
+        {
+          "text": "I helped my sister clean her room."
+        }
+      ],
+      "note": "helpの後ろはtoを省いた原形も使えます。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "彼は私に車を洗わせました。",
+      "answers": [
+        {
+          "text": "He made me wash the car."
+        }
+      ],
+      "note": "madeの後ろでもwashは原形です。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "私にあなたの写真を見せてください。",
+      "answers": [
+        {
+          "text": "Let me see your photos."
+        }
+      ],
+      "note": "Let me seeは「私に見せて」です。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "先生は私たちにその文を繰り返させました。",
+      "answers": [
+        {
+          "text": "The teacher made us repeat the sentence."
+        }
+      ],
+      "note": "usの後ろにtoは置きません。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "彼女は私が窓を開けるのを手伝いました。",
+      "answers": [
+        {
+          "text": "She helped me open the window."
+        }
+      ],
+      "note": "help + 人 + 原形の形です。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "両親は私を外で遊ばせてくれます。",
+      "answers": [
+        {
+          "text": "My parents let me play outside."
+        }
+      ],
+      "note": "letで「〜することを許す」を表します。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-bare-infinitives-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "bare-infinitives",
+      "topic": "原形不定詞",
+      "japanese": "その映画は私たちを泣かせました。",
+      "answers": [
+        {
+          "text": "The movie made us cry."
+        }
+      ],
+      "note": "cryは原形のまま置きます。\n\n基本の形：let / make / help + 人 + 動詞の原形\nlet・makeなどの後ろでは、人の後ろにtoを付けない原形を置く形があります。"
+    },
+    {
+      "id": "grammar-participles-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "あの眠っている犬はかわいいです。",
+      "answers": [
+        {
+          "text": "That sleeping dog is cute."
+        }
+      ],
+      "note": "sleepingがdogを前から説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "私は壊れた椅子を直しました。",
+      "answers": [
+        {
+          "text": "I fixed the broken chair."
+        }
+      ],
+      "note": "brokenは「壊れた」という状態を説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "ドアの近くに立っている女性は私の叔母です。",
+      "answers": [
+        {
+          "text": "The woman standing near the door is my aunt."
+        }
+      ],
+      "note": "standing以下をwomanの後ろに置きます。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "私はカナダで撮られた写真を持っています。",
+      "answers": [
+        {
+          "text": "I have a photo taken in Canada."
+        }
+      ],
+      "note": "taken以下がphotoを説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "庭で遊んでいる子どもたちは私の友達です。",
+      "answers": [
+        {
+          "text": "The children playing in the garden are my friends."
+        }
+      ],
+      "note": "説明されるchildrenに合わせてareを使います。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "これは盗まれた自転車です。",
+      "answers": [
+        {
+          "text": "This is a stolen bike."
+        }
+      ],
+      "note": "stolenはstealの過去分詞です。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "私はあの歌っている少年を知っています。",
+      "answers": [
+        {
+          "text": "I know that singing boy."
+        }
+      ],
+      "note": "singingがboyを説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "机の上に置かれた手紙を読んでください。",
+      "answers": [
+        {
+          "text": "Please read the letter placed on the desk."
+        }
+      ],
+      "note": "placed以下がletterを説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "あなたはあの走っている猫が見えますか。",
+      "answers": [
+        {
+          "text": "Can you see that running cat?"
+        }
+      ],
+      "note": "runningで動作中の猫を説明します。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-participles-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "participles",
+      "topic": "分詞",
+      "japanese": "これは昨日書かれたメモです。",
+      "answers": [
+        {
+          "text": "This is a note written yesterday."
+        }
+      ],
+      "note": "writtenはwriteの過去分詞です。\n\n基本の形：動詞のing形 / 過去分詞で名詞を説明\n「〜している」「〜された」という説明を名詞に加えます。まとまりが長い時は名詞の後ろに置きます。"
+    },
+    {
+      "id": "grammar-indirect-questions-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "私は彼女がどこに住んでいるか知っています。",
+      "answers": [
+        {
+          "text": "I know where she lives."
+        }
+      ],
+      "note": "whereの後ろはshe livesの語順です。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "あなたは今何時かわかりますか。",
+      "answers": [
+        {
+          "text": "Do you know what time it is?"
+        }
+      ],
+      "note": "文の中ではit isにします。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "私は彼がなぜ悲しいのかわかりません。",
+      "answers": [
+        {
+          "text": "I do not know why he is sad."
+        },
+        {
+          "text": "I don't know why he is sad.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "why is heにはしません。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "バスがいつ出発するか教えてください。",
+      "answers": [
+        {
+          "text": "Please tell me when the bus leaves."
+        }
+      ],
+      "note": "whenの後ろはthe bus leavesです。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "彼女は私が何を欲しいか知っています。",
+      "answers": [
+        {
+          "text": "She knows what I want."
+        }
+      ],
+      "note": "whatの後ろはI wantです。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "あなたはこの機械がどう動くか知っていますか。",
+      "answers": [
+        {
+          "text": "Do you know how this machine works?"
+        }
+      ],
+      "note": "中の文ではdoesを使いません。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "私は誰がこのケーキを作ったか知っています。",
+      "answers": [
+        {
+          "text": "I know who made this cake."
+        }
+      ],
+      "note": "whoが中の文の主語なので、そのままmadeが続きます。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "あなたの学校がどこにあるか教えてもらえますか。",
+      "answers": [
+        {
+          "text": "Can you tell me where your school is?"
+        }
+      ],
+      "note": "間接疑問ではisを後ろに置きます。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "私は彼らが何を話しているかわかりません。",
+      "answers": [
+        {
+          "text": "I do not know what they are talking about."
+        },
+        {
+          "text": "I don't know what they are talking about.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "they areの語順で、aboutも残します。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-indirect-questions-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "indirect-questions",
+      "topic": "間接疑問",
+      "japanese": "彼は私がどの色が好きか知っています。",
+      "answers": [
+        {
+          "text": "He knows which color I like."
+        }
+      ],
+      "note": "which colorをまとまりで前に置きます。\n\n基本の形：疑問詞 + 主語 + 動詞\n疑問を文の一部に入れる時は、疑問詞の後ろを普通の文の語順にします。"
+    },
+    {
+      "id": "grammar-relative-subject-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "私はケーキを作る友達がいます。",
+      "answers": [
+        {
+          "text": "I have a friend who makes cakes."
+        }
+      ],
+      "note": "whoがmakesの主語です。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "これは海へ行くバスです。",
+      "answers": [
+        {
+          "text": "This is a bus that goes to the beach."
+        }
+      ],
+      "note": "thatがgoesの主語です。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "赤い帽子をかぶっている少年は私の弟です。",
+      "answers": [
+        {
+          "text": "The boy who is wearing a red cap is my brother."
+        }
+      ],
+      "note": "who以下がboyを説明します。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "私は鳥が好きな人を知っています。",
+      "answers": [
+        {
+          "text": "I know someone who likes birds."
+        }
+      ],
+      "note": "whoの後ろにlikesが続きます。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "これはとても速く走る犬です。",
+      "answers": [
+        {
+          "text": "This is a dog that runs very fast."
+        }
+      ],
+      "note": "thatが犬の説明を始めます。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "窓の近くに立っている女性は医者です。",
+      "answers": [
+        {
+          "text": "The woman who is standing near the window is a doctor."
+        }
+      ],
+      "note": "説明部分の後に文全体のisが続きます。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "私は良い写真が撮れるカメラが欲しいです。",
+      "answers": [
+        {
+          "text": "I want a camera that takes good pictures."
+        }
+      ],
+      "note": "thatがtakesの主語です。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "ここで働いている人たちは親切です。",
+      "answers": [
+        {
+          "text": "The people who work here are kind."
+        }
+      ],
+      "note": "peopleは複数なのでworkです。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "あれは私の犬を助けてくれた男性です。",
+      "answers": [
+        {
+          "text": "That is the man who helped my dog."
+        }
+      ],
+      "note": "過去の動作なのでhelpedです。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-subject-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-subject",
+      "topic": "関係代名詞：主格",
+      "japanese": "私は大きな庭がある家に住んでいます。",
+      "answers": [
+        {
+          "text": "I live in a house that has a large garden."
+        }
+      ],
+      "note": "thatは家を指し、hasの主語です。\n\n基本の形：名詞 + who / which / that + 動詞\n人や物を、後ろから文の形で詳しく説明します。関係代名詞が説明部分の主語になります。"
+    },
+    {
+      "id": "grammar-relative-object-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "これは私が先週借りた本です。",
+      "answers": [
+        {
+          "text": "This is the book that I borrowed last week."
+        },
+        {
+          "text": "This is the book I borrowed last week.",
+          "explanation": "目的格の関係代名詞thatは省略できます。意味は同じで、会話でも自然な形です。"
+        }
+      ],
+      "note": "I borrowedの相手がbookです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "私はあなたが作ったスープが好きです。",
+      "answers": [
+        {
+          "text": "I like the soup that you made."
+        },
+        {
+          "text": "I like the soup you made.",
+          "explanation": "目的格の関係代名詞thatは省略できます。意味は同じで、会話でも自然な形です。"
+        }
+      ],
+      "note": "you madeの相手がsoupです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "これは彼女が昨日撮った写真です。",
+      "answers": [
+        {
+          "text": "This is the photo that she took yesterday."
+        }
+      ],
+      "note": "tookの目的語をthatが受け持ちます。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "私たちが昨夜見た映画は面白かったです。",
+      "answers": [
+        {
+          "text": "The movie that we watched last night was interesting."
+        }
+      ],
+      "note": "we watched以下がmovieを説明します。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "あなたが探している鍵はここにあります。",
+      "answers": [
+        {
+          "text": "The keys that you are looking for are here."
+        }
+      ],
+      "note": "look forのforも必要です。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "私は彼が書いたメールを読みました。",
+      "answers": [
+        {
+          "text": "I read the email that he wrote."
+        }
+      ],
+      "note": "he wroteの相手がemailです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "これは私が毎日使うコップです。",
+      "answers": [
+        {
+          "text": "This is the cup that I use every day."
+        }
+      ],
+      "note": "thatを省いても意味は同じです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "彼女が選んだドレスは青いです。",
+      "answers": [
+        {
+          "text": "The dress that she chose is blue."
+        }
+      ],
+      "note": "chooseの過去形はchoseです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "あなたが昨日会った女性は私の母です。",
+      "answers": [
+        {
+          "text": "The woman that you met yesterday is my mother."
+        }
+      ],
+      "note": "you metの相手はwomanです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-relative-object-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "relative-object",
+      "topic": "関係代名詞：目的格",
+      "japanese": "私はあなたが教えてくれた歌を覚えています。",
+      "answers": [
+        {
+          "text": "I remember the song that you taught me."
+        }
+      ],
+      "note": "teachの過去形はtaughtです。\n\n基本の形：名詞 + that / which + 主語 + 動詞\n「私が買った本」のように、動作の相手になる名詞を後ろの文で説明します。関係代名詞を省ける場合もあります。"
+    },
+    {
+      "id": "grammar-subjunctive-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし私にもっと時間があれば、もっと本を読むのに。",
+      "answers": [
+        {
+          "text": "If I had more time, I would read more books."
+        }
+      ],
+      "note": "実際には時間が足りない想像です。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし私が鳥なら、海を越えて飛べるのに。",
+      "answers": [
+        {
+          "text": "If I were a bird, I could fly across the sea."
+        }
+      ],
+      "note": "事実と違う仮定ではIにもwereを使えます。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし彼女がここにいたら、私たちを助けてくれるのに。",
+      "answers": [
+        {
+          "text": "If she were here, she would help us."
+        }
+      ],
+      "note": "今ここにいないことを想像しています。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もしお金があれば、その自転車を買うのに。",
+      "answers": [
+        {
+          "text": "If I had the money, I would buy that bike."
+        }
+      ],
+      "note": "would buyで仮定の結果を表します。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし今日が日曜日なら、私は家にいられるのに。",
+      "answers": [
+        {
+          "text": "If today were Sunday, I could stay home."
+        }
+      ],
+      "note": "今の事実と違う想像です。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もっと上手に英語を話せたらいいのに。",
+      "answers": [
+        {
+          "text": "I wish I could speak English better."
+        }
+      ],
+      "note": "I wish + 過去形でかなわない願いを表します。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "私があなたなら、その仕事を引き受けます。",
+      "answers": [
+        {
+          "text": "If I were you, I would take the job."
+        }
+      ],
+      "note": "If I were youは助言でよく使います。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし彼がその答えを知っていたら、私たちに教えてくれるのに。",
+      "answers": [
+        {
+          "text": "If he knew the answer, he would tell us."
+        }
+      ],
+      "note": "knewは今は知らないという仮定です。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もっと大きな部屋があればいいのに。",
+      "answers": [
+        {
+          "text": "I wish I had a bigger room."
+        }
+      ],
+      "note": "hadは今の願いを表す過去形です。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-subjunctive-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "subjunctive",
+      "topic": "仮定法",
+      "japanese": "もし私たちが近くに住んでいたら、毎日会えるのに。",
+      "answers": [
+        {
+          "text": "If we lived nearby, we could meet every day."
+        }
+      ],
+      "note": "could meetは仮定上の可能性です。\n\n基本の形：If + 主語 + 過去形, 主語 + would / could + 原形\n今の事実とは違う想像や願いを表します。過去形でも、ここでは過去の出来事を話しているわけではありません。"
+    },
+    {
+      "id": "grammar-adjectives-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "私は小さな白い犬を飼っています。",
+      "answers": [
+        {
+          "text": "I have a small white dog."
+        }
+      ],
+      "note": "smallとwhiteがdogを説明します。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "このスープは温かいです。",
+      "answers": [
+        {
+          "text": "This soup is warm."
+        }
+      ],
+      "note": "warmはbe動詞の後ろで状態を表します。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "彼女は新しい青いかばんを持っています。",
+      "answers": [
+        {
+          "text": "She has a new blue bag."
+        }
+      ],
+      "note": "形容詞を名詞bagの前に置きます。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "私は何か冷たいものが欲しいです。",
+      "answers": [
+        {
+          "text": "I want something cold."
+        }
+      ],
+      "note": "somethingを説明する形容詞は後ろです。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "この問題は簡単です。",
+      "answers": [
+        {
+          "text": "This question is easy."
+        }
+      ],
+      "note": "easyは問題の性質を表します。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "あの古い橋は美しいです。",
+      "answers": [
+        {
+          "text": "That old bridge is beautiful."
+        }
+      ],
+      "note": "oldは名詞の前、beautifulはbe動詞の後ろです。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "それらの赤い花は私の母へのものです。",
+      "answers": [
+        {
+          "text": "The red flowers are for my mother."
+        }
+      ],
+      "note": "flowersを説明するredは数で形を変えません。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "私は今日は忙しいです。",
+      "answers": [
+        {
+          "text": "I am busy today."
+        },
+        {
+          "text": "I'm busy today.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "busyは状態を表す形容詞です。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "この部屋は清潔で静かです。",
+      "answers": [
+        {
+          "text": "This room is clean and quiet."
+        }
+      ],
+      "note": "2つの形容詞をandでつなぎます。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adjectives-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adjectives",
+      "topic": "形容詞",
+      "japanese": "私は面白い本を探しています。",
+      "answers": [
+        {
+          "text": "I am looking for an interesting book."
+        },
+        {
+          "text": "I'm looking for an interesting book.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "interestingがbookを説明します。\n\n基本の形：形容詞 + 名詞 / be動詞 + 形容詞\n物や人の性質・状態を表します。名詞の前に置く使い方と、be動詞の後ろに置く使い方があります。"
+    },
+    {
+      "id": "grammar-adverbs-01",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "どうかゆっくり話してください。",
+      "answers": [
+        {
+          "text": "Please speak slowly."
+        }
+      ],
+      "note": "slowlyが話す速さを説明します。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-02",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "彼女はとても親切です。",
+      "answers": [
+        {
+          "text": "She is very kind."
+        },
+        {
+          "text": "She's very kind.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "veryが形容詞kindの程度を表します。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-03",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "私はいつも朝食を食べます。",
+      "answers": [
+        {
+          "text": "I always eat breakfast."
+        }
+      ],
+      "note": "alwaysは一般動詞eatの前です。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-04",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "彼はしばしば図書館へ行きます。",
+      "answers": [
+        {
+          "text": "He often goes to the library."
+        }
+      ],
+      "note": "oftenは頻度を表します。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-05",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "私たちは時々一緒に料理します。",
+      "answers": [
+        {
+          "text": "We sometimes cook together."
+        }
+      ],
+      "note": "sometimesは「時々」です。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-06",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "この犬はとても速く走ります。",
+      "answers": [
+        {
+          "text": "This dog runs very fast."
+        }
+      ],
+      "note": "fastはここでは走り方を表す副詞です。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-07",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "彼女はピアノを上手に弾きます。",
+      "answers": [
+        {
+          "text": "She plays the piano well."
+        }
+      ],
+      "note": "goodではなく副詞wellを使います。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-08",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "彼は決して授業に遅れません。",
+      "answers": [
+        {
+          "text": "He is never late for class."
+        },
+        {
+          "text": "He's never late for class.",
+          "explanation": "短縮形を使った言い方です。意味は同じで、会話ではこちらの形もよく使います。"
+        }
+      ],
+      "note": "neverはbe動詞isの後ろです。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-09",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "私はほとんどテレビを見ません。",
+      "answers": [
+        {
+          "text": "I rarely watch TV."
+        }
+      ],
+      "note": "rarelyは「めったに〜ない」です。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    },
+    {
+      "id": "grammar-adverbs-10",
+      "level": "初級",
+      "scene": "日常",
+      "grammarUnit": "adverbs",
+      "topic": "副詞",
+      "japanese": "私たちは注意深くその箱を開けました。",
+      "answers": [
+        {
+          "text": "We opened the box carefully."
+        }
+      ],
+      "note": "carefullyが動作の仕方を説明します。\n\n基本の形：動作・程度・頻度などを説明する語\n「ゆっくり」「とても」「いつも」などを加えます。動詞や形容詞、文全体などを説明します。"
+    }
+  ]
+}

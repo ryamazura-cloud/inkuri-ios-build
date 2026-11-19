@@ -1,0 +1,54 @@
+name: Inkuri Android Dart build (no signing)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up matching Flutter SDK
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch 3.47.9 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - name: Resolve pinned dependencies
+        run: flutter pub get --enforce-lockfile
+      - name: Prepare Android compiler artifacts
+        run: flutter precache --android
+      - name: Build Flutter release libraries and assets
+        run: |
+          set -euo pipefail
+          defines=$(python3 - <<'PY'
+          import base64, json, pathlib
+          values = json.loads(pathlib.Path('ci/android-release-defines.json').read_text())
+          print(','.join(base64.b64encode((key+'='+str(value).lower() if isinstance(value,bool) else key+'='+str(value)).encode()).decode() for key,value in values.items()))
+          PY
+          )
+          flutter assemble --no-version-check --output=build/android-dart \
+            -dTargetFile=lib/main.dart -dTargetPlatform=android -dBuildMode=release \
+            -dTrackWidgetCreation=false -dTreeShakeIcons=true --DartDefines="$defines" \
+            '-dAndroidArchs=android-arm android-arm64 android-x64' -dMinSdkVersion=24 \
+            android_aot_bundle_release_android-arm \
+            android_aot_bundle_release_android-arm64 \
+            android_aot_bundle_release_android-x64
+          test -s build/android-dart/armeabi-v7a/app.so
+          test -s build/android-dart/arm64-v8a/app.so
+          test -s build/android-dart/x86_64/app.so
+          cd build/android-dart
+          find . -type f -print0 | sort -z | xargs -0 sha256sum > ../android-dart-sha256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inkuri-android-dart-v45
+          path: |
+            build/android-dart/
+            build/android-dart-sha256.txt
+          include-hidden-files: true
+          retention-days: 14

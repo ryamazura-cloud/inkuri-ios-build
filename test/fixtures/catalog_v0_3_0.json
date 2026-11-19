@@ -1,0 +1,1702 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.3",
+  "questions": [
+    {
+      "id": "daily-b-001",
+      "level": "初級",
+      "scene": "日常",
+      "japanese": "私は毎朝コーヒーを飲みます。",
+      "answers": [
+        {
+          "text": "I drink coffee every morning.",
+          "explanation": "毎朝の習慣を、特に強調せず伝える基本的な表現です。"
+        },
+        {
+          "text": "I have coffee every morning.",
+          "explanation": "飲食物についての have は「飲む・食べる」の意味でも使えます。ここでは drink とほぼ同じ意味で、日常会話で自然です。"
+        }
+      ],
+      "note": "習慣には現在形を使います。"
+    },
+    {
+      "id": "daily-b-002",
+      "level": "初級",
+      "scene": "日常",
+      "japanese": "あなたの鍵はテーブルの上にあります。",
+      "answers": [
+        {
+          "text": "Your keys are on the table.",
+          "explanation": "鍵がどこにあるかを、そのまま相手に伝える表現です。"
+        },
+        {
+          "text": "You'll find your keys on the table.",
+          "explanation": "「テーブルの上を見ればあるよ」と、見つける場所を案内する言い方です。単に場所を述べる表現より、探している相手への案内が前面に出ます。"
+        }
+      ],
+      "note": "鍵の束を想定し、keys としています。"
+    },
+    {
+      "id": "daily-b-003",
+      "level": "初級",
+      "scene": "日常",
+      "japanese": "私は今、夕食を作っています。",
+      "answers": [
+        {
+          "text": "I'm making dinner now.",
+          "explanation": "making dinner は料理だけでなく、食事を用意することを広く表せます。"
+        },
+        {
+          "text": "I'm cooking dinner now.",
+          "explanation": "cooking は調理そのものに焦点を当てます。making dinner と多くの場面で言い換えられますが、火を使わず食事を用意するだけなら making のほうが広く使えます。"
+        }
+      ],
+      "note": "今していることは現在進行形で表します。"
+    },
+    {
+      "id": "daily-b-004",
+      "level": "初級",
+      "scene": "日常",
+      "japanese": "昨日はとても寒かったです。",
+      "answers": [
+        {
+          "text": "It was very cold yesterday.",
+          "explanation": "昨日の寒さを述べる、標準的な表現です。"
+        },
+        {
+          "text": "It was really cold yesterday.",
+          "explanation": "really は会話でよく使う強調です。ここでは very と大きな意味の差はなく、「本当に寒かった」という実感が伝わります。"
+        }
+      ],
+      "note": "天気を表すときは it を主語にします。"
+    },
+    {
+      "id": "travel-b-001",
+      "level": "初級",
+      "scene": "旅行",
+      "japanese": "駅はどこですか？",
+      "answers": [
+        {
+          "text": "Where is the station?",
+          "explanation": "駅の場所を直接たずねる、簡潔な表現です。"
+        },
+        {
+          "text": "Could you tell me where the station is?",
+          "explanation": "「駅の場所を教えていただけますか」と丁寧にたずねます。教えてもらう依頼を加えた表現で、後半は where the station is の語順です。"
+        }
+      ],
+      "note": "Where is ...? で場所をたずねます。"
+    },
+    {
+      "id": "travel-b-002",
+      "level": "初級",
+      "scene": "旅行",
+      "japanese": "水を一杯いただけますか？",
+      "answers": [
+        {
+          "text": "Could I have a glass of water?",
+          "explanation": "Could I have ...? は注文や依頼を少し控えめに伝える表現です。"
+        },
+        {
+          "text": "Can I have a glass of water?",
+          "explanation": "Can I have ...? も注文で普通に使えます。Could I have ...? よりくだけた響きになりやすいですが、丁寧さは声の調子や場面にも左右されます。"
+        }
+      ],
+      "note": "Could I have ...? は丁寧な注文の表現です。"
+    },
+    {
+      "id": "travel-b-003",
+      "level": "初級",
+      "scene": "旅行",
+      "japanese": "このバスは空港に行きますか？",
+      "answers": [
+        {
+          "text": "Does this bus go to the airport?",
+          "explanation": "このバスの行き先・経路が空港を含むか確認しています。"
+        },
+        {
+          "text": "Can I get to the airport on this bus?",
+          "explanation": "「このバスで空港へ行けますか」と、自分が目的地に着けるかに焦点を当てます。旅行中の確認として自然ですが、乗り換えの要否は別に確認できます。"
+        }
+      ],
+      "note": "一般動詞の疑問文には does を使います。"
+    },
+    {
+      "id": "travel-b-004",
+      "level": "初級",
+      "scene": "旅行",
+      "japanese": "二泊の予約をしています。",
+      "answers": [
+        {
+          "text": "I have a reservation for two nights.",
+          "explanation": "ホテルなどで、すでに予約があることを伝える基本形です。"
+        },
+        {
+          "text": "I've booked a room for two nights.",
+          "explanation": "「部屋を二泊予約しました」と、予約を済ませたことを伝えます。room を明示するので、宿泊予約だとはっきり分かります。"
+        }
+      ],
+      "note": "宿泊数は for two nights で伝えられます。"
+    },
+    {
+      "id": "work-b-001",
+      "level": "初級",
+      "scene": "仕事",
+      "japanese": "会議は9時に始まります。",
+      "answers": [
+        {
+          "text": "The meeting starts at nine.",
+          "explanation": "予定された会議の開始時刻を伝えます。"
+        },
+        {
+          "text": "The meeting begins at nine.",
+          "explanation": "begins は starts とほぼ同じ意味です。この文では、意味や丁寧さに大きな違いはありません。"
+        }
+      ],
+      "note": "時刻には at を使います。"
+    },
+    {
+      "id": "work-b-002",
+      "level": "初級",
+      "scene": "仕事",
+      "japanese": "メールを確認してください。",
+      "answers": [
+        {
+          "text": "Please check your email.",
+          "explanation": "メールの確認を直接お願いする表現です。please があっても、場面や声の調子によっては指示のように響くことがあります。"
+        },
+        {
+          "text": "Could you check your email?",
+          "explanation": "相手に確認してもらえるかたずねる形なので、Please check ... より控えめな依頼として使いやすい表現です。"
+        }
+      ],
+      "note": "Please + 動詞で依頼を表せます。"
+    },
+    {
+      "id": "work-b-003",
+      "level": "初級",
+      "scene": "仕事",
+      "japanese": "今日は家で仕事をしています。",
+      "answers": [
+        {
+          "text": "I'm working from home today.",
+          "explanation": "今日は在宅勤務をしている、という働き方を伝えます。"
+        },
+        {
+          "text": "I'm working at home today.",
+          "explanation": "こちらは仕事をしている場所が自宅だと伝えます。from home は在宅勤務という働き方、at home は場所に焦点が当たりやすいですが、同じ状況にも使えます。"
+        }
+      ],
+      "note": "work from home は在宅勤務の表現です。"
+    },
+    {
+      "id": "work-b-004",
+      "level": "初級",
+      "scene": "仕事",
+      "japanese": "質問があります。",
+      "answers": [
+        {
+          "text": "I have a question.",
+          "explanation": "「質問があります」と、質問があることを率直に伝える基本的な表現です。会議でも日常会話でも使えます。"
+        },
+        {
+          "text": "I've got a question.",
+          "explanation": "I have a question. とほぼ同じ意味で、会話でよく使う言い方です。ここでの have got は「持っている」の意味で、「今、思いついた」とは限りません。"
+        },
+        {
+          "text": "May I ask a question?",
+          "explanation": "「質問してもよろしいですか」と、質問する許可を丁寧に求めます。質問があると述べる文とは意図が少し異なり、会議などで発言を切り出す際に使えます。"
+        }
+      ],
+      "note": "数えられる単数名詞 question に a を付けます。"
+    },
+    {
+      "id": "daily-i-001",
+      "level": "中級",
+      "scene": "日常",
+      "japanese": "雨が降ったら、家にいます。",
+      "answers": [
+        {
+          "text": "If it rains, I'll stay home.",
+          "explanation": "雨が降った場合の自分の行動・判断を表します。"
+        },
+        {
+          "text": "If it rains, I'll stay at home.",
+          "explanation": "stay home と stay at home はどちらも「家にいる」です。stay home は特に米語でよく使われます。この文で意味の大きな違いはありません。"
+        }
+      ],
+      "note": "未来の条件でも if 節では現在形を使います。"
+    },
+    {
+      "id": "daily-i-002",
+      "level": "中級",
+      "scene": "日常",
+      "japanese": "私は3年間ここに住んでいます。",
+      "answers": [
+        {
+          "text": "I've lived here for three years.",
+          "explanation": "過去から現在まで、ここに住んでいる期間を伝えます。"
+        },
+        {
+          "text": "I've been living here for three years.",
+          "explanation": "住み続けているという継続中の状況に焦点を当てます。現在完了進行形だからといって、必ず一時的な住まいだという意味になるわけではありません。"
+        }
+      ],
+      "note": "過去から今まで続く状態には現在完了形を使えます。"
+    },
+    {
+      "id": "daily-i-003",
+      "level": "中級",
+      "scene": "日常",
+      "japanese": "あなたが勧めてくれた本を買いました。",
+      "answers": [
+        {
+          "text": "I bought the book you recommended.",
+          "explanation": "recommended は、その本がよいと相手が勧めてくれたことを表します。"
+        },
+        {
+          "text": "I bought the book that you recommended.",
+          "explanation": "目的語になる関係代名詞 that を明示した形です。that を省略した解答例と意味は同じで、明示したから必ず丁寧になるわけではありません。"
+        }
+      ],
+      "note": "the book の後ろで、どの本かを説明します。"
+    },
+    {
+      "id": "daily-i-004",
+      "level": "中級",
+      "scene": "日常",
+      "japanese": "寝る前に窓を閉めるのを忘れないでください。",
+      "answers": [
+        {
+          "text": "Don't forget to close the window before you go to bed.",
+          "explanation": "「忘れないで」と、するべきことを念押ししています。"
+        },
+        {
+          "text": "Remember to close the window before going to bed.",
+          "explanation": "「忘れずに閉めてね」という肯定形の呼びかけです。Don't forget ... と実際の依頼内容はほぼ同じで、響きは声の調子や関係性にも左右されます。"
+        }
+      ],
+      "note": "forget to do は、これからすることを忘れるという意味です。"
+    },
+    {
+      "id": "travel-i-001",
+      "level": "中級",
+      "scene": "旅行",
+      "japanese": "チェックアウトまで荷物をここに置いてもいいですか？",
+      "answers": [
+        {
+          "text": "May I leave my luggage here until checkout?",
+          "explanation": "May I ...? は許可を少し改まってたずねる表現です。"
+        },
+        {
+          "text": "Could I leave my luggage here until checkout?",
+          "explanation": "Could I ...? も丁寧に許可を求められ、会話で自然です。どちらも「チェックアウトまで」であり、「チェックアウト後まで」ではありません。"
+        }
+      ],
+      "note": "luggage は不可算名詞です。"
+    },
+    {
+      "id": "travel-i-002",
+      "level": "中級",
+      "scene": "旅行",
+      "japanese": "駅への行き方を教えていただけますか？",
+      "answers": [
+        {
+          "text": "Could you tell me how to get to the station?",
+          "explanation": "駅への行き方を丁寧に教えてもらう依頼です。"
+        },
+        {
+          "text": "How do I get to the station?",
+          "explanation": "「駅へはどう行きますか」と直接たずねます。丁寧な前置きはありませんが、Excuse me. などを添えれば旅行中の会話でも自然です。"
+        }
+      ],
+      "note": "how to get to ... で行き方を表します。"
+    },
+    {
+      "id": "travel-i-003",
+      "level": "中級",
+      "scene": "旅行",
+      "japanese": "予約を明日に変更したいです。",
+      "answers": [
+        {
+          "text": "I'd like to change my reservation to tomorrow.",
+          "explanation": "予約変更の希望を控えめに伝えます。"
+        },
+        {
+          "text": "Could I move my reservation to tomorrow?",
+          "explanation": "変更が可能かをたずねる形です。move は予約の日付を移す意味で使っています。希望を述べる文より、相手への依頼が明確になります。"
+        }
+      ],
+      "note": "I'd like to ... は丁寧に希望を伝えます。"
+    },
+    {
+      "id": "travel-i-004",
+      "level": "中級",
+      "scene": "旅行",
+      "japanese": "電車に乗り遅れたので、タクシーに乗りました。",
+      "answers": [
+        {
+          "text": "I missed the train, so I took a taxi.",
+          "explanation": "電車に乗り遅れたことを先に述べ、結果を so でつなぎます。"
+        },
+        {
+          "text": "I took a taxi because I missed the train.",
+          "explanation": "先にタクシーに乗ったことを述べ、その理由を because で説明します。出来事は同じですが、情報を伝える順番が変わります。"
+        }
+      ],
+      "note": "交通機関に乗り遅れるときは miss を使います。"
+    },
+    {
+      "id": "work-i-001",
+      "level": "中級",
+      "scene": "仕事",
+      "japanese": "金曜日までに資料を送っていただけますか？",
+      "answers": [
+        {
+          "text": "Could you send me the documents by Friday?",
+          "explanation": "資料を送ってもらうことを、控えめに依頼します。"
+        },
+        {
+          "text": "Would you send me the documents by Friday?",
+          "explanation": "Would you ...? も丁寧な依頼に使えます。丁寧さは表現だけで一律に決まらず、声の調子や文脈によって変わります。"
+        }
+      ],
+      "note": "期限の『までに』は by で表します。"
+    },
+    {
+      "id": "work-i-002",
+      "level": "中級",
+      "scene": "仕事",
+      "japanese": "準備ができたらお知らせします。",
+      "answers": [
+        {
+          "text": "I'll let you know when I'm ready.",
+          "explanation": "準備ができた時点で知らせる、という自然な会話表現です。"
+        },
+        {
+          "text": "I'll notify you when I'm ready.",
+          "explanation": "notify は正式に知らせる・通知する響きがあります。let you know は日常会話や普段の仕事のやり取りで、より柔らかく使えます。"
+        }
+      ],
+      "note": "時を表す when 節では未来のことも現在形にします。"
+    },
+    {
+      "id": "work-i-003",
+      "level": "中級",
+      "scene": "仕事",
+      "japanese": "この問題を解決する必要があります。",
+      "answers": [
+        {
+          "text": "We need to solve this problem.",
+          "explanation": "問題を解いて解決に至ることが必要だと伝えます。"
+        },
+        {
+          "text": "We need to resolve this issue.",
+          "explanation": "resolve this issue は仕事上の懸案や支障を解消するときによく使います。文脈によって issue は problem より中立的に響きますが、常に軽い問題を意味するわけではありません。"
+        }
+      ],
+      "note": "need to + 動詞で必要性を伝えます。"
+    },
+    {
+      "id": "work-i-004",
+      "level": "中級",
+      "scene": "仕事",
+      "japanese": "会議を30分延期できますか？",
+      "answers": [
+        {
+          "text": "Can we postpone the meeting by thirty minutes?",
+          "explanation": "会議を30分後ろにずらせるか、確認しています。"
+        },
+        {
+          "text": "Could we push the meeting back by thirty minutes?",
+          "explanation": "push ... back は予定を後ろにずらす会話的な表現です。Could we ...? にすることで、控えめな提案として伝えられます。"
+        }
+      ],
+      "note": "by thirty minutes は遅らせる時間の幅を示します。"
+    },
+    {
+      "id": "daily-a-001",
+      "level": "上級",
+      "scene": "日常",
+      "japanese": "もっと時間があれば、毎日運動するのに。",
+      "answers": [
+        {
+          "text": "If I had more time, I would exercise every day.",
+          "explanation": "今は十分な時間がない、という状況を仮定法で表します。"
+        },
+        {
+          "text": "I would exercise every day if I had more time.",
+          "explanation": "条件節を後ろに置いた形です。基本的な意味は同じですが、最初に「毎日運動するのに」という結果を伝えます。"
+        }
+      ],
+      "note": "今の事実と異なる仮定には仮定法過去を使います。"
+    },
+    {
+      "id": "daily-a-002",
+      "level": "上級",
+      "scene": "日常",
+      "japanese": "彼に会うまで、その知らせを聞いていませんでした。",
+      "answers": [
+        {
+          "text": "I hadn't heard the news until I met him.",
+          "explanation": "彼に会う時点まで、その知らせを聞いていなかったことを示します。"
+        },
+        {
+          "text": "It wasn't until I met him that I heard the news.",
+          "explanation": "「彼に会って初めてその知らせを聞いた」と、知った時点を強調します。こちらは、そのとき実際に知らせを聞いたことをより明示しています。"
+        }
+      ],
+      "note": "過去の時点より前のことを過去完了形で表します。"
+    },
+    {
+      "id": "daily-a-003",
+      "level": "上級",
+      "scene": "日常",
+      "japanese": "彼女があんなに早く来るとは思っていませんでした。",
+      "answers": [
+        {
+          "text": "I didn't expect her to arrive so early.",
+          "explanation": "彼女の到着が予想より早かった、と述べます。"
+        },
+        {
+          "text": "I wasn't expecting her to arrive so early.",
+          "explanation": "当時そういう予想をしていなかった、という心構えに焦点を当てます。この状況では単純過去と大きな意味の違いなく使えることも多いです。"
+        }
+      ],
+      "note": "expect + 人 + to do の形です。"
+    },
+    {
+      "id": "daily-a-004",
+      "level": "上級",
+      "scene": "日常",
+      "japanese": "早く出発していれば、渋滞を避けられたのに。",
+      "answers": [
+        {
+          "text": "If we had left earlier, we could have avoided the traffic.",
+          "explanation": "実際には早く出発せず、渋滞を避けられなかったという過去の仮定です。"
+        },
+        {
+          "text": "We could have avoided the traffic if we had left earlier.",
+          "explanation": "結果を先に置いた形です。同じ仮定を表し、「渋滞を避けられたのに」という点を先に伝えます。"
+        }
+      ],
+      "note": "過去の事実に反する仮定には仮定法過去完了を使います。"
+    },
+    {
+      "id": "travel-a-001",
+      "level": "上級",
+      "scene": "旅行",
+      "japanese": "飛行機が欠航になった場合、払い戻しを受けられますか？",
+      "answers": [
+        {
+          "text": "Can I get a refund if my flight is canceled?",
+          "explanation": "欠航した場合に返金を受けられるか、直接確認しています。"
+        },
+        {
+          "text": "Would I be entitled to a refund if my flight were canceled?",
+          "explanation": "返金を受ける権利・資格があるかを、より改まってたずねます。were は仮定を強調する形で、実際の返金条件は運賃や規約によります。"
+        }
+      ],
+      "note": "canceled は米式、cancelled は英式のつづりです。"
+    },
+    {
+      "id": "travel-a-002",
+      "level": "上級",
+      "scene": "旅行",
+      "japanese": "事前に予約しておけばよかったです。",
+      "answers": [
+        {
+          "text": "I wish I had booked in advance.",
+          "explanation": "実際には事前予約しなかったことを、後悔しています。"
+        },
+        {
+          "text": "I should have booked ahead.",
+          "explanation": "「前もって予約しておくべきだった」と、適切だった行動に焦点を当てます。wish は実際と違う過去への願い、should have は過去の判断への反省を表します。"
+        }
+      ],
+      "note": "I wish + 過去完了形で過去への後悔を表します。"
+    },
+    {
+      "id": "travel-a-003",
+      "level": "上級",
+      "scene": "旅行",
+      "japanese": "景色がどれほど美しいか、言葉では表せません。",
+      "answers": [
+        {
+          "text": "Words can't describe how beautiful the scenery is.",
+          "explanation": "言葉では表せないほど景色が美しいと伝えます。"
+        },
+        {
+          "text": "The scenery is so beautiful that words cannot do it justice.",
+          "explanation": "do it justice は「その良さを十分に伝える」という意味です。こちらは、美しさを言葉で十分に伝えきれないという、少し表現豊かな言い方です。"
+        }
+      ],
+      "note": "間接疑問の語順は how beautiful + 主語 + 動詞です。"
+    },
+    {
+      "id": "travel-a-004",
+      "level": "上級",
+      "scene": "旅行",
+      "japanese": "天候にかかわらず、ツアーは予定どおり行われます。",
+      "answers": [
+        {
+          "text": "The tour will go ahead as scheduled, regardless of the weather.",
+          "explanation": "天気に左右されず、ツアーが実施されると伝えます。"
+        },
+        {
+          "text": "The tour will take place as planned, whatever the weather.",
+          "explanation": "whatever the weather は「どんな天気でも」です。take place は開催・実施を表し、この文では go ahead とほぼ同じ内容を伝えます。"
+        }
+      ],
+      "note": "regardless of ... で『〜にかかわらず』を表します。"
+    },
+    {
+      "id": "work-a-001",
+      "level": "上級",
+      "scene": "仕事",
+      "japanese": "予算が承認され次第、プロジェクトを開始します。",
+      "answers": [
+        {
+          "text": "We'll start the project as soon as the budget is approved.",
+          "explanation": "承認されるとすぐに開始する、というタイミングを明確にします。"
+        },
+        {
+          "text": "We'll begin the project once the budget has been approved.",
+          "explanation": "once と現在完了の組み合わせで、承認が済むことを開始の条件にしています。as soon as のほうが「直ちに」という時間の近さを強く表します。"
+        }
+      ],
+      "note": "as soon as は『〜するとすぐに』。予算を主語にした受動態です。"
+    },
+    {
+      "id": "work-a-002",
+      "level": "上級",
+      "scene": "仕事",
+      "japanese": "誤解が生じないように、要点を確認しましょう。",
+      "answers": [
+        {
+          "text": "Let's go over the key points to avoid any misunderstandings.",
+          "explanation": "要点を一緒に見直して、誤解を防ごうと呼びかけます。"
+        },
+        {
+          "text": "Let's review the main points so that there are no misunderstandings.",
+          "explanation": "review は go over よりやや改まった語として使えます。so that ... で、誤解を防ぐという目的を文の形で明示します。"
+        }
+      ],
+      "note": "go over は確認する、詳しく見直すという表現です。"
+    },
+    {
+      "id": "work-a-003",
+      "level": "上級",
+      "scene": "仕事",
+      "japanese": "もし昨日知らせてくれていたら、準備できたのに。",
+      "answers": [
+        {
+          "text": "If you had told me yesterday, I could have prepared.",
+          "explanation": "昨日知らされていれば、準備が可能だったという過去の仮定です。"
+        },
+        {
+          "text": "Had you told me yesterday, I could have prepared.",
+          "explanation": "if を省略して Had を先頭に置く倒置です。意味は同じですが、より改まった文章や発言で使われやすく、普段の会話では if の形が使いやすいです。"
+        }
+      ],
+      "note": "過去の仮定と、実現しなかった可能性を表します。"
+    },
+    {
+      "id": "work-a-004",
+      "level": "上級",
+      "scene": "仕事",
+      "japanese": "納期を守れるかどうかは、進捗次第です。",
+      "answers": [
+        {
+          "text": "Whether we can meet the deadline depends on our progress.",
+          "explanation": "納期を守れるかどうかが、進捗に左右されると述べます。"
+        },
+        {
+          "text": "Our ability to meet the deadline depends on our progress.",
+          "explanation": "「納期を守れるかどうか」を「納期を守る能力・見込み」という名詞句で表した形です。やや改まった説明や文書に向いています。"
+        }
+      ],
+      "note": "Whether ... が主語。meet the deadline は納期を守るという表現です。"
+    },
+    {
+      "id": "daily-b-005",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これはいくらですか？",
+      "answers": [
+        {
+          "text": "How much is this?",
+          "explanation": "値段をたずねる簡潔な表現です。品物を指しながら使えます。"
+        },
+        {
+          "text": "How much does this cost?",
+          "explanation": "cost は「費用がかかる」という動詞です。この場面では解答例とほぼ同じ意味です。"
+        }
+      ],
+      "note": "値段は How much ...? でたずねます。"
+    },
+    {
+      "id": "daily-b-006",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これを一つください。",
+      "answers": [
+        {
+          "text": "I'd like one of these, please.",
+          "explanation": "欲しいものを控えめに伝える注文の形です。"
+        },
+        {
+          "text": "Can I have one of these, please?",
+          "explanation": "相手に品物を渡してもらう依頼の形です。どちらも注文で自然に使えます。"
+        }
+      ],
+      "note": "one of these は「これらのうちの一つ」です。"
+    },
+    {
+      "id": "daily-b-007",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これは別の色もありますか？",
+      "answers": [
+        {
+          "text": "Do you have this in another color?",
+          "explanation": "店に別の色の品物があるか、在庫をたずねます。"
+        },
+        {
+          "text": "Does this come in a different color?",
+          "explanation": "come in は色・サイズなどの種類があることを表します。商品の展開に焦点を当てる言い方です。"
+        }
+      ],
+      "note": "色やサイズの違いは in + 色・サイズで表せます。"
+    },
+    {
+      "id": "daily-b-008",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これを試着してもいいですか？",
+      "answers": [
+        {
+          "text": "Can I try this on?",
+          "explanation": "試着の許可をたずねる日常的な言い方です。"
+        },
+        {
+          "text": "May I try this on?",
+          "explanation": "May I ...? はやや改まった許可の求め方です。Can I ...? も店で普通に使えます。"
+        }
+      ],
+      "note": "try on は「試着する」。代名詞 this は間に置けます。"
+    },
+    {
+      "id": "daily-b-009",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "カードで支払えますか？",
+      "answers": [
+        {
+          "text": "Can I pay by card?",
+          "explanation": "自分がカードで支払えるかを確認します。"
+        },
+        {
+          "text": "Do you accept cards?",
+          "explanation": "店がカード払いに対応しているかをたずねます。確認したいことはほぼ同じですが、主語と焦点が変わります。"
+        }
+      ],
+      "note": "支払い方法には by card や in cash を使います。"
+    },
+    {
+      "id": "daily-b-010",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "袋はいりません。",
+      "answers": [
+        {
+          "text": "I don't need a bag.",
+          "explanation": "袋が不要だと、文の形ではっきり伝えます。"
+        },
+        {
+          "text": "No bag, thank you.",
+          "explanation": "レジで袋を勧められたときの短い返答です。thank you を添えると、断る場面でも自然です。"
+        }
+      ],
+      "note": "数えられる単数名詞 bag に a を付けます。"
+    },
+    {
+      "id": "daily-b-011",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "もっと小さいサイズはありますか？",
+      "answers": [
+        {
+          "text": "Do you have a smaller size?",
+          "explanation": "店員に小さいサイズの在庫を直接たずねます。"
+        },
+        {
+          "text": "Is there a smaller size available?",
+          "explanation": "available を使い、利用できる在庫があるかを確認します。この場面では大きな意味の差はありません。"
+        }
+      ],
+      "note": "small の比較級は smaller です。"
+    },
+    {
+      "id": "daily-b-012",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "夕食の時間です。",
+      "answers": [
+        {
+          "text": "It's time for dinner.",
+          "explanation": "夕食の時間になったと、文の形で伝えます。"
+        },
+        {
+          "text": "Dinner time!",
+          "explanation": "家族に呼びかける短い言い方です。完全な文ではありませんが、食卓への声かけでは自然です。"
+        }
+      ],
+      "note": "It is time for + 名詞で「〜の時間」です。"
+    },
+    {
+      "id": "daily-b-013",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "テレビの音を下げてください。",
+      "answers": [
+        {
+          "text": "Please turn the TV down.",
+          "explanation": "音量を下げるよう直接お願いしています。"
+        },
+        {
+          "text": "Could you turn down the TV?",
+          "explanation": "疑問文の形で控えめに頼みます。丁寧さは声の調子や関係性にも左右されます。"
+        }
+      ],
+      "note": "turn down は音量を下げる表現です。"
+    },
+    {
+      "id": "daily-b-014",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "窓を開けてください。",
+      "answers": [
+        {
+          "text": "Please open the window.",
+          "explanation": "相手にしてほしい行動を直接伝えます。"
+        },
+        {
+          "text": "Could you open the window?",
+          "explanation": "してもらえるかをたずねる形で、依頼を少し控えめに伝えられます。"
+        }
+      ],
+      "note": "Please + 動詞で依頼を表せます。"
+    },
+    {
+      "id": "daily-b-015",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "今日は私が皿を洗います。",
+      "answers": [
+        {
+          "text": "I'll wash the dishes today.",
+          "explanation": "wash で洗う動作を具体的に表します。"
+        },
+        {
+          "text": "I'll do the dishes today.",
+          "explanation": "do the dishes は「皿洗いをする」という日常的な決まり文句です。この場面ではほぼ同じ意味です。"
+        }
+      ],
+      "note": "the dishes は食事に使った食器類をまとめて指せます。"
+    },
+    {
+      "id": "daily-b-016",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "父は今お風呂に入っています。",
+      "answers": [
+        {
+          "text": "My dad is taking a bath now.",
+          "explanation": "dad は会話でよく使う「お父さん」です。take a bath で入浴を表します。"
+        },
+        {
+          "text": "My father is having a bath now.",
+          "explanation": "father は dad より改まった呼び方です。have a bath も入浴の意味で、特にイギリス英語でよく使います。"
+        }
+      ],
+      "note": "今している動作は現在進行形で表します。"
+    },
+    {
+      "id": "daily-b-017",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "この服はどこにしまえばいいですか？",
+      "answers": [
+        {
+          "text": "Where should I put these clothes?",
+          "explanation": "自分がどこに置くべきか、指示を求めています。"
+        },
+        {
+          "text": "Where do these clothes go?",
+          "explanation": "服の決まった置き場所をたずねる自然な会話表現です。go はここでは行き先・収納先を表します。"
+        }
+      ],
+      "note": "clothes は複数扱いなので these を使います。"
+    },
+    {
+      "id": "daily-b-018",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "明日は早く起きます。",
+      "answers": [
+        {
+          "text": "I'll get up early tomorrow.",
+          "explanation": "will でこれからの行動や意志を伝えます。"
+        },
+        {
+          "text": "I'm going to get up early tomorrow.",
+          "explanation": "going to は、すでに考えている予定・意図を伝えるときに使いやすい形です。この場面では両方使えます。"
+        }
+      ],
+      "note": "get up は起床してベッドから出ることを表します。"
+    },
+    {
+      "id": "daily-b-019",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "今日は忙しいですか？",
+      "answers": [
+        {
+          "text": "Are you busy today?",
+          "explanation": "今日の忙しさを広くたずねます。"
+        },
+        {
+          "text": "Do you have a lot to do today?",
+          "explanation": "やることがたくさんあるかを具体的にたずねます。busy の言い換えに使えますが、忙しさの理由までは同じとは限りません。"
+        }
+      ],
+      "note": "busy は形容詞なので be動詞と組み合わせます。"
+    },
+    {
+      "id": "daily-b-020",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "一緒に昼ごはんを食べませんか？",
+      "answers": [
+        {
+          "text": "Would you like to have lunch together?",
+          "explanation": "相手の希望をたずねる、丁寧な誘い方です。"
+        },
+        {
+          "text": "Do you want to grab lunch together?",
+          "explanation": "grab lunch は会話的な「昼ごはんを食べる」です。友人を気軽に誘う響きになります。"
+        }
+      ],
+      "note": "Would you like to ...? で行動に誘えます。"
+    },
+    {
+      "id": "daily-b-021",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "何時に会いましょうか？",
+      "answers": [
+        {
+          "text": "What time should we meet?",
+          "explanation": "会う時刻を相談しています。"
+        },
+        {
+          "text": "When would you like to meet?",
+          "explanation": "相手の都合をたずねる形です。when は日付も含められるので、時刻だけを決めるなら What time が明確です。"
+        }
+      ],
+      "note": "What time は具体的な時刻をたずねます。"
+    },
+    {
+      "id": "daily-b-022",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "駅の前で待っています。",
+      "answers": [
+        {
+          "text": "I'm waiting in front of the station.",
+          "explanation": "今いる場所と、待っていることを伝えます。"
+        },
+        {
+          "text": "I'm in front of the station, waiting for you.",
+          "explanation": "場所を先に伝え、あなたを待っていることを明示します。待つ相手が友人だと分かっている場面で使えます。"
+        }
+      ],
+      "note": "in front of は「〜の前に」です。"
+    },
+    {
+      "id": "daily-b-023",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "少し遅れます。",
+      "answers": [
+        {
+          "text": "I'll be a little late.",
+          "explanation": "これからの到着が少し遅れると伝えます。"
+        },
+        {
+          "text": "I'm running a bit late.",
+          "explanation": "予定より遅れ気味である今の状況を伝えます。待ち合わせに遅れそうなときによく使います。"
+        }
+      ],
+      "note": "a little と a bit は、程度が小さいことを表せます。"
+    },
+    {
+      "id": "daily-b-024",
+      "level": "初級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "誘ってくれてありがとう。",
+      "answers": [
+        {
+          "text": "Thanks for inviting me.",
+          "explanation": "誘ってくれた行動に感謝する、会話で自然な表現です。"
+        },
+        {
+          "text": "Thank you for the invitation.",
+          "explanation": "invitation という名詞を使った形です。メールなど、少し改まったお礼にも使えます。"
+        }
+      ],
+      "note": "前置詞 for の後ろには名詞や動名詞を置きます。"
+    },
+    {
+      "id": "daily-i-005",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "レシートをなくしました。それでも交換できますか？",
+      "answers": [
+        {
+          "text": "I've lost the receipt. Can I still exchange this?",
+          "explanation": "レシートをなくしたことと、交換できるかという確認を分けて伝えます。"
+        },
+        {
+          "text": "Can I exchange this even though I don't have the receipt?",
+          "explanation": "even though で条件の不利さを示します。こちらはレシートがない状態を述べ、なくした理由までは明示しません。"
+        }
+      ],
+      "note": "still は「それでも」、even though は「〜だけれども」です。"
+    },
+    {
+      "id": "daily-i-006",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "サイズが合わなければ返品できますか？",
+      "answers": [
+        {
+          "text": "Can I return this if it doesn't fit?",
+          "explanation": "サイズが合わない場合を条件にして、返品できるか確認します。"
+        },
+        {
+          "text": "If this doesn't fit, is it possible to return it?",
+          "explanation": "条件を先に置き、可能かどうかをたずねます。返品の可否を確認する意図は同じです。"
+        }
+      ],
+      "note": "服などのサイズが合うことを fit で表します。"
+    },
+    {
+      "id": "daily-i-007",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これと同じ商品をもう一つ探しています。",
+      "answers": [
+        {
+          "text": "I'm looking for another one just like this.",
+          "explanation": "another one で、これと同じようなものをもう一つ求めています。"
+        },
+        {
+          "text": "I'm trying to find one more of the same item.",
+          "explanation": "the same item で、同じ商品であることをより明確にします。型番まで同一である必要があるなら、その条件も伝えます。"
+        }
+      ],
+      "note": "another は「もう一つの」を表します。"
+    },
+    {
+      "id": "daily-i-008",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "プレゼントなので、包装していただけますか？",
+      "answers": [
+        {
+          "text": "It's a gift. Could you wrap it for me?",
+          "explanation": "プレゼントだと説明してから、包装を依頼します。"
+        },
+        {
+          "text": "Could you gift-wrap this, please?",
+          "explanation": "gift-wrap は贈り物用に包装することです。目的の説明を一つの動詞にまとめられます。"
+        }
+      ],
+      "note": "Could you + 動詞で丁寧に依頼します。"
+    },
+    {
+      "id": "daily-i-009",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "レジがどこにあるか教えていただけますか？",
+      "answers": [
+        {
+          "text": "Could you tell me where the checkout is?",
+          "explanation": "会計をする場所を言葉で教えてもらう依頼です。"
+        },
+        {
+          "text": "Could you show me where to pay?",
+          "explanation": "支払う場所を示してもらう依頼です。show は指し示す・案内する行動に焦点を当てます。"
+        }
+      ],
+      "note": "間接疑問の語順は where + 主語 + 動詞です。"
+    },
+    {
+      "id": "daily-i-010",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "これを買う前に、動くか確認したいです。",
+      "answers": [
+        {
+          "text": "I'd like to check that this works before I buy it.",
+          "explanation": "購入前に、品物が動作するか確認したいと伝えます。"
+        },
+        {
+          "text": "I'd like to make sure this works before buying it.",
+          "explanation": "make sure は確かめて安心することに焦点を当てます。この場面では目的はほぼ同じです。"
+        }
+      ],
+      "note": "before + 主語・動詞と、before + 動名詞の両方が使えます。"
+    },
+    {
+      "id": "daily-i-011",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "オンラインで見た値段と違います。",
+      "answers": [
+        {
+          "text": "This isn't the price I saw online.",
+          "explanation": "見た値段と一致しないことを直接伝えます。"
+        },
+        {
+          "text": "The price is different from the one I saw online.",
+          "explanation": "different from を使って違いを説明します。否定から始める文より、比較として述べやすい形です。"
+        }
+      ],
+      "note": "the one は、ここでは前に述べた price の代わりです。"
+    },
+    {
+      "id": "daily-i-012",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "帰りに牛乳を買ってきてくれますか？",
+      "answers": [
+        {
+          "text": "Could you pick up some milk on your way home?",
+          "explanation": "pick up は、ついでに買ったり受け取ったりする会話的な表現です。"
+        },
+        {
+          "text": "Could you get some milk on the way home?",
+          "explanation": "get は「手に入れる」という広い意味の動詞です。買い物だと分かっている場面では自然に使えます。"
+        }
+      ],
+      "note": "milk は不可算名詞なので some milk とします。"
+    },
+    {
+      "id": "daily-i-013",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "子どもを寝かしつけてから電話します。",
+      "answers": [
+        {
+          "text": "I'll call you after I put the kids to bed.",
+          "explanation": "自分が子どもを寝かせる行動を終えた後で電話すると伝えます。"
+        },
+        {
+          "text": "I'll give you a call once the kids are in bed.",
+          "explanation": "子どもがベッドに入った状態になってから電話する言い方です。誰が寝かせるかは明示していません。"
+        }
+      ],
+      "note": "put someone to bed は「人を寝かせる」です。"
+    },
+    {
+      "id": "daily-i-014",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "あなたが料理をしている間、私が掃除をします。",
+      "answers": [
+        {
+          "text": "I'll clean while you're cooking.",
+          "explanation": "料理と掃除が同じ時間に進むことを表します。"
+        },
+        {
+          "text": "While you cook, I'll do the cleaning.",
+          "explanation": "do the cleaning は「掃除をする」。条件を先に述べますが、この場面での役割分担は同じです。"
+        }
+      ],
+      "note": "while は二つの動作が同時に行われることを表します。"
+    },
+    {
+      "id": "daily-i-015",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "今日は外食するより家で食べたいです。",
+      "answers": [
+        {
+          "text": "I'd rather eat at home than eat out today.",
+          "explanation": "would rather で、二つの行動のうちどちらがよいか伝えます。"
+        },
+        {
+          "text": "I'd prefer to eat at home rather than go out for a meal today.",
+          "explanation": "would prefer to も控えめに希望を伝える形です。to の有無など、後ろの動詞の形が変わります。"
+        }
+      ],
+      "note": "would rather + 動詞の原形、would prefer + to不定詞です。"
+    },
+    {
+      "id": "daily-i-016",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "鍵を忘れないように、玄関のそばに置きました。",
+      "answers": [
+        {
+          "text": "I left my keys by the front door so I wouldn't forget them.",
+          "explanation": "玄関のそばに置いておいたことと、その目的を伝えます。"
+        },
+        {
+          "text": "I put my keys near the front door to avoid forgetting them.",
+          "explanation": "put は置く行動、avoid forgetting は忘れるのを避ける目的を明示します。伝える状況はほぼ同じです。"
+        }
+      ],
+      "note": "avoid の後ろには動名詞を置きます。"
+    },
+    {
+      "id": "daily-i-017",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "家族と過ごす時間をもっと作りたいです。",
+      "answers": [
+        {
+          "text": "I'd like to make more time for my family.",
+          "explanation": "家族のための時間を確保することに焦点を当てます。"
+        },
+        {
+          "text": "I want to spend more time with my family.",
+          "explanation": "家族と一緒に過ごす時間を増やしたいという希望です。時間を作る工夫までは述べていません。"
+        }
+      ],
+      "note": "make time for は「〜のために時間を作る」です。"
+    },
+    {
+      "id": "daily-i-018",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "明日の予定を変更してもいいですか？",
+      "answers": [
+        {
+          "text": "Could we change our plans for tomorrow?",
+          "explanation": "二人に関わる予定を変える提案・依頼です。"
+        },
+        {
+          "text": "Would it be okay to change tomorrow's plans?",
+          "explanation": "変更しても問題ないかを控えめに確認します。どちらも相手の了承を求める場面で使えます。"
+        }
+      ],
+      "note": "plans for tomorrow は「明日の予定」です。"
+    },
+    {
+      "id": "daily-i-019",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "もしよければ、うちに夕食を食べに来ませんか？",
+      "answers": [
+        {
+          "text": "Would you like to come over for dinner?",
+          "explanation": "相手の希望をたずねる形で自宅へ誘います。"
+        },
+        {
+          "text": "How about coming over for dinner?",
+          "explanation": "How about ...? は気軽な提案です。親しい相手に予定を持ちかけるときに使いやすい表現です。"
+        }
+      ],
+      "note": "come over は、話し手の家などへ来ることを表します。"
+    },
+    {
+      "id": "daily-i-020",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "もう少し早く教えてくれればよかったのに。",
+      "answers": [
+        {
+          "text": "I wish you'd told me a little sooner.",
+          "explanation": "もっと早く知らされたかったという、過去への願い・残念さを表します。"
+        },
+        {
+          "text": "You should have told me a bit earlier.",
+          "explanation": "相手がするべきだった行動を述べるため、責める響きが強くなることがあります。どちらも声の調子に注意します。"
+        }
+      ],
+      "note": "I wish + 過去完了形で過去への願いを表します。"
+    },
+    {
+      "id": "daily-i-021",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "あなたに借りた本を返すのを忘れていました。",
+      "answers": [
+        {
+          "text": "I forgot to return the book I borrowed from you.",
+          "explanation": "borrow は借りた側の自分を主語にします。"
+        },
+        {
+          "text": "I forgot to give you back the book you lent me.",
+          "explanation": "lend は貸した側の相手を主語にします。give back も「返す」という会話で自然な表現です。"
+        }
+      ],
+      "note": "borrow from と lend to は視点が逆になります。"
+    },
+    {
+      "id": "daily-i-022",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "また近いうちに会いましょう。",
+      "answers": [
+        {
+          "text": "Let's see each other again soon.",
+          "explanation": "近いうちにまた会うことを提案します。"
+        },
+        {
+          "text": "Let's catch up again soon.",
+          "explanation": "catch up は近況を話し合うことを含みます。実際に会うほか、電話などで話す場合にも使えます。"
+        }
+      ],
+      "note": "Let us を短くした Let's + 動詞で提案します。"
+    },
+    {
+      "id": "daily-i-023",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "何か手伝えることがあれば教えてください。",
+      "answers": [
+        {
+          "text": "Let me know if there's anything I can help with.",
+          "explanation": "自分に手伝えることがあるか、相手に知らせてもらう表現です。"
+        },
+        {
+          "text": "If you need a hand with anything, just let me know.",
+          "explanation": "need a hand は助けが必要という会話的な表現です。親しい相手への申し出に使えます。"
+        }
+      ],
+      "note": "a hand は慣用的に「手助け」を表します。"
+    },
+    {
+      "id": "daily-i-024",
+      "level": "中級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "その映画は思っていたより面白かったです。",
+      "answers": [
+        {
+          "text": "The movie was more interesting than I expected.",
+          "explanation": "映画が予想より面白かったと、比較の形で伝えます。"
+        },
+        {
+          "text": "I found the movie more interesting than I'd expected.",
+          "explanation": "I found ... で自分の感想だとはっきり示します。had expected は鑑賞する前の予想を表します。"
+        }
+      ],
+      "note": "find + 目的語 + 形容詞で「〜だと感じる」です。"
+    },
+    {
+      "id": "daily-a-005",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "セールだからといって、必要のない物まで買うつもりはありません。",
+      "answers": [
+        {
+          "text": "Just because it's on sale doesn't mean I'm going to buy something I don't need.",
+          "explanation": "セールであることが、そのまま購入の理由にはならないと述べます。"
+        },
+        {
+          "text": "I don't intend to buy things I don't need just because they're discounted.",
+          "explanation": "自分の購入意図を先に伝える形です。discounted は値引きされているという意味です。"
+        }
+      ],
+      "note": "Just because ... doesn't mean ... は推論を否定する形です。"
+    },
+    {
+      "id": "daily-a-006",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "買うかどうか決める前に、ほかの商品とも比べてみたいです。",
+      "answers": [
+        {
+          "text": "I'd like to compare it with other products before deciding whether to buy it.",
+          "explanation": "購入を決める前に比較したいと、目的を明確に伝えます。"
+        },
+        {
+          "text": "Before I make up my mind about buying it, I'd like to see how it compares with other options.",
+          "explanation": "make up my mind は決心することです。options は候補となる商品を、選択肢として捉えています。"
+        }
+      ],
+      "note": "whether to + 動詞で「〜するかどうか」です。"
+    },
+    {
+      "id": "daily-a-007",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "使ってみて初めて、なぜ人気があるのか分かりました。",
+      "answers": [
+        {
+          "text": "It wasn't until I tried it that I understood why it was so popular.",
+          "explanation": "使ってみた時点で初めて分かった、と時点を強調します。"
+        },
+        {
+          "text": "Only after trying it did I understand why it was so popular.",
+          "explanation": "Only after を先頭に置く倒置で、同じ気づきを強調します。改まった説明や文章で使いやすい形です。"
+        }
+      ],
+      "note": "Only after ... の後は did + 主語 + 動詞の原形となります。"
+    },
+    {
+      "id": "daily-a-008",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "思っていたほど長持ちしなかったので、少しがっかりしました。",
+      "answers": [
+        {
+          "text": "I was a little disappointed because it didn't last as long as I'd expected.",
+          "explanation": "予想していた使用期間に届かなかったことが残念だと伝えます。"
+        },
+        {
+          "text": "It didn't last as long as I'd hoped, which was a bit disappointing.",
+          "explanation": "hoped は予想ではなく願っていた期間です。後半の which で、前の内容全体への感想を述べます。"
+        }
+      ],
+      "note": "not as ... as で「〜ほど…ではない」を表します。"
+    },
+    {
+      "id": "daily-a-009",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "注文した物と違う商品が届いたようです。",
+      "answers": [
+        {
+          "text": "It looks like I received a different item from the one I ordered.",
+          "explanation": "届いた商品を自分が受け取った視点で、推測として述べます。"
+        },
+        {
+          "text": "I seem to have been sent the wrong item.",
+          "explanation": "受動態で誤った商品が送られたことに焦点を当てます。seem to で断定を避けます。"
+        }
+      ],
+      "note": "seem to have been + 過去分詞で、過去の受け身の出来事を推測します。"
+    },
+    {
+      "id": "daily-a-010",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "買い物",
+      "japanese": "店員さんが勧めてくれなければ、これを選ばなかったと思います。",
+      "answers": [
+        {
+          "text": "I don't think I would have chosen this if the sales assistant hadn't recommended it.",
+          "explanation": "店員の勧めが実際の選択に影響したことを、過去の仮定で述べます。"
+        },
+        {
+          "text": "If it hadn't been for the sales assistant's recommendation, I probably wouldn't have picked this.",
+          "explanation": "If it hadn't been for ... は「〜がなければ」。pick は choose より会話的な「選ぶ」です。"
+        }
+      ],
+      "note": "過去の事実に反する仮定には had + 過去分詞を使います。"
+    },
+    {
+      "id": "daily-a-011",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "手伝ってもらえると分かっていれば、一人で全部やろうとはしませんでした。",
+      "answers": [
+        {
+          "text": "If I'd known you could help, I wouldn't have tried to do everything by myself.",
+          "explanation": "助けを頼めると当時は知らなかった、という過去の仮定です。"
+        },
+        {
+          "text": "Had I known you could lend a hand, I wouldn't have attempted to do it all alone.",
+          "explanation": "Had I known は if を省いた倒置です。attempt は try より改まった語で、lend a hand は手伝うという慣用表現です。"
+        }
+      ],
+      "note": "Had + 主語 + 過去分詞で if を省いた仮定を表せます。"
+    },
+    {
+      "id": "daily-a-012",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "子どもが大きくなるにつれて、一緒に過ごす時間が減ってきました。",
+      "answers": [
+        {
+          "text": "As the kids have grown older, we've been spending less time together.",
+          "explanation": "成長に伴い、一緒に過ごす時間が減っている状況を表します。"
+        },
+        {
+          "text": "We've had less time together as the children have got older.",
+          "explanation": "こちらは一緒にいられる時間の少なさに焦点を当てます。kids は children よりくだけた呼び方です。"
+        }
+      ],
+      "note": "as は「〜するにつれて」という変化の関係を表せます。"
+    },
+    {
+      "id": "daily-a-013",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "家事を公平に分担できるよう、話し合っておきたいです。",
+      "answers": [
+        {
+          "text": "I'd like us to talk things through so we can share the housework fairly.",
+          "explanation": "talk things through は、十分に話し合って整理することです。"
+        },
+        {
+          "text": "I'd like to discuss how we can divide the chores fairly.",
+          "explanation": "家事をどう分けるか、具体的な方法の相談に焦点を当てます。discuss は内容をそのまま目的語に取ります。"
+        }
+      ],
+      "note": "discuss about ではなく discuss + 内容とします。"
+    },
+    {
+      "id": "daily-a-014",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "もっと早く寝るようにしてから、朝の準備が楽になりました。",
+      "answers": [
+        {
+          "text": "Getting ready in the morning has become easier since I started going to bed earlier.",
+          "explanation": "就寝時刻を変えてから生じた、今につながる変化を述べます。"
+        },
+        {
+          "text": "Ever since I began going to bed earlier, I've found it easier to get ready in the morning.",
+          "explanation": "I've found it easier で自分の実感を示し、ever since でその時点以降の継続を強調します。"
+        }
+      ],
+      "note": "since で始まる過去の時点と、現在完了形を組み合わせます。"
+    },
+    {
+      "id": "daily-a-015",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "家にいるからといって、いつでも電話に出られるわけではありません。",
+      "answers": [
+        {
+          "text": "Just because I'm at home doesn't mean I can always answer the phone.",
+          "explanation": "在宅していることと、いつでも電話に出られることを切り離して述べます。"
+        },
+        {
+          "text": "Being at home doesn't necessarily mean I'm available to take calls.",
+          "explanation": "available は対応できる状況にあるという意味です。necessarily によって「必ずしもそうではない」と示します。"
+        }
+      ],
+      "note": "not necessarily は「必ずしも〜ではない」です。"
+    },
+    {
+      "id": "daily-a-016",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "家族が安心できるよう、無事に着いたら連絡します。",
+      "answers": [
+        {
+          "text": "I'll let my family know when I arrive safely so they don't worry.",
+          "explanation": "家族が心配しないよう、到着後に知らせることを伝えます。"
+        },
+        {
+          "text": "Once I've arrived safely, I'll get in touch with my family to put their minds at ease.",
+          "explanation": "get in touch は連絡を取ること、put their minds at ease は安心させることです。後者は安心してもらう目的を前面に出します。"
+        }
+      ],
+      "note": "未来の時を表す once 節でも、will ではなく現在形・現在完了形を使います。"
+    },
+    {
+      "id": "daily-a-017",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "家族・家事",
+      "japanese": "何をするにも、家族全員の都合を合わせるのは簡単ではありません。",
+      "answers": [
+        {
+          "text": "Whatever we do, it's not easy to find a time that works for everyone in the family.",
+          "explanation": "家族全員に合う時間を見つける難しさを述べます。"
+        },
+        {
+          "text": "No matter what we plan, coordinating everyone's schedules in the family isn't easy.",
+          "explanation": "coordinate schedules は予定を調整することです。時間を見つけるだけでなく、予定を合わせる作業も含む言い方です。"
+        }
+      ],
+      "note": "Whatever ... と No matter what ... は「何を〜しても」です。"
+    },
+    {
+      "id": "daily-a-018",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "直前になって予定を変更してしまい、申し訳なく思っています。",
+      "answers": [
+        {
+          "text": "I feel bad about changing our plans at the last minute.",
+          "explanation": "feel bad about ... で、してしまったことへの申し訳なさを述べます。"
+        },
+        {
+          "text": "I'm sorry for changing the plans on such short notice.",
+          "explanation": "I'm sorry で直接謝ります。on short notice は相手に準備する時間をあまり与えずに、という意味です。"
+        }
+      ],
+      "note": "at the last minute は「土壇場で・直前に」です。"
+    },
+    {
+      "id": "daily-a-019",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "あなたが来られるかどうか分かり次第、お店を予約します。",
+      "answers": [
+        {
+          "text": "I'll book a table as soon as I know whether you can make it.",
+          "explanation": "as soon as で、来られるか分かったらすぐに予約すると伝えます。"
+        },
+        {
+          "text": "Once I find out if you can come, I'll make a restaurant reservation.",
+          "explanation": "once は分かることを条件・区切りとして示します。as soon as より「直ちに」という時間の近さは弱くなります。"
+        }
+      ],
+      "note": "make it は予定された場所や集まりに来られることを表せます。"
+    },
+    {
+      "id": "daily-a-020",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "忙しい時期なのは分かりますが、少しだけ相談に乗ってもらえませんか？",
+      "answers": [
+        {
+          "text": "I know this is a busy time for you, but could you spare a few minutes to give me some advice?",
+          "explanation": "相手の忙しさを認めてから、短い時間を割いて助言してもらう依頼です。"
+        },
+        {
+          "text": "I realize you've got a lot on your plate, but could you spare a moment to give me some advice?",
+          "explanation": "have a lot on your plate は多くの用事や責任を抱えているという慣用表現です。意味を比喩的に伝えます。"
+        }
+      ],
+      "note": "spare a few minutes は「数分の時間を割く」です。"
+    },
+    {
+      "id": "daily-a-021",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "長い間会っていませんが、会えばすぐに昔のように話せると思います。",
+      "answers": [
+        {
+          "text": "We haven't seen each other in a long time, but I think we'll be able to talk just like we used to.",
+          "explanation": "昔のように話せるだろうという見通しを、I think で述べます。"
+        },
+        {
+          "text": "Although it's been ages since we last met, I'm sure we'll pick up right where we left off.",
+          "explanation": "pick up where we left off は前回の続きのように再開することです。I'm sure は I think より自信の強い言い方です。"
+        }
+      ],
+      "note": "used to + 動詞で、以前よくしていたことを表します。"
+    },
+    {
+      "id": "daily-a-022",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "気を遣わせたくないので、今回は私から連絡してみます。",
+      "answers": [
+        {
+          "text": "I don't want to put you out, so I'll get in touch with them myself this time.",
+          "explanation": "put you out は相手に手間・不便をかけることです。共通の知人へ連絡する場面を想定しています。"
+        },
+        {
+          "text": "I'd rather not trouble you, so I'll contact them on my own this time.",
+          "explanation": "trouble you は手数をかけること、on my own は自分でという意味です。こちらも相手に負担をかけたくない気持ちを伝えます。"
+        }
+      ],
+      "note": "contact は前置詞なしで、連絡する相手を目的語に取ります。"
+    },
+    {
+      "id": "daily-a-023",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "断るのは気が引けますが、今回は参加できそうにありません。",
+      "answers": [
+        {
+          "text": "I feel bad saying no, but I don't think I can join you this time.",
+          "explanation": "断ることへの申し訳なさと、参加できない見込みを伝えます。"
+        },
+        {
+          "text": "I'm reluctant to turn you down, but it looks like I won't be able to make it this time.",
+          "explanation": "reluctant は気が進まないという意味です。turn you down は相手の誘いや依頼を断ることを表します。"
+        }
+      ],
+      "note": "be reluctant to + 動詞で「〜するのは気が進まない」です。"
+    },
+    {
+      "id": "daily-a-024",
+      "level": "上級",
+      "scene": "日常",
+      "topic": "友人・予定",
+      "japanese": "時間がたってから、あの時のあなたの助言がどれほど役に立ったか気づきました。",
+      "answers": [
+        {
+          "text": "It was only later that I realized how helpful your advice had been.",
+          "explanation": "気づいたのは後になってからだと、時点を強調します。"
+        },
+        {
+          "text": "Only after some time had passed did I realize how useful your advice had been.",
+          "explanation": "Only after を先頭に置いた倒置です。こちらは、ある程度の時間が過ぎたことを明示します。"
+        }
+      ],
+      "note": "how + 形容詞 + 主語 + 動詞で、程度の大きさを文の一部にできます。"
+    }
+  ]
+}

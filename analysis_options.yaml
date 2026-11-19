@@ -1,0 +1,10 @@
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - backend/**
+    - tools/node_modules/**
+    - tools/.cache/**
+include: package:flutter_lints/flutter.yaml

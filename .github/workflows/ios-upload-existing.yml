@@ -1,0 +1,111 @@
+name: Inkuri upload verified App Store build
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: Successful signed build run ID
+        required: true
+        type: string
+      build_number:
+        description: Build number to upload
+        required: true
+        type: string
+      ipa_sha256:
+        description: Expected SHA-256 from the successful signed build
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: inkuri-app-store-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: macos-26
+    timeout-minutes: 45
+    environment: app-store-upload
+    env:
+      EXPECTED_BUILD: ${{ inputs.build_number }}
+      EXPECTED_SHA256: ${{ inputs.ipa_sha256 }}
+    steps:
+      - name: Check upload authentication
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY_BASE64: ${{ secrets.ASC_PRIVATE_KEY_BASE64 }}
+        run: |
+          set -euo pipefail
+          test -n "$ASC_KEY_ID"
+          test -n "$ASC_ISSUER_ID"
+          test -n "$ASC_PRIVATE_KEY_BASE64"
+          [[ "$EXPECTED_BUILD" =~ ^[1-9][0-9]*$ ]]
+          [[ "$EXPECTED_SHA256" =~ ^[0-9a-f]{64}$ ]]
+      - uses: actions/download-artifact@v4
+        with:
+          name: inkuri-app-store-1.0-${{ inputs.build_number }}
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/inkuri-upload
+      - name: Verify the original signed IPA
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, os, pathlib, plistlib, subprocess, zipfile
+          folder = pathlib.Path(os.environ['RUNNER_TEMP']) / 'inkuri-upload'
+          files = list(folder.glob('*.ipa'))
+          assert len(files) == 1, 'Expected one IPA'
+          ipa = files[0]
+          with ipa.open('rb') as stream:
+              assert hashlib.file_digest(stream, 'sha256').hexdigest() == os.environ['EXPECTED_SHA256'], 'IPA hash mismatch'
+          destination = folder / 'extracted'
+          with zipfile.ZipFile(ipa) as archive:
+              for name in archive.namelist():
+                  target = (destination / name).resolve()
+                  assert target.is_relative_to(destination.resolve()), 'Unsafe archive path'
+              archive.extractall(destination)
+          apps = list((destination / 'Payload').glob('*.app'))
+          assert len(apps) == 1, 'Expected one app'
+          app = apps[0]
+          info = plistlib.loads((app / 'Info.plist').read_bytes())
+          assert (info['CFBundleIdentifier'], info['CFBundleShortVersionString'], info['CFBundleVersion']) == ('biz.wisemap.encre', '1.0.0', os.environ['EXPECTED_BUILD']), 'App identity mismatch'
+          assert info['GADApplicationIdentifier'] == 'ca-app-pub-2142000020431433~3837222433', 'AdMob app mismatch'
+          firebase = plistlib.loads((app / 'GoogleService-Info.plist').read_bytes())
+          assert firebase['BUNDLE_ID'] == 'biz.wisemap.encre' and firebase['PROJECT_ID'] == 'encre-ab3d8', 'Firebase mismatch'
+          profile = plistlib.loads(subprocess.check_output(['security', 'cms', '-D', '-i', str(app / 'embedded.mobileprovision')]))
+          assert profile['Entitlements']['application-identifier'] == 'BUJ5D4YYGK.biz.wisemap.encre', 'Profile mismatch'
+          assert not profile['Entitlements'].get('get-task-allow'), 'Development signing is not allowed'
+          assert not profile.get('ProvisionedDevices') and not profile.get('ProvisionsAllDevices'), 'App Store signing required'
+          # Unzip preserves executable modes needed by codesign validation.
+          subprocess.run(['unzip', '-oq', str(ipa), '-d', str(destination)], check=True)
+          subprocess.run(['codesign', '--verify', '--deep', '--strict', str(app)], check=True)
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write('INKURI_IPA=' + str(ipa) + '\n')
+          print('Verified IPA hash, bundle ID, version, profile and signature.')
+          PY
+      - name: Install upload authentication
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_PRIVATE_KEY_BASE64: ${{ secrets.ASC_PRIVATE_KEY_BASE64 }}
+        run: |
+          set -euo pipefail
+          umask 077
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          printf '%s' "$ASC_PRIVATE_KEY_BASE64" | base64 --decode > "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+      - name: Validate and upload to App Store Connect
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          xcrun altool --validate-app --type ios --file "$INKURI_IPA" --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          xcrun altool --upload-app --type ios --file "$INKURI_IPA" --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          echo "Uploaded version 1.0.0 ($EXPECTED_BUILD). Apple processing and TestFlight verification remain pending." >> "$GITHUB_STEP_SUMMARY"
+      - name: Remove temporary upload authentication
+        if: always()
+        run: |
+          rm -rf "$HOME/.appstoreconnect/private_keys" "$RUNNER_TEMP/inkuri-upload"

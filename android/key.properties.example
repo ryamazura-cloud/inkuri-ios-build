@@ -1,0 +1,6 @@
+# Copy to key.properties; never commit the real file or keystore.
+# Use forward slashes for Windows absolute paths.
+storeFile=/absolute/path/to/upload-keystore.jks
+storePassword=REPLACE_ME
+keyAlias=upload
+keyPassword=REPLACE_ME

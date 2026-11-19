@@ -1,0 +1,1943 @@
+{
+  "schemaVersion": 1,
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "precision": "fp32",
+  "speed": 1,
+  "sampleRate": 24000,
+  "audioFormat": "PCM16 mono 24000 Hz WAV",
+  "generatedAt": "2026-11-02T06:52:56.628Z",
+  "clips": [
+    {
+      "text": "I drink coffee every morning.",
+      "textSha256": "dc0d40f9047c055b45689f52a659450ef46d124816ba468e158e274f3169e523",
+      "asset": "assets/audio/dc0d40f9047c055b4568.wav",
+      "bytes": 110444,
+      "durationSeconds": 2.3,
+      "rms": 0.06668,
+      "peak": 0.48914,
+      "fileSha256": "e7713f87a51ea05b47b08f53f8ecc8b149510d345c1d628d3e3e4ebaac348354"
+    },
+    {
+      "text": "I have coffee every morning.",
+      "textSha256": "add1f4c45a6df27b1c042002a06a48eec24701680b8c1c2f7e867afec9e59477",
+      "asset": "assets/audio/add1f4c45a6df27b1c04.wav",
+      "bytes": 110444,
+      "durationSeconds": 2.3,
+      "rms": 0.06442,
+      "peak": 0.63351,
+      "fileSha256": "0dd86af218f31bed7106c1ac0bd9386ec98587f9d88ceef338e11f29c42d65be"
+    },
+    {
+      "text": "Your keys are on the table.",
+      "textSha256": "4800902cbcc9ea3fea20d89482067b240e0c58a8630cfb50887197c55a4c620b",
+      "asset": "assets/audio/4800902cbcc9ea3fea20.wav",
+      "bytes": 99644,
+      "durationSeconds": 2.075,
+      "rms": 0.06531,
+      "peak": 0.51852,
+      "fileSha256": "22ce6f368cbf151bbcc3f171e004d97da9d16896875d5b05c6f30edc969347e3"
+    },
+    {
+      "text": "You'll find your keys on the table.",
+      "textSha256": "833509d7eafafe327d66088d646c588b309782b2051b87b3a051c8c7b207e24e",
+      "asset": "assets/audio/833509d7eafafe327d66.wav",
+      "bytes": 110444,
+      "durationSeconds": 2.3,
+      "rms": 0.06974,
+      "peak": 0.59711,
+      "fileSha256": "10526b52e134088e0718718b950c2e0c6557646b5b063f3c4bf888054207a1f1"
+    },
+    {
+      "text": "I'm making dinner now.",
+      "textSha256": "88db4e7aff53cbfb9109ea04b6b539083ead96b715365acd1848324ac07459e9",
+      "asset": "assets/audio/88db4e7aff53cbfb9109.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.06592,
+      "peak": 0.69656,
+      "fileSha256": "c178b014b6ed7269cc292a863ce9222d687a1af3a8eb55cedf268f837c6e62c5"
+    },
+    {
+      "text": "I'm cooking dinner now.",
+      "textSha256": "7a6b261f2d15efb5839f52a4183b07f1fb6f2f60241c9c560d1201395598862e",
+      "asset": "assets/audio/7a6b261f2d15efb5839f.wav",
+      "bytes": 90044,
+      "durationSeconds": 1.875,
+      "rms": 0.0651,
+      "peak": 0.62341,
+      "fileSha256": "661bf9df7b024d4422bec3f16882cf8a818655dd5c4407c7c3cba876a2036be3"
+    },
+    {
+      "text": "It was very cold yesterday.",
+      "textSha256": "286ed70d9887b5036709d67519ccb91ba7bd50297a8890e84f0384feaab0b3f1",
+      "asset": "assets/audio/286ed70d9887b5036709.wav",
+      "bytes": 110444,
+      "durationSeconds": 2.3,
+      "rms": 0.06301,
+      "peak": 0.39755,
+      "fileSha256": "4dae1dc203f17279159ff385eca809d651fc368472f33606ae5089ca64c77e59"
+    },
+    {
+      "text": "It was really cold yesterday.",
+      "textSha256": "61ad28eda922d6dd4e2b91b97c911d6922312a3ce983524e2e7f24198dbe521c",
+      "asset": "assets/audio/61ad28eda922d6dd4e2b.wav",
+      "bytes": 112844,
+      "durationSeconds": 2.35,
+      "rms": 0.06434,
+      "peak": 0.41107,
+      "fileSha256": "cf6d1f90393d9f8fc1e625e3571d4df91f8d104ff9cf964d6c4415aa13d86d19"
+    },
+    {
+      "text": "Where is the station?",
+      "textSha256": "143c343f0c548b3f628160667244404e93047c8e9a63af609efaf33a057e6f0f",
+      "asset": "assets/audio/143c343f0c548b3f6281.wav",
+      "bytes": 87644,
+      "durationSeconds": 1.825,
+      "rms": 0.06573,
+      "peak": 0.45404,
+      "fileSha256": "6d060801eba010493386a1c6726f5f08435ee6e862d2e0270060b5d0018d00c5"
+    },
+    {
+      "text": "Could you tell me where the station is?",
+      "textSha256": "f6513b05844cc2735ccdd33a1dd4be07721b6cba3602a28e170023459a27df88",
+      "asset": "assets/audio/f6513b05844cc2735ccd.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.06707,
+      "peak": 0.43091,
+      "fileSha256": "922d5393ce6da3069575f52d4976f5ea90dff4a633fca940baf2e14f22e4167f"
+    },
+    {
+      "text": "Could I have a glass of water?",
+      "textSha256": "7cbdfe61890bde7c1d1fbdc728084bfbfad516be7feea47fa73d132f45e260e7",
+      "asset": "assets/audio/7cbdfe61890bde7c1d1f.wav",
+      "bytes": 105644,
+      "durationSeconds": 2.2,
+      "rms": 0.06232,
+      "peak": 0.40637,
+      "fileSha256": "a66d854614335d671e5968a5845fd53c6256977a01901e3aa20e129913bd83e8"
+    },
+    {
+      "text": "Can I have a glass of water?",
+      "textSha256": "93a0a4df7a032eea78b303a6d9a403e6ee61144614b8c0a65647d8528a98c7c2",
+      "asset": "assets/audio/93a0a4df7a032eea78b3.wav",
+      "bytes": 106844,
+      "durationSeconds": 2.225,
+      "rms": 0.0632,
+      "peak": 0.41019,
+      "fileSha256": "aad7e54807d3a049d5cdff2f2db034d090074747ecf1609b77a978127a47e31d"
+    },
+    {
+      "text": "Does this bus go to the airport?",
+      "textSha256": "12577000856ba88ffebf18e9615f477398494a0f7d9d988e5a94c78a4c48cb86",
+      "asset": "assets/audio/12577000856ba88ffebf.wav",
+      "bytes": 112844,
+      "durationSeconds": 2.35,
+      "rms": 0.06661,
+      "peak": 0.50052,
+      "fileSha256": "7019f185d2b60a2c75e7cbf5765df24cc0371042eaa5bd2aed2259bcf72ebff8"
+    },
+    {
+      "text": "Can I get to the airport on this bus?",
+      "textSha256": "836084945a8a4bfa25683a226faa445bb7b79a2b412be40d61eaf84940c943e2",
+      "asset": "assets/audio/836084945a8a4bfa2568.wav",
+      "bytes": 122444,
+      "durationSeconds": 2.55,
+      "rms": 0.06573,
+      "peak": 0.40311,
+      "fileSha256": "5ff0ef25ca189903f16d1769add917ef602f2b529c73d05a3a5c12a62474e8f1"
+    },
+    {
+      "text": "I have a reservation for two nights.",
+      "textSha256": "a14d4dfd239cec44eb5beff106a0f47e57dcb7bac5510489c4656d8c68a6784f",
+      "asset": "assets/audio/a14d4dfd239cec44eb5b.wav",
+      "bytes": 124844,
+      "durationSeconds": 2.6,
+      "rms": 0.06661,
+      "peak": 0.44281,
+      "fileSha256": "49dda5f9c28964241d05a027216ff2591fe281ba3b418cd9b256be186922d1e7"
+    },
+    {
+      "text": "I've booked a room for two nights.",
+      "textSha256": "cc6674a2d8448fae4788a8bfa4b8b7c714aaf71ea1f79e166dbb6acf0113960b",
+      "asset": "assets/audio/cc6674a2d8448fae4788.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.06899,
+      "peak": 0.62363,
+      "fileSha256": "becb387520a844d0f6d4e088f46794b2fffc8bdcf076a91abd6c1242bc5474f6"
+    },
+    {
+      "text": "The meeting starts at nine.",
+      "textSha256": "bacd3104ed27bb21730c1e210f2e12b3e5619a311f3430d98430d7d729514e89",
+      "asset": "assets/audio/bacd3104ed27bb21730c.wav",
+      "bytes": 97244,
+      "durationSeconds": 2.025,
+      "rms": 0.06995,
+      "peak": 0.53888,
+      "fileSha256": "439a8a841b198a5bacc78930ca21238ae3dbb93ae823a230a363b0f8660d7177"
+    },
+    {
+      "text": "The meeting begins at nine.",
+      "textSha256": "2913798c739e3b29d3756d1a4c38de445e495dd6e6161a01d892ee009177c205",
+      "asset": "assets/audio/2913798c739e3b29d375.wav",
+      "bytes": 103244,
+      "durationSeconds": 2.15,
+      "rms": 0.0675,
+      "peak": 0.56177,
+      "fileSha256": "be3e7d836b6945bc39ec3a593936ad7298970b022d8cde23d90d73eb7f910a09"
+    },
+    {
+      "text": "Please check your email.",
+      "textSha256": "fd0e3fd3bdc5da7385f7d7194fac72f76f5dcc52a0db6c2710c63020b714a0ec",
+      "asset": "assets/audio/fd0e3fd3bdc5da7385f7.wav",
+      "bytes": 90044,
+      "durationSeconds": 1.875,
+      "rms": 0.06679,
+      "peak": 0.57608,
+      "fileSha256": "7f253a12d0dba98b2d344bca0c04579a5412f69778de6085cf652dd45809cd7f"
+    },
+    {
+      "text": "Could you check your email?",
+      "textSha256": "a3f0b38cd3c34238333843a87e09fca5d0e9cd4530da38e1fc41ab5b6a2d6e3d",
+      "asset": "assets/audio/a3f0b38cd3c342383338.wav",
+      "bytes": 87644,
+      "durationSeconds": 1.825,
+      "rms": 0.06776,
+      "peak": 0.57861,
+      "fileSha256": "f61e0eecea74352e229884d012475c9ac1306d97b5ded0f84b93c99cb24e4403"
+    },
+    {
+      "text": "I'm working from home today.",
+      "textSha256": "a4ec89db527eac56b8c6cbb136fa5e29f8ca0db04ce00ed7075f9293e6cb1ae8",
+      "asset": "assets/audio/a4ec89db527eac56b8c6.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.06773,
+      "peak": 0.58093,
+      "fileSha256": "d79417ea49525ca244daae12e10bd0c247ed2af25516bf877de8a5634d0634eb"
+    },
+    {
+      "text": "I'm working at home today.",
+      "textSha256": "a6f636e4e6850f09a258887956f3e2c84602d9a9fa9d603ac12a3a135f44419b",
+      "asset": "assets/audio/a6f636e4e6850f09a258.wav",
+      "bytes": 103244,
+      "durationSeconds": 2.15,
+      "rms": 0.0688,
+      "peak": 0.46005,
+      "fileSha256": "2eec621b0353cabad20d4dad53584959235c34a99e2d659589fcca06e64d2e18"
+    },
+    {
+      "text": "I have a question.",
+      "textSha256": "c66fb72552f1fa4c50fc9fc2b527b77c69ac97e3dd1e95d304437bb74f48fbc4",
+      "asset": "assets/audio/c66fb72552f1fa4c50fc.wav",
+      "bytes": 86444,
+      "durationSeconds": 1.8,
+      "rms": 0.06462,
+      "peak": 0.72644,
+      "fileSha256": "f99e70c0282f1e196351984bc1f4ae964a6dbcd45a7076205006cb900f3fd3a1"
+    },
+    {
+      "text": "I've got a question.",
+      "textSha256": "faad9c84a6398c139386beca4d20b5428307ede5af6d879689e3966ff9aab1a1",
+      "asset": "assets/audio/faad9c84a6398c139386.wav",
+      "bytes": 82844,
+      "durationSeconds": 1.725,
+      "rms": 0.06603,
+      "peak": 0.5831,
+      "fileSha256": "25a39e46b481103993057639b4b3dfe1cbb8f75306f9c4e23140ca0587d2f227"
+    },
+    {
+      "text": "May I ask a question?",
+      "textSha256": "b13b201253d571655ba935c38213f2eec61b9dd09b6ac2e5dfad9bb5ad8c76a6",
+      "asset": "assets/audio/b13b201253d571655ba9.wav",
+      "bytes": 94844,
+      "durationSeconds": 1.975,
+      "rms": 0.06709,
+      "peak": 0.5538,
+      "fileSha256": "4d9feda033556f65846d1855f3f3221c5c34d715531e78f9c64dabd9ef41d678"
+    },
+    {
+      "text": "If it rains, I'll stay home.",
+      "textSha256": "b4ac98f065790e197f20a5622ecddc2149bc55d22232b69dd38985156004cc3c",
+      "asset": "assets/audio/b4ac98f065790e197f20.wav",
+      "bytes": 105644,
+      "durationSeconds": 2.2,
+      "rms": 0.06525,
+      "peak": 0.48489,
+      "fileSha256": "9378df30d9dddd45b4c41c36e3fc41ae5a3f3910c4ce688eb09f55d8f395340c"
+    },
+    {
+      "text": "If it rains, I'll stay at home.",
+      "textSha256": "62afce60b2a5ec3e3824cc9153bcb545082c23659ce90c2fe3d5451132d61a6c",
+      "asset": "assets/audio/62afce60b2a5ec3e3824.wav",
+      "bytes": 112844,
+      "durationSeconds": 2.35,
+      "rms": 0.06542,
+      "peak": 0.48898,
+      "fileSha256": "f93fa281595914285d7c9dcd339576c1a4a288161e8d26ee7ae1f91ff0c79a44"
+    },
+    {
+      "text": "I've lived here for three years.",
+      "textSha256": "6ea37d6f8e0b0d00352c686fc4516589c94b2eba6d90dda543523376a6a36ab6",
+      "asset": "assets/audio/6ea37d6f8e0b0d00352c.wav",
+      "bytes": 105644,
+      "durationSeconds": 2.2,
+      "rms": 0.06821,
+      "peak": 0.55511,
+      "fileSha256": "88eac7190866e6bbcc4df53d4a9818f1623aa1441bbc99ad6d71a3c1a4277162"
+    },
+    {
+      "text": "I've been living here for three years.",
+      "textSha256": "da591b88be8fe7ca63bfc8a669c03977f28af66ad8d7648f42e9de319d199e6d",
+      "asset": "assets/audio/da591b88be8fe7ca63bf.wav",
+      "bytes": 115244,
+      "durationSeconds": 2.4,
+      "rms": 0.06977,
+      "peak": 0.60526,
+      "fileSha256": "bf2cc84b7f644c85ec1eccc5815c57b701fed204043120345592ac52a47f983a"
+    },
+    {
+      "text": "I bought the book you recommended.",
+      "textSha256": "972379b94c92abef3b3278666db09160a6b9290f0829bed9998e957b909f0199",
+      "asset": "assets/audio/972379b94c92abef3b32.wav",
+      "bytes": 106844,
+      "durationSeconds": 2.225,
+      "rms": 0.06784,
+      "peak": 0.4856,
+      "fileSha256": "a667217d023ea4ef59428616c27bcabc9bd52106fe632835aca85fe9a920a758"
+    },
+    {
+      "text": "I bought the book that you recommended.",
+      "textSha256": "6efaf5de79d8ef178f249d79cac47043345239a75d029b2c380cae61fad6844c",
+      "asset": "assets/audio/6efaf5de79d8ef178f24.wav",
+      "bytes": 112844,
+      "durationSeconds": 2.35,
+      "rms": 0.06719,
+      "peak": 0.47339,
+      "fileSha256": "a3ad36b1432a252d8132359693dc012cc0420358863d0723c66145e3030faf25"
+    },
+    {
+      "text": "Don't forget to close the window before you go to bed.",
+      "textSha256": "b87dad47ba99217539931ce82d511158e0eca2cd399f9ef66b8d219b37f8184b",
+      "asset": "assets/audio/b87dad47ba9921753993.wav",
+      "bytes": 165644,
+      "durationSeconds": 3.45,
+      "rms": 0.06935,
+      "peak": 0.50693,
+      "fileSha256": "9b64d39e0f74eab20aba724137ae31a1c70b41a8474ee0412b55a7f7249e0042"
+    },
+    {
+      "text": "Remember to close the window before going to bed.",
+      "textSha256": "4a8d02fffcd8e3e635a1861581c7496bac86fb2fe179ba07563cea7b2331b60e",
+      "asset": "assets/audio/4a8d02fffcd8e3e635a1.wav",
+      "bytes": 157244,
+      "durationSeconds": 3.275,
+      "rms": 0.0709,
+      "peak": 0.5249,
+      "fileSha256": "f3348c95574c6a81cf2fd1b3b3e0dd5fbc1bd13059d0cafa1ad489806d0aa5c8"
+    },
+    {
+      "text": "May I leave my luggage here until checkout?",
+      "textSha256": "c85988611e35d4016095a6a13c517f487951dad99c30e327073b4d83bceeee05",
+      "asset": "assets/audio/c85988611e35d4016095.wav",
+      "bytes": 145244,
+      "durationSeconds": 3.025,
+      "rms": 0.0655,
+      "peak": 0.50427,
+      "fileSha256": "db3538c783fcfdf930fe675c5e106d766f49471ebe1e54249a9a5774865e4670"
+    },
+    {
+      "text": "Could I leave my luggage here until checkout?",
+      "textSha256": "ee153e1835fd234e5bcda8136869b34f5684cc8d8bee2c3602ca1226e50f962d",
+      "asset": "assets/audio/ee153e1835fd234e5bcd.wav",
+      "bytes": 147644,
+      "durationSeconds": 3.075,
+      "rms": 0.06818,
+      "peak": 0.46213,
+      "fileSha256": "6b05b77f4b782e342459d57cebc9dca3dd02881c342c6297127451f4554357c6"
+    },
+    {
+      "text": "Could you tell me how to get to the station?",
+      "textSha256": "0b3602bcfadaeab5e018bc151f7a4800e80098ec3ce848369f9b1f549ae8b368",
+      "asset": "assets/audio/0b3602bcfadaeab5e018.wav",
+      "bytes": 126044,
+      "durationSeconds": 2.625,
+      "rms": 0.06795,
+      "peak": 0.48047,
+      "fileSha256": "b5b5f87b33d8c27b5f2f5ccf4c30f6e99ffd1ad2a4d76b0f43213fc22c963127"
+    },
+    {
+      "text": "How do I get to the station?",
+      "textSha256": "e5169d2c3a88c516025c2b9516936baa13a77cede3800f139e29fe8fe7ab500c",
+      "asset": "assets/audio/e5169d2c3a88c516025c.wav",
+      "bytes": 100844,
+      "durationSeconds": 2.1,
+      "rms": 0.0698,
+      "peak": 0.48221,
+      "fileSha256": "515bb34c271e21e178b0f43fdd36288c2e5421b8912601c86c3a1859fdf906d9"
+    },
+    {
+      "text": "I'd like to change my reservation to tomorrow.",
+      "textSha256": "0760dcb9986ebb369362e2733874a1be21e67911bd5ebe7777433340fdd8cf07",
+      "asset": "assets/audio/0760dcb9986ebb369362.wav",
+      "bytes": 151244,
+      "durationSeconds": 3.15,
+      "rms": 0.06506,
+      "peak": 0.74701,
+      "fileSha256": "55fc2476f28a8c171c2583230232c762ab54df97c3d9c3947cb2515aff0b3d23"
+    },
+    {
+      "text": "Could I move my reservation to tomorrow?",
+      "textSha256": "78ae68b4456c86a7c56fad4b6f0da62ca39d1115e21034a27b1d5e8e524cdffa",
+      "asset": "assets/audio/78ae68b4456c86a7c56f.wav",
+      "bytes": 144044,
+      "durationSeconds": 3,
+      "rms": 0.06595,
+      "peak": 0.43896,
+      "fileSha256": "1181381f1545f48f52e2244a1405f293033a0197858f49598356f83335d39d43"
+    },
+    {
+      "text": "I missed the train, so I took a taxi.",
+      "textSha256": "4e7bbd179547d82ff2b94005fb277fe4d9cf531d289b087323ad5eb2a61dbd4f",
+      "asset": "assets/audio/4e7bbd179547d82ff2b9.wav",
+      "bytes": 134444,
+      "durationSeconds": 2.8,
+      "rms": 0.07082,
+      "peak": 0.58981,
+      "fileSha256": "6d58bc8d85d946ff96293d10448034677497d1ab038bb17f107dcafda5d81baf"
+    },
+    {
+      "text": "I took a taxi because I missed the train.",
+      "textSha256": "f6693af90fac770f42fada79ef694881d69f7a1677c3a8adf59761d9fa1297e9",
+      "asset": "assets/audio/f6693af90fac770f42fa.wav",
+      "bytes": 142844,
+      "durationSeconds": 2.975,
+      "rms": 0.06901,
+      "peak": 0.56155,
+      "fileSha256": "8448818628f36bf0408d22463fbde7bf8d4e28861401034e5dc8303f7bf6ede2"
+    },
+    {
+      "text": "Could you send me the documents by Friday?",
+      "textSha256": "b5d00ef15bb76e6cf5602e8cc17d25c6b00abac3fce96b83657eac97b9f5974c",
+      "asset": "assets/audio/b5d00ef15bb76e6cf560.wav",
+      "bytes": 136844,
+      "durationSeconds": 2.85,
+      "rms": 0.06891,
+      "peak": 0.46387,
+      "fileSha256": "cc8103c82a6584478ea20401c6ad58d3ea718253a7ce13323b52cf4fd3a12194"
+    },
+    {
+      "text": "Would you send me the documents by Friday?",
+      "textSha256": "51926a663d7ff5be64a4a3f60599b1b21c9594ebe4666022d07ab4c22dd3cda2",
+      "asset": "assets/audio/51926a663d7ff5be64a4.wav",
+      "bytes": 138044,
+      "durationSeconds": 2.875,
+      "rms": 0.06953,
+      "peak": 0.4816,
+      "fileSha256": "1db6127c01482bbcd687798d9a8a773c9dab49e3176a9880fa4f694ae1fe78e8"
+    },
+    {
+      "text": "I'll let you know when I'm ready.",
+      "textSha256": "beb3903d3710fbade7077ab52b18be35571c09406c0613e2274205198a710a6a",
+      "asset": "assets/audio/beb3903d3710fbade707.wav",
+      "bytes": 99644,
+      "durationSeconds": 2.075,
+      "rms": 0.06683,
+      "peak": 0.72745,
+      "fileSha256": "052f24b805448e856845dbeaa6d111e7eb021dd30c3182db9f7b82f44adef17e"
+    },
+    {
+      "text": "I'll notify you when I'm ready.",
+      "textSha256": "0d03a1a734fe7f848533f5d6b80cecb30d898801bc16ec59c54abb541fab6a08",
+      "asset": "assets/audio/0d03a1a734fe7f848533.wav",
+      "bytes": 114044,
+      "durationSeconds": 2.375,
+      "rms": 0.06567,
+      "peak": 0.6246,
+      "fileSha256": "11631194e90bf57e1e033e024fc597f333cc94412916e33f20c7a4e5a1f1b300"
+    },
+    {
+      "text": "We need to solve this problem.",
+      "textSha256": "43b0f43e36a98f96d46fb1cafe82618bcbe774b14869e51fa8c1ac5c4d16a5bc",
+      "asset": "assets/audio/43b0f43e36a98f96d46f.wav",
+      "bytes": 106844,
+      "durationSeconds": 2.225,
+      "rms": 0.07296,
+      "peak": 0.46399,
+      "fileSha256": "9ec76c299b5639d918d4e072898d5fd1b74f24a6b714d4cd59d6c4c23e879e32"
+    },
+    {
+      "text": "We need to resolve this issue.",
+      "textSha256": "0cc6aa71a81734546bf4e21673478355cf824b9b40fc7b7040f3082d9605464a",
+      "asset": "assets/audio/0cc6aa71a81734546bf4.wav",
+      "bytes": 111644,
+      "durationSeconds": 2.325,
+      "rms": 0.0713,
+      "peak": 0.52814,
+      "fileSha256": "b1e2043931201ccc58e56de6c5562dc746ebf63a28fb8add30bc92630808e4f9"
+    },
+    {
+      "text": "Can we postpone the meeting by thirty minutes?",
+      "textSha256": "30ea6706e7778d9b13d2f85b04e88040d065702bf8dbb9da8d571874599228c7",
+      "asset": "assets/audio/30ea6706e7778d9b13d2.wav",
+      "bytes": 141644,
+      "durationSeconds": 2.95,
+      "rms": 0.06884,
+      "peak": 0.56296,
+      "fileSha256": "d29b7be89984a74eeac6aee4b869c569d8a469dd8d4d698e05b9aac41c23fdc4"
+    },
+    {
+      "text": "Could we push the meeting back by thirty minutes?",
+      "textSha256": "46b17c763d95e9de803ffa79d3b804d9637acf8d9519425f7fb8dc5012df55f1",
+      "asset": "assets/audio/46b17c763d95e9de803f.wav",
+      "bytes": 140444,
+      "durationSeconds": 2.925,
+      "rms": 0.06879,
+      "peak": 0.43201,
+      "fileSha256": "61ca735df814bd3fd487bef86a4e6c79a5ebadabc127acda3edac49987cefa3d"
+    },
+    {
+      "text": "If I had more time, I would exercise every day.",
+      "textSha256": "a2e149a2e317dad3949330f208f6bed4a50b3ac103d97335911ea7de36d4b040",
+      "asset": "assets/audio/a2e149a2e317dad39493.wav",
+      "bytes": 171644,
+      "durationSeconds": 3.575,
+      "rms": 0.06623,
+      "peak": 0.74442,
+      "fileSha256": "1d6765b81ecba2948e24a1da15d8342df470d33f11148f80554a4c4c37787e4f"
+    },
+    {
+      "text": "I would exercise every day if I had more time.",
+      "textSha256": "a05bb55cfaaa701d15b4590fcb6072967b9360b06900f322c1a8cc67cbd58d2d",
+      "asset": "assets/audio/a05bb55cfaaa701d15b4.wav",
+      "bytes": 162044,
+      "durationSeconds": 3.375,
+      "rms": 0.05605,
+      "peak": 0.97998,
+      "fileSha256": "a2782833b91cab2d3a0c6e76cdbce95ae3348d1860956a41685cd752bf5ac21e"
+    },
+    {
+      "text": "I hadn't heard the news until I met him.",
+      "textSha256": "e54b006ed91f4402a8ba4aa0660fb2147ba0bd12552ee8ddd285d9094193010d",
+      "asset": "assets/audio/e54b006ed91f4402a8ba.wav",
+      "bytes": 127244,
+      "durationSeconds": 2.65,
+      "rms": 0.06637,
+      "peak": 0.65726,
+      "fileSha256": "3b2d9f592b303a070b03d687056e156b0f3825aa1f27941a7a6a1be7b72dedf2"
+    },
+    {
+      "text": "It wasn't until I met him that I heard the news.",
+      "textSha256": "b3bb52e1ab8be9a75dab9594c3300f33958a364f7af0fc90f48af21af73cfee2",
+      "asset": "assets/audio/b3bb52e1ab8be9a75dab.wav",
+      "bytes": 153644,
+      "durationSeconds": 3.2,
+      "rms": 0.066,
+      "peak": 0.59329,
+      "fileSha256": "5f7457bcb503bfb755d6905c5ba15e2128a8919ebbe87717c1f40d01c171436e"
+    },
+    {
+      "text": "I didn't expect her to arrive so early.",
+      "textSha256": "e5c2f6083dd793416233d8834ea7d04afa72adaed79266ad9928db135c0d7217",
+      "asset": "assets/audio/e5c2f6083dd793416233.wav",
+      "bytes": 129644,
+      "durationSeconds": 2.7,
+      "rms": 0.06502,
+      "peak": 0.64566,
+      "fileSha256": "8aa0700f2bca92f719940bbf4620dceed5dc015f64f79ecd333de399a1e963cf"
+    },
+    {
+      "text": "I wasn't expecting her to arrive so early.",
+      "textSha256": "f28d52f22e449ad36542d0fba2be65f213b73027211a2c8aaf80fa656137d22a",
+      "asset": "assets/audio/f28d52f22e449ad36542.wav",
+      "bytes": 140444,
+      "durationSeconds": 2.925,
+      "rms": 0.06336,
+      "peak": 0.58777,
+      "fileSha256": "0f7364bf83fe7da987d8d220bb85bb06fd6c6a2b92a65f7c0c3b95adba3280a3"
+    },
+    {
+      "text": "If we had left earlier, we could have avoided the traffic.",
+      "textSha256": "9a8d7efcbf4723cc1d153ed7999bf78fbcabb357ba6b4f3591560d53423b1f21",
+      "asset": "assets/audio/9a8d7efcbf4723cc1d15.wav",
+      "bytes": 168044,
+      "durationSeconds": 3.5,
+      "rms": 0.06912,
+      "peak": 0.53296,
+      "fileSha256": "82921a8d83da72c61fc5be3a4526c0f95d0b9f36b708c6eb2d9e06ae52988233"
+    },
+    {
+      "text": "We could have avoided the traffic if we had left earlier.",
+      "textSha256": "889c1d93dfb5f9900befff9c56751c2d81e5b5a16ffcf70e1178a336867cde65",
+      "asset": "assets/audio/889c1d93dfb5f9900bef.wav",
+      "bytes": 163244,
+      "durationSeconds": 3.4,
+      "rms": 0.0685,
+      "peak": 0.47903,
+      "fileSha256": "0a3f9bc7ef03d1dbe95fcb962873eadfcdf079ced700c1ce8e03fb5acc0c682c"
+    },
+    {
+      "text": "Can I get a refund if my flight is canceled?",
+      "textSha256": "2f1b6e031026e89c9dea115e31fced6f26f134ed19639d695b0ece2671615010",
+      "asset": "assets/audio/2f1b6e031026e89c9dea.wav",
+      "bytes": 157244,
+      "durationSeconds": 3.275,
+      "rms": 0.06814,
+      "peak": 0.45139,
+      "fileSha256": "1813499a0b2be20f482163bb0738cc989fc8651243b2b44cec86e957627f4c3a"
+    },
+    {
+      "text": "Would I be entitled to a refund if my flight were canceled?",
+      "textSha256": "71c4cce5a6eb83fa8d33661e9b1b1d3fde07044dbd87327037a5e37dc5a49308",
+      "asset": "assets/audio/71c4cce5a6eb83fa8d33.wav",
+      "bytes": 196844,
+      "durationSeconds": 4.1,
+      "rms": 0.06948,
+      "peak": 0.42853,
+      "fileSha256": "88351b0861449ccc16fbc0e92d47614b471642990fbb47fc4c8cc8de0c32ca9e"
+    },
+    {
+      "text": "I wish I had booked in advance.",
+      "textSha256": "a4e6c4bdb51e7f45a5379ac77f5da8637f69eef6d6b024342509e96170c82643",
+      "asset": "assets/audio/a4e6c4bdb51e7f45a537.wav",
+      "bytes": 109244,
+      "durationSeconds": 2.275,
+      "rms": 0.06557,
+      "peak": 0.74796,
+      "fileSha256": "0768943e6aae0db4fd9c5ac882510781fd6f55c9f599a401d906bf1ff9e6f6dd"
+    },
+    {
+      "text": "I should have booked ahead.",
+      "textSha256": "c2a2a04fe6bb2a4ad5fbfdf35ecc3c49ceaea11fa0b78c89210b60cecb8ea306",
+      "asset": "assets/audio/c2a2a04fe6bb2a4ad5fb.wav",
+      "bytes": 86444,
+      "durationSeconds": 1.8,
+      "rms": 0.06503,
+      "peak": 0.62927,
+      "fileSha256": "e90a2479374f3faef63c1b9b8c6a3f30a078615b8153ec7d4030a0b8ddaf2c1f"
+    },
+    {
+      "text": "Words can't describe how beautiful the scenery is.",
+      "textSha256": "6895fb8d161b9087fb0919bf4a33243aa5e03350a49c274a7a93dff862d36090",
+      "asset": "assets/audio/6895fb8d161b9087fb09.wav",
+      "bytes": 168044,
+      "durationSeconds": 3.5,
+      "rms": 0.06607,
+      "peak": 0.41159,
+      "fileSha256": "79701b6579cb8d7f3ae3ef870d88f695fba62cf2f92da2ad423d22d28ebe5648"
+    },
+    {
+      "text": "The scenery is so beautiful that words cannot do it justice.",
+      "textSha256": "21d4ae18fd012c31115ff17134426b1f6f3bbea88b3afe023db9f248da6deaad",
+      "asset": "assets/audio/21d4ae18fd012c31115f.wav",
+      "bytes": 199244,
+      "durationSeconds": 4.15,
+      "rms": 0.06937,
+      "peak": 0.76462,
+      "fileSha256": "76fd9feeab38025ec8453813e66071bdd7fab558e96f1739a34028cd66591f38"
+    },
+    {
+      "text": "The tour will go ahead as scheduled, regardless of the weather.",
+      "textSha256": "5a5667752e3ed8f230d8878687d013a71c388fb2c016c0d7e9cecca898baf97e",
+      "asset": "assets/audio/5a5667752e3ed8f230d8.wav",
+      "bytes": 194444,
+      "durationSeconds": 4.05,
+      "rms": 0.06698,
+      "peak": 0.504,
+      "fileSha256": "ffdde313eee67f02069477daa9808e2d9e2984176cc62a22e42d71ad6f04c662"
+    },
+    {
+      "text": "The tour will take place as planned, whatever the weather.",
+      "textSha256": "14ee88655d3fb0dbec614f75d8e12ddfa6651c6a1a4b5067b4c04ee344021e8e",
+      "asset": "assets/audio/14ee88655d3fb0dbec61.wav",
+      "bytes": 166844,
+      "durationSeconds": 3.475,
+      "rms": 0.06815,
+      "peak": 0.56476,
+      "fileSha256": "ca024bfebb463f645a8b58d06ef8781bcd89d170a269ce29cf4cb50e99506c1b"
+    },
+    {
+      "text": "We'll start the project as soon as the budget is approved.",
+      "textSha256": "3c3519b47d016f95a2dd6c3fb79f5d61acb93c63c9dec430f6abddbb84fe2739",
+      "asset": "assets/audio/3c3519b47d016f95a2dd.wav",
+      "bytes": 187244,
+      "durationSeconds": 3.9,
+      "rms": 0.06987,
+      "peak": 0.51535,
+      "fileSha256": "67480d812590f2a96139d98e47595735115f91e122ecbb8425a5e4177e13ecd5"
+    },
+    {
+      "text": "We'll begin the project once the budget has been approved.",
+      "textSha256": "5fcf0838bd0e78211b2511becf1ed2f48b44d0a9f45db37f5da0c828cecc0b73",
+      "asset": "assets/audio/5fcf0838bd0e78211b25.wav",
+      "bytes": 182444,
+      "durationSeconds": 3.8,
+      "rms": 0.07234,
+      "peak": 0.54504,
+      "fileSha256": "5db089c6c502f720bf5ef55fdab33b4748569c557a34cc215688293d63070c5e"
+    },
+    {
+      "text": "Let's go over the key points to avoid any misunderstandings.",
+      "textSha256": "6afb4cfa1e98c8458006fa7d1d9e0d36b539437db925309325754ff2dd14a95b",
+      "asset": "assets/audio/6afb4cfa1e98c8458006.wav",
+      "bytes": 194444,
+      "durationSeconds": 4.05,
+      "rms": 0.07139,
+      "peak": 0.54755,
+      "fileSha256": "f45c22f72adc78c487eb7f9119a1cdec65593ae5156302bcedd3e4afe50a9e88"
+    },
+    {
+      "text": "Let's review the main points so that there are no misunderstandings.",
+      "textSha256": "5c1a327742f9f2927961a2d7bf12626ef4effad638d5a4650a7120c649491df1",
+      "asset": "assets/audio/5c1a327742f9f2927961.wav",
+      "bytes": 204044,
+      "durationSeconds": 4.25,
+      "rms": 0.06998,
+      "peak": 0.5787,
+      "fileSha256": "e8488c34c39c3bb7c8bb0e411463c246715260ac8891620f209e5ee9de0598e2"
+    },
+    {
+      "text": "If you had told me yesterday, I could have prepared.",
+      "textSha256": "f19783488735f4594d8d7f5d843f6971c60f83ac7b66c5926402afd472778c28",
+      "asset": "assets/audio/f19783488735f4594d8d.wav",
+      "bytes": 153644,
+      "durationSeconds": 3.2,
+      "rms": 0.06755,
+      "peak": 0.83093,
+      "fileSha256": "b7042033ed8f6db66ceb31a132f32eee76afbf15b43662e46734e7888a6131ce"
+    },
+    {
+      "text": "Had you told me yesterday, I could have prepared.",
+      "textSha256": "71dc5b4ecb19b82899f8b5a7ead453f2e82880733f81bc0d40851518cf568432",
+      "asset": "assets/audio/71dc5b4ecb19b82899f8.wav",
+      "bytes": 146444,
+      "durationSeconds": 3.05,
+      "rms": 0.06917,
+      "peak": 0.66507,
+      "fileSha256": "e028a533cdcb16d8248ddcb98aac2d5d84ea64b5210374bde011b4c67102e585"
+    },
+    {
+      "text": "Whether we can meet the deadline depends on our progress.",
+      "textSha256": "5dab5e58c578f0139e3b755768c8e34dc6aa5a1e8087cec74ecd0b37ade07527",
+      "asset": "assets/audio/5dab5e58c578f0139e3b.wav",
+      "bytes": 164444,
+      "durationSeconds": 3.425,
+      "rms": 0.06724,
+      "peak": 0.43622,
+      "fileSha256": "1eb142508e50f023b6d7f0d3f607c1a7787c4d3d739fc7615846c7c6bfc483f3"
+    },
+    {
+      "text": "Our ability to meet the deadline depends on our progress.",
+      "textSha256": "9ebfd615435fee330d29c30bf7a2e2e282ab586fc4242bb7afbf2265601b1629",
+      "asset": "assets/audio/9ebfd615435fee330d29.wav",
+      "bytes": 184844,
+      "durationSeconds": 3.85,
+      "rms": 0.06979,
+      "peak": 0.46814,
+      "fileSha256": "ac99561aea7c0424e9674094744d9f1ba22ae0f492cc573a3e8f0d4133ef8baf"
+    },
+    {
+      "text": "How much is this?",
+      "textSha256": "c71b1e6dc0159c8330d1e05ace36f1c5d5faa76f709513090a19567e41747a1f",
+      "asset": "assets/audio/c71b1e6dc0159c8330d1.wav",
+      "bytes": 86444,
+      "durationSeconds": 1.8,
+      "rms": 0.07237,
+      "peak": 0.4295,
+      "fileSha256": "c95c917a9b4e204ad9556188e93d101299342e4359f80d796954f36fbba42b3e"
+    },
+    {
+      "text": "How much does this cost?",
+      "textSha256": "72ca21eac47b0e6c2e839391669d2c3e18546d542f3885bfa439a592074b4aa1",
+      "asset": "assets/audio/72ca21eac47b0e6c2e83.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.07225,
+      "peak": 0.45651,
+      "fileSha256": "8f37c78303e787545ca1fe819c0783a8b8caf052c0b227ac367e7a7364d60d1b"
+    },
+    {
+      "text": "I'd like one of these, please.",
+      "textSha256": "3e2d458a50e3e3779d36f9e78bb70de577d1928e66dfbbbfd2810fe5e9f263c1",
+      "asset": "assets/audio/3e2d458a50e3e3779d36.wav",
+      "bytes": 100844,
+      "durationSeconds": 2.1,
+      "rms": 0.07145,
+      "peak": 0.72888,
+      "fileSha256": "1818ffe4f6266d94d874aa70d170cf806e571e29eedecec70c4d48ff49dffe6b"
+    },
+    {
+      "text": "Can I have one of these, please?",
+      "textSha256": "fd450719af65205a985fabd0cd04b38ad75dd7f765b630e608ce9cc8e92b7928",
+      "asset": "assets/audio/fd450719af65205a985f.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.0683,
+      "peak": 0.48904,
+      "fileSha256": "792aee8ceb51cf37cd850798e67d11eb1f19ee63c304df9abedf307894b98cfb"
+    },
+    {
+      "text": "Do you have this in another color?",
+      "textSha256": "00a99985fa09e26aa58164d22138e6f3dc3a4e9bee8200754e0abff5e72208b4",
+      "asset": "assets/audio/00a99985fa09e26aa581.wav",
+      "bytes": 115244,
+      "durationSeconds": 2.4,
+      "rms": 0.06573,
+      "peak": 0.38632,
+      "fileSha256": "3beccfe1dae329dae8bd556c13c383a378b8fb5934e51c213c15c7eb1d0c9a3c"
+    },
+    {
+      "text": "Does this come in a different color?",
+      "textSha256": "05bc59664ee41004d29dd979989bea26d3c6be9554c0ac1bd9cd70cdcabf0761",
+      "asset": "assets/audio/05bc59664ee41004d29d.wav",
+      "bytes": 109244,
+      "durationSeconds": 2.275,
+      "rms": 0.06702,
+      "peak": 0.40945,
+      "fileSha256": "5ecdf0cd844a1f11f00daf6206b31226612599985bcb963d965ff1ee83eb1919"
+    },
+    {
+      "text": "Can I try this on?",
+      "textSha256": "dcb1fa2585dc2bc27f61dd4aa7a36e7e16d8660d32d530051ac915676a455848",
+      "asset": "assets/audio/dcb1fa2585dc2bc27f61.wav",
+      "bytes": 86444,
+      "durationSeconds": 1.8,
+      "rms": 0.06586,
+      "peak": 0.43866,
+      "fileSha256": "504939520928f9a4745692e8f8cd7c7fdee9abb5bdd4349e5270b1a46057340e"
+    },
+    {
+      "text": "May I try this on?",
+      "textSha256": "d082cd66e034c87d2dc5cbb2edede96a4d811f6d3ed5960e8ee659f1afb02cb9",
+      "asset": "assets/audio/d082cd66e034c87d2dc5.wav",
+      "bytes": 88844,
+      "durationSeconds": 1.85,
+      "rms": 0.06589,
+      "peak": 0.37677,
+      "fileSha256": "b217e856e39b89fa55126d7ee57c0cf2e772e8366c441aa0c482f8d2b91d4497"
+    },
+    {
+      "text": "Can I pay by card?",
+      "textSha256": "73a8c75d9fc0608c53771e6cf95bcfa7417cb0b43508712afa269eae37561cb4",
+      "asset": "assets/audio/73a8c75d9fc0608c5377.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.0657,
+      "peak": 0.47418,
+      "fileSha256": "ace0d227ea1398e0d864b9fdd30277fb3a411349ebe248c9e00d688f2add084b"
+    },
+    {
+      "text": "Do you accept cards?",
+      "textSha256": "5448901fc0252e4913c5b8d57fe61a6dd694e3fa5a3e01f0841fca2e9eccf20c",
+      "asset": "assets/audio/5448901fc0252e4913c5.wav",
+      "bytes": 87644,
+      "durationSeconds": 1.825,
+      "rms": 0.06875,
+      "peak": 0.42392,
+      "fileSha256": "7f49d5938bbc913d2d4e93147a1627119567112df61b72a08d937aeaa7867c19"
+    },
+    {
+      "text": "I don't need a bag.",
+      "textSha256": "55bd6f4000821b18a57ab25eff8b9ad30d96aad12d71abeed7dd34347988c395",
+      "asset": "assets/audio/55bd6f4000821b18a57a.wav",
+      "bytes": 78044,
+      "durationSeconds": 1.625,
+      "rms": 0.06627,
+      "peak": 0.44324,
+      "fileSha256": "c0aa93dd94dab9c7ad6fabef46ac8e4ed5c5b0091731306d8c3a0264b2d58868"
+    },
+    {
+      "text": "No bag, thank you.",
+      "textSha256": "4ac9539d31db7aa7ca3a3bea7a0db344ad398f38a350d6b80285cf07859fbda2",
+      "asset": "assets/audio/4ac9539d31db7aa7ca3a.wav",
+      "bytes": 91244,
+      "durationSeconds": 1.9,
+      "rms": 0.06736,
+      "peak": 0.35556,
+      "fileSha256": "89f1165510911a7e9dd5cdd0706811f178315b1ba283a0b19d44be00979df334"
+    },
+    {
+      "text": "Do you have a smaller size?",
+      "textSha256": "519793a4e35c341be511676f5e7fdeba5077d42eeef7811cf74d3de574233862",
+      "asset": "assets/audio/519793a4e35c341be511.wav",
+      "bytes": 98444,
+      "durationSeconds": 2.05,
+      "rms": 0.06409,
+      "peak": 0.45261,
+      "fileSha256": "4e617d8ce163067c926f454ee3126ae4d87462ca820d28005f38af684101aaf1"
+    },
+    {
+      "text": "Is there a smaller size available?",
+      "textSha256": "7bd4cd63de32235058e49511ed372d8273a513b4f56243fb846103c82214f2d6",
+      "asset": "assets/audio/7bd4cd63de32235058e4.wav",
+      "bytes": 123644,
+      "durationSeconds": 2.575,
+      "rms": 0.06237,
+      "peak": 0.49622,
+      "fileSha256": "1a4491d3de62be86a2e970fc5b2a2314da1454ff6d0ed327ad299006a4ae7d88"
+    },
+    {
+      "text": "It's time for dinner.",
+      "textSha256": "0b1b2b15288b5a7602718f6930dac40773c14c0e6720ac83acafb2a6acad19a6",
+      "asset": "assets/audio/0b1b2b15288b5a760271.wav",
+      "bytes": 85244,
+      "durationSeconds": 1.775,
+      "rms": 0.06673,
+      "peak": 0.48544,
+      "fileSha256": "e1e4ea4f75aef8ab59b748f95755aacbab2d912c72a42610632029b1b07e76ba"
+    },
+    {
+      "text": "Dinner time!",
+      "textSha256": "625eac19d500c678a3828de8112ea34118ff0244dfbe3fc2ca1815e928e1b753",
+      "asset": "assets/audio/625eac19d500c678a382.wav",
+      "bytes": 74444,
+      "durationSeconds": 1.55,
+      "rms": 0.06905,
+      "peak": 0.54904,
+      "fileSha256": "730014dc5f56e9d32a51ac8929081c76de13a20a8c507de71de13c7605ed934d"
+    },
+    {
+      "text": "Please turn the TV down.",
+      "textSha256": "4688704d338f3fcf76565bc01e4174412e19dda200eb825413f83f8ddcb093ab",
+      "asset": "assets/audio/4688704d338f3fcf7656.wav",
+      "bytes": 103244,
+      "durationSeconds": 2.15,
+      "rms": 0.06736,
+      "peak": 0.42825,
+      "fileSha256": "3912c8c10a421c653452ccb8c589cf301ba6d3e14a7b44fd640574076ed5290a"
+    },
+    {
+      "text": "Could you turn down the TV?",
+      "textSha256": "0547eb2fee5364e880feaa924787a2e3487cee0d47ddee8affbab74078ffb111",
+      "asset": "assets/audio/0547eb2fee5364e880fe.wav",
+      "bytes": 102044,
+      "durationSeconds": 2.125,
+      "rms": 0.06822,
+      "peak": 0.65051,
+      "fileSha256": "cd217359e598718fcadeab91ba8d62a3e2c6a250ec74290edb6f4f0fed3253cd"
+    },
+    {
+      "text": "Please open the window.",
+      "textSha256": "96c2cab4ac9e683112263e2db6a6112f6359873fbb93172eb9e73dd337361d92",
+      "asset": "assets/audio/96c2cab4ac9e68311226.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.06567,
+      "peak": 0.48947,
+      "fileSha256": "fffb1a8e65ce002d9bb4b01ecd3ea4a75b3d7c37f5486eecbfe1a5fbef29278e"
+    },
+    {
+      "text": "Could you open the window?",
+      "textSha256": "3b936071862c0f78a3613b5cf4d455cf6b72424b19ae725ffd652f8bb5370a0e",
+      "asset": "assets/audio/3b936071862c0f78a361.wav",
+      "bytes": 90044,
+      "durationSeconds": 1.875,
+      "rms": 0.06785,
+      "peak": 0.52997,
+      "fileSha256": "f1b7240b12d9858a76796ef92c94b6540afc9b09fca8dbf350273000ae4579b1"
+    },
+    {
+      "text": "I'll wash the dishes today.",
+      "textSha256": "80fc3d97e0e8a0d01eb9d81815d33282648d9302c8d1cef2f1f82d246c1c3a24",
+      "asset": "assets/audio/80fc3d97e0e8a0d01eb9.wav",
+      "bytes": 104444,
+      "durationSeconds": 2.175,
+      "rms": 0.06675,
+      "peak": 0.46442,
+      "fileSha256": "5dba16387a1d0f376cf4e5bfc34d58dcc01a20d21bdf2577c6ed25604c620fbc"
+    },
+    {
+      "text": "I'll do the dishes today.",
+      "textSha256": "8ddf93996d32249a786c515cc11a9b4bc0c57fc9fd6dfc8d69c07cdfdb55058e",
+      "asset": "assets/audio/8ddf93996d32249a786c.wav",
+      "bytes": 96044,
+      "durationSeconds": 2,
+      "rms": 0.06603,
+      "peak": 0.50394,
+      "fileSha256": "1a572f0a7531ebe8bfa54e86390f87b61373d4127fb5834abb3a78611ec3ca6c"
+    },
+    {
+      "text": "My dad is taking a bath now.",
+      "textSha256": "d81863c775429fae49afe70e66d7cdc18b1ff211fca901f139dccda7fea5691b",
+      "asset": "assets/audio/d81863c775429fae49af.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.06586,
+      "peak": 0.40063,
+      "fileSha256": "8e329f2cddb8d8758f5324ed3c596f4b3737b95f2bb93806ea3eecdec763ee49"
+    },
+    {
+      "text": "My father is having a bath now.",
+      "textSha256": "2d72a996d6dfa682da467e0a913fe67de712d26158de8bb9da512b0fc8a09749",
+      "asset": "assets/audio/2d72a996d6dfa682da46.wav",
+      "bytes": 116444,
+      "durationSeconds": 2.425,
+      "rms": 0.06511,
+      "peak": 0.46094,
+      "fileSha256": "32e200044c83c843318d1985985c1de9052ed3a11551836228008e2f2a0b37cb"
+    },
+    {
+      "text": "Where should I put these clothes?",
+      "textSha256": "bfd8ba2f4152dbd2e6148dbeb1ac220c7acb36c7831de37402fb9f27d2e88017",
+      "asset": "assets/audio/bfd8ba2f4152dbd2e614.wav",
+      "bytes": 103244,
+      "durationSeconds": 2.15,
+      "rms": 0.06685,
+      "peak": 0.48557,
+      "fileSha256": "1e096a0d6843bb09ab219ec11a72cb90c1e7a0414b7faa58933bba5cf151d676"
+    },
+    {
+      "text": "Where do these clothes go?",
+      "textSha256": "f77b091ca3d05fa34bf4560808c79e35d6fee60efafe77db73bdae23ef263a14",
+      "asset": "assets/audio/f77b091ca3d05fa34bf4.wav",
+      "bytes": 94844,
+      "durationSeconds": 1.975,
+      "rms": 0.0662,
+      "peak": 0.51801,
+      "fileSha256": "60e9cb732aa54c8c1694f2e6b510beae103ec3627950bdaad3a5c05453b8b05a"
+    },
+    {
+      "text": "I'll get up early tomorrow.",
+      "textSha256": "a6c8de2ee9b1516b57d78839e0938e868fb81a757362c57fb5aaf0bfe8b341e3",
+      "asset": "assets/audio/a6c8de2ee9b1516b57d7.wav",
+      "bytes": 98444,
+      "durationSeconds": 2.05,
+      "rms": 0.0662,
+      "peak": 0.55573,
+      "fileSha256": "b0a35eb95364506737cfa273b321fc5501b86c66316c20fb2bbf238d72a0d769"
+    },
+    {
+      "text": "I'm going to get up early tomorrow.",
+      "textSha256": "3212ddd4e366c82c684f78be508c4300aba73d88e3f4c5f61c147532183ec01e",
+      "asset": "assets/audio/3212ddd4e366c82c684f.wav",
+      "bytes": 120044,
+      "durationSeconds": 2.5,
+      "rms": 0.06923,
+      "peak": 0.62109,
+      "fileSha256": "bd8d4d473236c0cdd1ba543229afe007db3bfe8215d1a2f95dcf0ac1c020a515"
+    },
+    {
+      "text": "Are you busy today?",
+      "textSha256": "06f1aad17f371bd665768d1683afd253a632299edb72925cf32a5df612525d9e",
+      "asset": "assets/audio/06f1aad17f371bd66576.wav",
+      "bytes": 87644,
+      "durationSeconds": 1.825,
+      "rms": 0.0693,
+      "peak": 0.83405,
+      "fileSha256": "36ba9c37460a4bffabd6cd43a510cd5777b3c31f5cbf5dfca093778c63f258a3"
+    },
+    {
+      "text": "Do you have a lot to do today?",
+      "textSha256": "67844ad1370af57b010bd5afc2fe8131565b154de6b5f2bfb301d0ff679a70ed",
+      "asset": "assets/audio/67844ad1370af57b010b.wav",
+      "bytes": 104444,
+      "durationSeconds": 2.175,
+      "rms": 0.06669,
+      "peak": 0.45679,
+      "fileSha256": "c86ff855f80d65d76906664de26f472c0d716b0bc5d9385fe29fd9fd370fc17d"
+    },
+    {
+      "text": "Would you like to have lunch together?",
+      "textSha256": "2b3417c2f87c276b1a161deb01d8eef5811b9aed88f76b91495db5165f36f377",
+      "asset": "assets/audio/2b3417c2f87c276b1a16.wav",
+      "bytes": 109244,
+      "durationSeconds": 2.275,
+      "rms": 0.0671,
+      "peak": 0.48074,
+      "fileSha256": "136a2589f2b087fe24b777beed7da6c7b081d9ad3dc2f864ffc9169d6a455a0c"
+    },
+    {
+      "text": "Do you want to grab lunch together?",
+      "textSha256": "852e75773026a8eacf44d7b99e5ee38e252fc6520fa84a03d2a25acdc21cf832",
+      "asset": "assets/audio/852e75773026a8eacf44.wav",
+      "bytes": 109244,
+      "durationSeconds": 2.275,
+      "rms": 0.06558,
+      "peak": 0.42712,
+      "fileSha256": "34cda257a266bd52b8cd5a4e4507b373f1753f0b225097867e5370076834b631"
+    },
+    {
+      "text": "What time should we meet?",
+      "textSha256": "60196cb0478f6d885ee5c0b4e3e114c7c88b38d0e2b98ad5f120d6da295326d6",
+      "asset": "assets/audio/60196cb0478f6d885ee5.wav",
+      "bytes": 87644,
+      "durationSeconds": 1.825,
+      "rms": 0.06858,
+      "peak": 0.61713,
+      "fileSha256": "2e2ebb7da054a590c842b1f9669341e0d845a854f7adae6af84ec3530f1614a2"
+    },
+    {
+      "text": "When would you like to meet?",
+      "textSha256": "65cf56b8ba4cfbe1c4c61f82a412f140c262ff06b14471b3fe3eb00650f1bc26",
+      "asset": "assets/audio/65cf56b8ba4cfbe1c4c6.wav",
+      "bytes": 91244,
+      "durationSeconds": 1.9,
+      "rms": 0.06982,
+      "peak": 0.52625,
+      "fileSha256": "20c924c83e98f7f65508e9b7afd503ca008e3fcdd6052fb4be40f778bb26c59a"
+    },
+    {
+      "text": "I'm waiting in front of the station.",
+      "textSha256": "745422034d9ff99d1101cb13bc897532ea5f2571a4a410a23c8694cfd99dab0f",
+      "asset": "assets/audio/745422034d9ff99d1101.wav",
+      "bytes": 117644,
+      "durationSeconds": 2.45,
+      "rms": 0.06788,
+      "peak": 0.54221,
+      "fileSha256": "c3c6af9f5e4ea96ba739de2388e8622e665ba8c7e8946e4fca44dfad7f40268c"
+    },
+    {
+      "text": "I'm in front of the station, waiting for you.",
+      "textSha256": "c8ce3ce984a72d6326d8c3603ef2e5e9db456d85593a8dfce7acd3dbf1ae8fa0",
+      "asset": "assets/audio/c8ce3ce984a72d6326d8.wav",
+      "bytes": 142844,
+      "durationSeconds": 2.975,
+      "rms": 0.07301,
+      "peak": 0.60971,
+      "fileSha256": "a5e4bf1250df96b04983d7802cc4469574c3f66db3664614a2ff4c29357f2ef7"
+    },
+    {
+      "text": "I'll be a little late.",
+      "textSha256": "73fa468bebe9f71836dd6349ea789ce4587c6ee1b96060a008a44cfe72bc4dcc",
+      "asset": "assets/audio/73fa468bebe9f71836dd.wav",
+      "bytes": 80444,
+      "durationSeconds": 1.675,
+      "rms": 0.06377,
+      "peak": 0.38651,
+      "fileSha256": "6f4fb5bd22019eeede452565e8f1404390f5e73dd2dc2c07318faa2a26d66104"
+    },
+    {
+      "text": "I'm running a bit late.",
+      "textSha256": "eac64464a2d35c4018f072c666cbdeddcb6869cf537f77d8b19182bb94aab46b",
+      "asset": "assets/audio/eac64464a2d35c4018f0.wav",
+      "bytes": 88844,
+      "durationSeconds": 1.85,
+      "rms": 0.06811,
+      "peak": 0.53488,
+      "fileSha256": "8e815d16c90b05f45dae93a59dfc39f9cb7e5a0dc78642cc37d97745c2c18553"
+    },
+    {
+      "text": "Thanks for inviting me.",
+      "textSha256": "8941f1db43b62545042b6274876a3d21cbe29e9d3b10a8de4ec09490ba0a3e8b",
+      "asset": "assets/audio/8941f1db43b62545042b.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.06782,
+      "peak": 0.49652,
+      "fileSha256": "339add74cb638bc79871c1f798baf99d8a97cc77ecdd45d08090e777c21e1fdc"
+    },
+    {
+      "text": "Thank you for the invitation.",
+      "textSha256": "babd7af9511013e159c9a926b0020573981b8704c6ee9f28bff59d8546ed342f",
+      "asset": "assets/audio/babd7af9511013e159c9.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.0656,
+      "peak": 0.48648,
+      "fileSha256": "d23ab2ab18fda419a70b231e48c96a5970c252ebecb3062212c3a342ee5104a2"
+    },
+    {
+      "text": "I've lost the receipt. Can I still exchange this?",
+      "textSha256": "f7e4d1ee71c7d8f613120d70fe8fea1969d0a8230d7c68aff07d1c8d8bbe5aff",
+      "asset": "assets/audio/f7e4d1ee71c7d8f61312.wav",
+      "bytes": 169244,
+      "durationSeconds": 3.525,
+      "rms": 0.07204,
+      "peak": 0.6604,
+      "fileSha256": "a0dfa09a0782c25407745f6c26578e91e414fdac07d69666e2f34c4c3bf4c393"
+    },
+    {
+      "text": "Can I exchange this even though I don't have the receipt?",
+      "textSha256": "1301a16581a3e5e53ccd337249f34889e2ca0c8199ae198a63c0aa7b9c1f8a70",
+      "asset": "assets/audio/1301a16581a3e5e53ccd.wav",
+      "bytes": 176444,
+      "durationSeconds": 3.675,
+      "rms": 0.07097,
+      "peak": 0.49844,
+      "fileSha256": "1d5cbaf0e9f427f133c6a703c5f01b0b2448bc8979f73e2a5c3de89a8ee39972"
+    },
+    {
+      "text": "Can I return this if it doesn't fit?",
+      "textSha256": "df07b455a81cce12e7cbf2c03ca5294614eb590265f1aec7809c3987fa6e60a9",
+      "asset": "assets/audio/df07b455a81cce12e7cb.wav",
+      "bytes": 124844,
+      "durationSeconds": 2.6,
+      "rms": 0.06747,
+      "peak": 0.49561,
+      "fileSha256": "fa2de71a629d1aa4808c8bf03736594577c8ecb99b26f7dec82dcc420207614d"
+    },
+    {
+      "text": "If this doesn't fit, is it possible to return it?",
+      "textSha256": "5dceb39be04b163e71b64f3d18d666d42b9d73136e399bef619ed0eeb5167348",
+      "asset": "assets/audio/5dceb39be04b163e71b6.wav",
+      "bytes": 159644,
+      "durationSeconds": 3.325,
+      "rms": 0.07076,
+      "peak": 0.50143,
+      "fileSha256": "69160ec9dabf2183fa6fe41301e16a021fe6d46c4ec010d9ce05f8180c4b118a"
+    },
+    {
+      "text": "I'm looking for another one just like this.",
+      "textSha256": "fc5d58ec7e0be32fea08430e16e98474adcd42c413a9e8937c90263a2396dcd7",
+      "asset": "assets/audio/fc5d58ec7e0be32fea08.wav",
+      "bytes": 132044,
+      "durationSeconds": 2.75,
+      "rms": 0.06794,
+      "peak": 0.77298,
+      "fileSha256": "a853977f78eb70f00e680fbb2d82e2de86dacbe9032f0c3a7de0f0ef0423b8f6"
+    },
+    {
+      "text": "I'm trying to find one more of the same item.",
+      "textSha256": "3919a4e44f4f78895fadfd1caa7464d972b9f3542d72e2c4a4ad53599cb0f8cd",
+      "asset": "assets/audio/3919a4e44f4f78895fad.wav",
+      "bytes": 147644,
+      "durationSeconds": 3.075,
+      "rms": 0.06358,
+      "peak": 0.50278,
+      "fileSha256": "68ccd5a071c497159ff6a93ede6eecb4f6cdb21c58b0b2235a3bf954a504dd4d"
+    },
+    {
+      "text": "It's a gift. Could you wrap it for me?",
+      "textSha256": "e136643d582fb172fb009e1dd958a7357d79909c1bd55afe92655bc29e8d3b42",
+      "asset": "assets/audio/e136643d582fb172fb00.wav",
+      "bytes": 122444,
+      "durationSeconds": 2.55,
+      "rms": 0.07158,
+      "peak": 0.60892,
+      "fileSha256": "74780614d7dc20897f550b2c76e6b7b86c28ead6a361b94f1eab5bfbcbdbca6c"
+    },
+    {
+      "text": "Could you gift-wrap this, please?",
+      "textSha256": "0d7b8101bcd6b622948e7632578dcab332b90ecd60733012924d06c33204aad9",
+      "asset": "assets/audio/0d7b8101bcd6b622948e.wav",
+      "bytes": 103244,
+      "durationSeconds": 2.15,
+      "rms": 0.06937,
+      "peak": 0.53192,
+      "fileSha256": "2243bc4b730795da52267539b72043895e6260ab32c3485db4fed479bb41ef12"
+    },
+    {
+      "text": "Could you tell me where the checkout is?",
+      "textSha256": "601077af19e1c4a7b3c5d284ace654e6276f747d980561d5c245f68110bdbb42",
+      "asset": "assets/audio/601077af19e1c4a7b3c5.wav",
+      "bytes": 108044,
+      "durationSeconds": 2.25,
+      "rms": 0.06812,
+      "peak": 0.40103,
+      "fileSha256": "64386315e83abe61f44c183b1f2e1d14b553f25bbeaf1e6cc2f7fe2c1a6705b2"
+    },
+    {
+      "text": "Could you show me where to pay?",
+      "textSha256": "cbda30543b3580aaef6fc26a7a5913d90ca3cfebd467bf74b8ae9a4e37adbd06",
+      "asset": "assets/audio/cbda30543b3580aaef6f.wav",
+      "bytes": 93644,
+      "durationSeconds": 1.95,
+      "rms": 0.06677,
+      "peak": 0.38168,
+      "fileSha256": "a69fa6d19e4fabc0337363168349029b6ceb4827ba9d670948db40bede66e3d3"
+    },
+    {
+      "text": "I'd like to check that this works before I buy it.",
+      "textSha256": "ed851aed7eebcdab766f332768b2346506a85ed9c86b9af65ce16add2126344f",
+      "asset": "assets/audio/ed851aed7eebcdab766f.wav",
+      "bytes": 142844,
+      "durationSeconds": 2.975,
+      "rms": 0.06682,
+      "peak": 0.4744,
+      "fileSha256": "532abb46f580e190fbad116f35f1aa55a3e2448d6c2bc5373fd20a80adf4300b"
+    },
+    {
+      "text": "I'd like to make sure this works before buying it.",
+      "textSha256": "8c35958e320976e21323038bbcfbc5081e5225c88e020982418581645b72f170",
+      "asset": "assets/audio/8c35958e320976e21323.wav",
+      "bytes": 136844,
+      "durationSeconds": 2.85,
+      "rms": 0.06973,
+      "peak": 0.46606,
+      "fileSha256": "1180ac46a6a0352df435ae4786f7f64323209aa92f1ba59d48c8a84b2e133d06"
+    },
+    {
+      "text": "This isn't the price I saw online.",
+      "textSha256": "24c7f092531ba0ef77f217482c8239b2b3763ce14ff81d59765352ed468cdd7a",
+      "asset": "assets/audio/24c7f092531ba0ef77f2.wav",
+      "bytes": 124844,
+      "durationSeconds": 2.6,
+      "rms": 0.06608,
+      "peak": 0.52744,
+      "fileSha256": "09fc509d0c658f03b9a2395f8d473b69c6f0f9126d85051151038bd3f140bbed"
+    },
+    {
+      "text": "The price is different from the one I saw online.",
+      "textSha256": "955780df34e5176bfe37cf629a320d7cd2b44191bde52f7917a9b6ede768a25f",
+      "asset": "assets/audio/955780df34e5176bfe37.wav",
+      "bytes": 157244,
+      "durationSeconds": 3.275,
+      "rms": 0.06491,
+      "peak": 0.4382,
+      "fileSha256": "5982c92f2455f89d6f2adb8b52b76c778791af49d8a0a19adac81df8b7a60a3e"
+    },
+    {
+      "text": "Could you pick up some milk on your way home?",
+      "textSha256": "79b456385e97208037f5763be9917af761e56afcfc7cb5383790bacaf46bc956",
+      "asset": "assets/audio/79b456385e97208037f5.wav",
+      "bytes": 128444,
+      "durationSeconds": 2.675,
+      "rms": 0.06547,
+      "peak": 0.5589,
+      "fileSha256": "c25b4c77fdb51434fe1ade0028d2f64fc68a91eb5c61f29dcf85c6ee6dd452ec"
+    },
+    {
+      "text": "Could you get some milk on the way home?",
+      "textSha256": "2223a00c0b570a842f8d66310722dd17c257c39ae45878184a9e887daf2e2cfe",
+      "asset": "assets/audio/2223a00c0b570a842f8d.wav",
+      "bytes": 117644,
+      "durationSeconds": 2.45,
+      "rms": 0.06755,
+      "peak": 0.48047,
+      "fileSha256": "dbd3640c58822d5d5bda36e0bff0e2fb76f58c77dda61ca87f17bf603cfad5e4"
+    },
+    {
+      "text": "I'll call you after I put the kids to bed.",
+      "textSha256": "872036d8831f97fd0fcca9fbedeaf7c7e0241ca24ed389e637cd07cbfcec7ef7",
+      "asset": "assets/audio/872036d8831f97fd0fcc.wav",
+      "bytes": 135644,
+      "durationSeconds": 2.825,
+      "rms": 0.06791,
+      "peak": 0.53528,
+      "fileSha256": "e4c4e7ad2c0625d79d5658573239b71532c0415fdd4aefdffe1c416641084854"
+    },
+    {
+      "text": "I'll give you a call once the kids are in bed.",
+      "textSha256": "88afb42d3b6ce55ce565fe34ce5b903969f00e839d358eb771b96e01589cefe6",
+      "asset": "assets/audio/88afb42d3b6ce55ce565.wav",
+      "bytes": 136844,
+      "durationSeconds": 2.85,
+      "rms": 0.06941,
+      "peak": 0.56967,
+      "fileSha256": "ac9723af33f086f6eb55946005d23dac71564930b2072a5a0625333752646aa7"
+    },
+    {
+      "text": "I'll clean while you're cooking.",
+      "textSha256": "79f0bb7168c0de43ac69be20fe94160242aa6ebdc565eb2f5e636c67aba2b5b2",
+      "asset": "assets/audio/79f0bb7168c0de43ac69.wav",
+      "bytes": 97244,
+      "durationSeconds": 2.025,
+      "rms": 0.06923,
+      "peak": 0.7034,
+      "fileSha256": "85980dac1eddba9f2f3ab708210ca3386184d5ce05d4bd04fb441f269db69ee5"
+    },
+    {
+      "text": "While you cook, I'll do the cleaning.",
+      "textSha256": "fd7c4b440b78042628bfd3b7d14994dfd73b7198da5cafecd3db2431c872a66a",
+      "asset": "assets/audio/fd7c4b440b78042628bf.wav",
+      "bytes": 109244,
+      "durationSeconds": 2.275,
+      "rms": 0.071,
+      "peak": 0.63077,
+      "fileSha256": "69f487314cb515ddcd1e7217f1135942e4c69306d22b85e4748ee48cc568b850"
+    },
+    {
+      "text": "I'd rather eat at home than eat out today.",
+      "textSha256": "b0ee06acdb6901b8c7fc23f36c9c259b170f9d752949e8939a8e2ce245eeddab",
+      "asset": "assets/audio/b0ee06acdb6901b8c7fc.wav",
+      "bytes": 133244,
+      "durationSeconds": 2.775,
+      "rms": 0.06471,
+      "peak": 0.51892,
+      "fileSha256": "36cb9a55dcb4cd4e3c9a1fb540f9f8cf5d022eb0045bf2592ab145cba19b253d"
+    },
+    {
+      "text": "I'd prefer to eat at home rather than go out for a meal today.",
+      "textSha256": "7375e8893846df3f1212ee23ce74fb655fa6042ba9879efa5b8b112cc3afb18d",
+      "asset": "assets/audio/7375e8893846df3f1212.wav",
+      "bytes": 192044,
+      "durationSeconds": 4,
+      "rms": 0.06793,
+      "peak": 0.58847,
+      "fileSha256": "0dc6fe52d44d51065d15da8e3e60f7b9862c944f8615aa20542971be55f42c92"
+    },
+    {
+      "text": "I left my keys by the front door so I wouldn't forget them.",
+      "textSha256": "d9211bae5c8b2c0890add1a7bf4b4c8c17d7501ab08024e207fcd3d6a26777d7",
+      "asset": "assets/audio/d9211bae5c8b2c0890ad.wav",
+      "bytes": 182444,
+      "durationSeconds": 3.8,
+      "rms": 0.06988,
+      "peak": 0.57834,
+      "fileSha256": "07f9060bf4521b568a7598e2c601f0266397b063eecfbe9e18b8f938ea8562a7"
+    },
+    {
+      "text": "I put my keys near the front door to avoid forgetting them.",
+      "textSha256": "14665c1801be2184f52361443f22f59300c3249967cab822c5a5abe466e74ac3",
+      "asset": "assets/audio/14665c1801be2184f523.wav",
+      "bytes": 184844,
+      "durationSeconds": 3.85,
+      "rms": 0.06815,
+      "peak": 0.67966,
+      "fileSha256": "5dbce6c6c8c63130b3514a2e828bd6285c038ee8a9200f7027b7090161ca6efa"
+    },
+    {
+      "text": "I'd like to make more time for my family.",
+      "textSha256": "11d3d36428454c32fe9c09e1571b5b0f02c900630aa07bf874e949ce1c0aee84",
+      "asset": "assets/audio/11d3d36428454c32fe9c.wav",
+      "bytes": 133244,
+      "durationSeconds": 2.775,
+      "rms": 0.06799,
+      "peak": 0.71942,
+      "fileSha256": "cc08fb55512a7994bef955a9c42462d8cf0a07b3b445b100ad3fc370491e5813"
+    },
+    {
+      "text": "I want to spend more time with my family.",
+      "textSha256": "ae307f1eea74b3e08ee19cb07b31d422da541952fe6e6989d1a2501b658de35d",
+      "asset": "assets/audio/ae307f1eea74b3e08ee1.wav",
+      "bytes": 133244,
+      "durationSeconds": 2.775,
+      "rms": 0.06453,
+      "peak": 0.47327,
+      "fileSha256": "2a233cc7e55378668b9400ad49b34ef6372bfee347f5724ca549d3d53a31318e"
+    },
+    {
+      "text": "Could we change our plans for tomorrow?",
+      "textSha256": "f04be90b299224e9917082a967b77a2203f5368cc6c0cdb42b270f8da8f10711",
+      "asset": "assets/audio/f04be90b299224e99170.wav",
+      "bytes": 123644,
+      "durationSeconds": 2.575,
+      "rms": 0.06646,
+      "peak": 0.53793,
+      "fileSha256": "05e8613e6e8df0eea582bb2218fb5276780f483058c3b811941edd850c014921"
+    },
+    {
+      "text": "Would it be okay to change tomorrow's plans?",
+      "textSha256": "45947449b611c62c64ee108a03f33d92920a18aff37df3a70fffc4154fbaf658",
+      "asset": "assets/audio/45947449b611c62c64ee.wav",
+      "bytes": 142844,
+      "durationSeconds": 2.975,
+      "rms": 0.06802,
+      "peak": 0.47958,
+      "fileSha256": "d1e64bbfefeb86a16e2b6a057443b1acae215855ac334a38d2aa9b6135138790"
+    },
+    {
+      "text": "Would you like to come over for dinner?",
+      "textSha256": "0a8a61cb46c44e7ebf9939bda260d1547af1ebd6d0b4e0e5f6c6f725879a6e84",
+      "asset": "assets/audio/0a8a61cb46c44e7ebf99.wav",
+      "bytes": 106844,
+      "durationSeconds": 2.225,
+      "rms": 0.07017,
+      "peak": 0.54575,
+      "fileSha256": "668376cf3b922ba4f9aa8cffba8729edb0c44970e61d2273b289f0424875526c"
+    },
+    {
+      "text": "How about coming over for dinner?",
+      "textSha256": "e637942ee1a7e900e7051ef59743a8ccabe3eeaacf79600b5bc7164870ca1157",
+      "asset": "assets/audio/e637942ee1a7e900e705.wav",
+      "bytes": 105644,
+      "durationSeconds": 2.2,
+      "rms": 0.06919,
+      "peak": 0.53723,
+      "fileSha256": "c8538ce84f7f1e6103a0a4e56757be08bbfebb3387d08ecc36fa36500061b714"
+    },
+    {
+      "text": "I wish you'd told me a little sooner.",
+      "textSha256": "6b106976c49775388844fb187a1a1a69e0b9a862ac60eca7d6172fa072708ce4",
+      "asset": "assets/audio/6b106976c49775388844.wav",
+      "bytes": 111644,
+      "durationSeconds": 2.325,
+      "rms": 0.06637,
+      "peak": 0.80087,
+      "fileSha256": "39e113114150487e1d7bae1b6244171a1bb93f91af4d9f8c50afdfd385818975"
+    },
+    {
+      "text": "You should have told me a bit earlier.",
+      "textSha256": "d7c1dd653e53f2d84f5dfff7db2b4b5f0b17bdb12b1497213a572362f024744b",
+      "asset": "assets/audio/d7c1dd653e53f2d84f5d.wav",
+      "bytes": 105644,
+      "durationSeconds": 2.2,
+      "rms": 0.06599,
+      "peak": 0.45227,
+      "fileSha256": "b351b9084aae81a366e76e8a5c0164cf58c5e7ef7e15f80d844fd78518216d1f"
+    },
+    {
+      "text": "I forgot to return the book I borrowed from you.",
+      "textSha256": "edad5a58fcd24e83e635fd599f64412f54b91711b235685948459614ee7ff455",
+      "asset": "assets/audio/edad5a58fcd24e83e635.wav",
+      "bytes": 144044,
+      "durationSeconds": 3,
+      "rms": 0.06591,
+      "peak": 0.54312,
+      "fileSha256": "fb41177a97b79b3ce1b85b71d67e31c0dd5e128645c38cfbcbd029ba2dcc2a0e"
+    },
+    {
+      "text": "I forgot to give you back the book you lent me.",
+      "textSha256": "6b6f4d00e149287b509777146716964168f2e3eb9af0364711e6272751096a69",
+      "asset": "assets/audio/6b6f4d00e149287b5097.wav",
+      "bytes": 135644,
+      "durationSeconds": 2.825,
+      "rms": 0.06981,
+      "peak": 0.74451,
+      "fileSha256": "1aeec5dbdb8088561dfe722701a111e3efaca46f2cf635712333085ad06bc30d"
+    },
+    {
+      "text": "Let's see each other again soon.",
+      "textSha256": "3d0ab17119f3bd087b9638902d5d00287eedd3452bb08d976dab02f9b8c8b969",
+      "asset": "assets/audio/3d0ab17119f3bd087b96.wav",
+      "bytes": 104444,
+      "durationSeconds": 2.175,
+      "rms": 0.06739,
+      "peak": 0.57443,
+      "fileSha256": "7ac834603089e7bd7740d2658515cef664fc8eeedd64b25a16b1df05a621a119"
+    },
+    {
+      "text": "Let's catch up again soon.",
+      "textSha256": "6897f1248f8b097f5a1ac199fc661fb602a27e820549e4ac11f02be1fe4618f0",
+      "asset": "assets/audio/6897f1248f8b097f5a1a.wav",
+      "bytes": 100844,
+      "durationSeconds": 2.1,
+      "rms": 0.06595,
+      "peak": 0.44025,
+      "fileSha256": "2ac3f9e6a3edacc8eaab871542b85e7ec359ae8ef81e691ec6b10c25f528b740"
+    },
+    {
+      "text": "Let me know if there's anything I can help with.",
+      "textSha256": "9a921f7530196b48109fe315b286e55fb62de9162912e85653ad371e01e726be",
+      "asset": "assets/audio/9a921f7530196b48109f.wav",
+      "bytes": 141644,
+      "durationSeconds": 2.95,
+      "rms": 0.07062,
+      "peak": 0.5542,
+      "fileSha256": "650855912d66e4b3a6ca0eee01554c29bc9ce2432d7c0e49c996a7b9b0e08c08"
+    },
+    {
+      "text": "If you need a hand with anything, just let me know.",
+      "textSha256": "26830386a45eefc307d4aa067c26a6194ea80516e2467e2c12510182784c59fd",
+      "asset": "assets/audio/26830386a45eefc307d4.wav",
+      "bytes": 157244,
+      "durationSeconds": 3.275,
+      "rms": 0.07108,
+      "peak": 0.56235,
+      "fileSha256": "f36d920106753689d46a9b5a4d64d75357806669f98b426f00e6469ae6a0adcf"
+    },
+    {
+      "text": "The movie was more interesting than I expected.",
+      "textSha256": "8a33ff2db6c1c7d82aff5ce927b4e94e8dab16ef6f4c37ac95097d4aff0e7d6c",
+      "asset": "assets/audio/8a33ff2db6c1c7d82aff.wav",
+      "bytes": 151244,
+      "durationSeconds": 3.15,
+      "rms": 0.07089,
+      "peak": 0.60349,
+      "fileSha256": "3b93579987ae19a0c4159713ac17660a4a4b29f89fb4d5e57800978abe509047"
+    },
+    {
+      "text": "I found the movie more interesting than I'd expected.",
+      "textSha256": "a147927588d089cdaaa0898626b3ef19a7b556855f8561a7cec17ef74d880827",
+      "asset": "assets/audio/a147927588d089cdaaa0.wav",
+      "bytes": 164444,
+      "durationSeconds": 3.425,
+      "rms": 0.07045,
+      "peak": 0.59952,
+      "fileSha256": "3daf2cebb87ebfa34bbf018b3db95d96bc7c852ba7c21683865237265448fb81"
+    },
+    {
+      "text": "Just because it's on sale doesn't mean I'm going to buy something I don't need.",
+      "textSha256": "dcca4b4deb8f411c546b3e867accc3c7998ec632a1cf9f9c39b4206a68bc4505",
+      "asset": "assets/audio/dcca4b4deb8f411c546b.wav",
+      "bytes": 248444,
+      "durationSeconds": 5.175,
+      "rms": 0.06879,
+      "peak": 0.56177,
+      "fileSha256": "1cd750397650090ff08713de5041d601e27bacb663ae9c24e12c99f5062ff75a"
+    },
+    {
+      "text": "I don't intend to buy things I don't need just because they're discounted.",
+      "textSha256": "57683f301f6a0031f79517cb567635d3b9555443354cd1666708f32c1bd648fd",
+      "asset": "assets/audio/57683f301f6a0031f795.wav",
+      "bytes": 217244,
+      "durationSeconds": 4.525,
+      "rms": 0.07089,
+      "peak": 0.65845,
+      "fileSha256": "4d25e6ade3b855d73971da0d784b8de4cbb39b4fd790444552c21d931f9bd184"
+    },
+    {
+      "text": "I'd like to compare it with other products before deciding whether to buy it.",
+      "textSha256": "d94f10d3bbbe4d27d5a4a8ee7696e9f99995d06c460f2b0745a9a7417d7891e1",
+      "asset": "assets/audio/d94f10d3bbbe4d27d5a4.wav",
+      "bytes": 222044,
+      "durationSeconds": 4.625,
+      "rms": 0.06983,
+      "peak": 0.51459,
+      "fileSha256": "3b1863b70fe196a4b890e74d499db39482bd169429727b4e2344a42cb71804b0"
+    },
+    {
+      "text": "Before I make up my mind about buying it, I'd like to see how it compares with other options.",
+      "textSha256": "bb0a66965065cd19f2c6331fb2c05dddbee61d191ed909e27768d691dc49511f",
+      "asset": "assets/audio/bb0a66965065cd19f2c6.wav",
+      "bytes": 270044,
+      "durationSeconds": 5.625,
+      "rms": 0.0689,
+      "peak": 0.53665,
+      "fileSha256": "a0e638229e04e1f8aaa461b52ddea5604dbadde94f863a5735de5099e3bb9401"
+    },
+    {
+      "text": "It wasn't until I tried it that I understood why it was so popular.",
+      "textSha256": "0474840c2e24d17ab95c047ab5ceb0c7982f0e42ea6b3ab3122e7778ac5e7e61",
+      "asset": "assets/audio/0474840c2e24d17ab95c.wav",
+      "bytes": 206444,
+      "durationSeconds": 4.3,
+      "rms": 0.06734,
+      "peak": 0.45355,
+      "fileSha256": "a36226ff698b8a309171b227f582dbd0450a30e2d18b03445be4112c25cab3f8"
+    },
+    {
+      "text": "Only after trying it did I understand why it was so popular.",
+      "textSha256": "b3732f22100666e20fdc0e0ed82a798bde4b8c33a55a5692c493520efe44b841",
+      "asset": "assets/audio/b3732f22100666e20fdc.wav",
+      "bytes": 212444,
+      "durationSeconds": 4.425,
+      "rms": 0.06855,
+      "peak": 0.65228,
+      "fileSha256": "50b2070677f9f89353565976f496143cad08fcd0f51799c9623a55f878bdf018"
+    },
+    {
+      "text": "I was a little disappointed because it didn't last as long as I'd expected.",
+      "textSha256": "7c4e8b8956e5c4c47817cb1e9b9db6a1d6cb02e9e7c77b87d88374500a38336e",
+      "asset": "assets/audio/7c4e8b8956e5c4c47817.wav",
+      "bytes": 228044,
+      "durationSeconds": 4.75,
+      "rms": 0.06891,
+      "peak": 0.49301,
+      "fileSha256": "ff4c328b694022fe4b3d6f0044d92f88c2ec4a3a5cf4d0cd743e4cf4af0158d5"
+    },
+    {
+      "text": "It didn't last as long as I'd hoped, which was a bit disappointing.",
+      "textSha256": "d5d118bcfc8055152d0df346e8112ee5f1cf14ddf7c8237c6ce62dd4284bb4c7",
+      "asset": "assets/audio/d5d118bcfc8055152d0d.wav",
+      "bytes": 200444,
+      "durationSeconds": 4.175,
+      "rms": 0.06967,
+      "peak": 0.43243,
+      "fileSha256": "864c2f2ddc30cc4d7592b022115866fb4dd151cfe8903ee754e953cbe09755cf"
+    },
+    {
+      "text": "It looks like I received a different item from the one I ordered.",
+      "textSha256": "81d4dfd636f742834de2c655e5b7086e5b7030847bb755b30a81f4d14a01120e",
+      "asset": "assets/audio/81d4dfd636f742834de2.wav",
+      "bytes": 193244,
+      "durationSeconds": 4.025,
+      "rms": 0.0679,
+      "peak": 0.80127,
+      "fileSha256": "92615afe31a59712e67edd7c699b459cc12bd02b9518e56beb3c3242bb8fa919"
+    },
+    {
+      "text": "I seem to have been sent the wrong item.",
+      "textSha256": "0c6000c5b3e7409783b7f1c2dcca0ee53726d2b7c5af7f82ba8ef478a6847db6",
+      "asset": "assets/audio/0c6000c5b3e7409783b7.wav",
+      "bytes": 124844,
+      "durationSeconds": 2.6,
+      "rms": 0.06469,
+      "peak": 0.47256,
+      "fileSha256": "69741102451c7edfe8a36837f966bb7bb61883d837f510390c150c1174ca14ba"
+    },
+    {
+      "text": "I don't think I would have chosen this if the sales assistant hadn't recommended it.",
+      "textSha256": "34cb9a61d9d9671ef509cb80d2d56131480aaa3a259a794dfaa22685b53e6cb3",
+      "asset": "assets/audio/34cb9a61d9d9671ef509.wav",
+      "bytes": 237644,
+      "durationSeconds": 4.95,
+      "rms": 0.07057,
+      "peak": 0.69659,
+      "fileSha256": "2ae163ebc8386faa25a0fe0f201bb45465097ef22fb53910c7637c5198b487ce"
+    },
+    {
+      "text": "If it hadn't been for the sales assistant's recommendation, I probably wouldn't have picked this.",
+      "textSha256": "a33e18550e468ee2d51805129872859153e63299f83ed7fc8b042bc14f7d2637",
+      "asset": "assets/audio/a33e18550e468ee2d518.wav",
+      "bytes": 265244,
+      "durationSeconds": 5.525,
+      "rms": 0.0691,
+      "peak": 0.60455,
+      "fileSha256": "2abcda74e778ebd7566b5758adf955eb655d1faad30e9887fb6b44de5afd40ce"
+    },
+    {
+      "text": "If I'd known you could help, I wouldn't have tried to do everything by myself.",
+      "textSha256": "4d80e372a6cd81002e2f9fd1ce872c8dc028d2c4ca7cb3f5e478bbab8c11ecf2",
+      "asset": "assets/audio/4d80e372a6cd81002e2f.wav",
+      "bytes": 218444,
+      "durationSeconds": 4.55,
+      "rms": 0.07013,
+      "peak": 0.59818,
+      "fileSha256": "0c0a48abd4370289a256c691c25f615d3ec9e0797f394819a63cfe462a33bde4"
+    },
+    {
+      "text": "Had I known you could lend a hand, I wouldn't have attempted to do it all alone.",
+      "textSha256": "8383344465d99a394fb248febb2a90e3830e191aa4e946a3cc49da015acece8f",
+      "asset": "assets/audio/8383344465d99a394fb2.wav",
+      "bytes": 220844,
+      "durationSeconds": 4.6,
+      "rms": 0.07041,
+      "peak": 0.66217,
+      "fileSha256": "cf1d69019a8b5e93e7586a6bbca24f753264e00ac13704e5aa1bb055fa4e1751"
+    },
+    {
+      "text": "As the kids have grown older, we've been spending less time together.",
+      "textSha256": "677e5d87ac2f15700b1d0a9466b9f24e37d9541ec10975243ec9f838b4c7334c",
+      "asset": "assets/audio/677e5d87ac2f15700b1d.wav",
+      "bytes": 201644,
+      "durationSeconds": 4.2,
+      "rms": 0.06785,
+      "peak": 0.56958,
+      "fileSha256": "12b99be1c01a956a0dd9bd99f8b0f86b4834fcb18db2d521a853b40ab70f7a5d"
+    },
+    {
+      "text": "We've had less time together as the children have got older.",
+      "textSha256": "cb135abf35dba124c49af5dd6aeab7c3b06746cf3ed99ac8be669d21507839df",
+      "asset": "assets/audio/cb135abf35dba124c49a.wav",
+      "bytes": 182444,
+      "durationSeconds": 3.8,
+      "rms": 0.06754,
+      "peak": 0.58954,
+      "fileSha256": "7612acf206d4bf8a69f37b9bef029269175b94a26e846e20af8fb1e645d7ca70"
+    },
+    {
+      "text": "I'd like us to talk things through so we can share the housework fairly.",
+      "textSha256": "79b73d9dc2a1f1c188d080d0e4fe764f220a01b8f5a6369c64a193be1468fbf6",
+      "asset": "assets/audio/79b73d9dc2a1f1c188d0.wav",
+      "bytes": 204044,
+      "durationSeconds": 4.25,
+      "rms": 0.07044,
+      "peak": 0.55972,
+      "fileSha256": "73f681fcf06acaf4fb1e5a1eb5abd4864dd7baa1467c4735f40442a92a4a7322"
+    },
+    {
+      "text": "I'd like to discuss how we can divide the chores fairly.",
+      "textSha256": "e4257480f7f3ef14914ac79e6cb02c6c79396d4adc4761c516e866d6ee52cc2e",
+      "asset": "assets/audio/e4257480f7f3ef14914a.wav",
+      "bytes": 166844,
+      "durationSeconds": 3.475,
+      "rms": 0.06967,
+      "peak": 0.61676,
+      "fileSha256": "9719cc79c176c03dc1c430becb0ea521158d243c2a2b9fdb790bbfdec76d307c"
+    },
+    {
+      "text": "Getting ready in the morning has become easier since I started going to bed earlier.",
+      "textSha256": "cabd3ba62d8ce6163db99e856fb380dd8592e74a85efd2877cc079cfe6e7c919",
+      "asset": "assets/audio/cabd3ba62d8ce6163db9.wav",
+      "bytes": 253244,
+      "durationSeconds": 5.275,
+      "rms": 0.06728,
+      "peak": 0.51541,
+      "fileSha256": "5c576831eff8f1e88e1fc25755adc36160efa3ab8c8f07feb98c55b95f40609e"
+    },
+    {
+      "text": "Ever since I began going to bed earlier, I've found it easier to get ready in the morning.",
+      "textSha256": "01ae7b479e718aff248a889fe8a4c2c87dda2d38fb77bff0add2b54e04764891",
+      "asset": "assets/audio/01ae7b479e718aff248a.wav",
+      "bytes": 270044,
+      "durationSeconds": 5.625,
+      "rms": 0.06694,
+      "peak": 0.54486,
+      "fileSha256": "d8efd143ebff705f4213264075e4734063aad11f378ee7fb597d09ce93b72480"
+    },
+    {
+      "text": "Just because I'm at home doesn't mean I can always answer the phone.",
+      "textSha256": "ce050d3fd3fa99b0807093848480681fce934db6f1054f00cb34f77670499b56",
+      "asset": "assets/audio/ce050d3fd3fa99b08070.wav",
+      "bytes": 213644,
+      "durationSeconds": 4.45,
+      "rms": 0.06784,
+      "peak": 0.52405,
+      "fileSha256": "f65f8d3e2d76f26b5a7556a7cef13ccc16fbd66bd010536b21701194f449d134"
+    },
+    {
+      "text": "Being at home doesn't necessarily mean I'm available to take calls.",
+      "textSha256": "4d513195b63bb652c3a6bff72dac238734b80228a3847198fba7b7e3061bd006",
+      "asset": "assets/audio/4d513195b63bb652c3a6.wav",
+      "bytes": 225644,
+      "durationSeconds": 4.7,
+      "rms": 0.06844,
+      "peak": 0.4968,
+      "fileSha256": "0c144c2fbffef4e0e8204b3f7acab3a5b8a2afc48ae2dbafc7b5f2a8ce675ed1"
+    },
+    {
+      "text": "I'll let my family know when I arrive safely so they don't worry.",
+      "textSha256": "6e0e87fcb80884ae9f0fb116caede5f0a232a6697c2de93f39cc19453424b61f",
+      "asset": "assets/audio/6e0e87fcb80884ae9f0f.wav",
+      "bytes": 204044,
+      "durationSeconds": 4.25,
+      "rms": 0.0659,
+      "peak": 0.4183,
+      "fileSha256": "337607458e828715261e30e6381c1590609abf1be56d8b4f4825014def6d87d0"
+    },
+    {
+      "text": "Once I've arrived safely, I'll get in touch with my family to put their minds at ease.",
+      "textSha256": "44c5875a555f3e1cdd2f3b055684a048661e8eca925cfcd5e2c003359be5b29b",
+      "asset": "assets/audio/44c5875a555f3e1cdd2f.wav",
+      "bytes": 256844,
+      "durationSeconds": 5.35,
+      "rms": 0.06917,
+      "peak": 0.55838,
+      "fileSha256": "d6cb9f912abb6802907b191a12492eae55ae3e8427e3b4e45451bb64b096ae9e"
+    },
+    {
+      "text": "Whatever we do, it's not easy to find a time that works for everyone in the family.",
+      "textSha256": "e6aacbd6b63f1e53425de9c148c6f18ca2b8cbad40b0eb2e8b2f357ff2389620",
+      "asset": "assets/audio/e6aacbd6b63f1e53425d.wav",
+      "bytes": 256844,
+      "durationSeconds": 5.35,
+      "rms": 0.06864,
+      "peak": 0.65726,
+      "fileSha256": "c2f88229c9be3d53b5bc5c003b89491879521d73666d8457e3f206b5b09902e5"
+    },
+    {
+      "text": "No matter what we plan, coordinating everyone's schedules in the family isn't easy.",
+      "textSha256": "34fbe3cf89aac291c7de22b679bdc57b3bc6b51608796016cf14779ff11c7b91",
+      "asset": "assets/audio/34fbe3cf89aac291c7de.wav",
+      "bytes": 271244,
+      "durationSeconds": 5.65,
+      "rms": 0.07013,
+      "peak": 0.80902,
+      "fileSha256": "d7a138eddde509ea80cc4fdd04dd5b58976f550ba410efc162766d9cffb3f651"
+    },
+    {
+      "text": "I feel bad about changing our plans at the last minute.",
+      "textSha256": "bf23476ce53aceca5f51f4afac5659b4523e72f60f78e7876c2c1b1c4e49d4d4",
+      "asset": "assets/audio/bf23476ce53aceca5f51.wav",
+      "bytes": 176444,
+      "durationSeconds": 3.675,
+      "rms": 0.06705,
+      "peak": 0.37534,
+      "fileSha256": "de08ca6715742cabc44e3a83c1c0d69da5b9143a7769aa9a320e0581eb7cedb5"
+    },
+    {
+      "text": "I'm sorry for changing the plans on such short notice.",
+      "textSha256": "42a1e46316e3b01a59fa21d8ad477197d6bb2d773bc2d0747b688ce4d6a86583",
+      "asset": "assets/audio/42a1e46316e3b01a59fa.wav",
+      "bytes": 183644,
+      "durationSeconds": 3.825,
+      "rms": 0.06963,
+      "peak": 0.4884,
+      "fileSha256": "9187ebb27f18d905e5232107f695d2a19fde6d8ce9d2bc1e82f3da9029ccea73"
+    },
+    {
+      "text": "I'll book a table as soon as I know whether you can make it.",
+      "textSha256": "c04dc50a30b404b7a080eb4264893a8c005ca91e9cb061245d22e35237740be7",
+      "asset": "assets/audio/c04dc50a30b404b7a080.wav",
+      "bytes": 169244,
+      "durationSeconds": 3.525,
+      "rms": 0.07057,
+      "peak": 0.70404,
+      "fileSha256": "a32c597ea739da878578a6361f927916aa9ff657e92333f716f1a31731abdd41"
+    },
+    {
+      "text": "Once I find out if you can come, I'll make a restaurant reservation.",
+      "textSha256": "7178b0410fcce7dd4adc501ad6eea3ccceee5279b0df33e028811f4ad3bbe6ed",
+      "asset": "assets/audio/7178b0410fcce7dd4adc.wav",
+      "bytes": 217244,
+      "durationSeconds": 4.525,
+      "rms": 0.06901,
+      "peak": 0.56754,
+      "fileSha256": "7cc0d9291666f88dff8d486730e11d28f06f46be8012f72286c73c16c4e53c8b"
+    },
+    {
+      "text": "I know this is a busy time for you, but could you spare a few minutes to give me some advice?",
+      "textSha256": "c97755459ec8b5ad34f3020ecc59bf478f8b5360904726f0ac0bca8942b6dabe",
+      "asset": "assets/audio/c97755459ec8b5ad34f3.wav",
+      "bytes": 261644,
+      "durationSeconds": 5.45,
+      "rms": 0.07225,
+      "peak": 0.59433,
+      "fileSha256": "15b37ac3b3bf4168e02d91cd28f7e1808c0f5bc9366a36804432349fa0403a97"
+    },
+    {
+      "text": "I realize you've got a lot on your plate, but could you spare a moment to give me some advice?",
+      "textSha256": "3a4e3b933ffe12a22fe0eebabb8723010ec2d50c44218dedf9c94aa500d34a42",
+      "asset": "assets/audio/3a4e3b933ffe12a22fe0.wav",
+      "bytes": 264044,
+      "durationSeconds": 5.5,
+      "rms": 0.07116,
+      "peak": 0.4241,
+      "fileSha256": "0774350ea0062c737449a35572415f25eefbc0c8a7c4952351182960d5f4436f"
+    },
+    {
+      "text": "We haven't seen each other in a long time, but I think we'll be able to talk just like we used to.",
+      "textSha256": "9b17672f5dfc6908de81738b18eb87765072959fe371a9ea5a9cae058d780019",
+      "asset": "assets/audio/9b17672f5dfc6908de81.wav",
+      "bytes": 272444,
+      "durationSeconds": 5.675,
+      "rms": 0.07354,
+      "peak": 0.57007,
+      "fileSha256": "27e17cd9fc0543473b0c6aac52ff2d0f9d53307675009bd6a8b917297d17585f"
+    },
+    {
+      "text": "Although it's been ages since we last met, I'm sure we'll pick up right where we left off.",
+      "textSha256": "38d696756e34225a63ee8906657e61e3ecf7cbfebe5667b5d08c4b199826784a",
+      "asset": "assets/audio/38d696756e34225a63ee.wav",
+      "bytes": 254444,
+      "durationSeconds": 5.3,
+      "rms": 0.07056,
+      "peak": 0.43686,
+      "fileSha256": "1bba44dfe8d47ba880d1470b1a646217834412cf638908ae679a1a0375a48485"
+    },
+    {
+      "text": "I don't want to put you out, so I'll get in touch with them myself this time.",
+      "textSha256": "4382c5d29a33a41e2a2db4e4d6eeb33dd448d0babe380f89c98aa3563ada8c1d",
+      "asset": "assets/audio/4382c5d29a33a41e2a2d.wav",
+      "bytes": 204044,
+      "durationSeconds": 4.25,
+      "rms": 0.07224,
+      "peak": 0.61557,
+      "fileSha256": "59687bbe9bce221c8d65c06eb79a66f433333c8dae31bd6da5960f5cf4d16085"
+    },
+    {
+      "text": "I'd rather not trouble you, so I'll contact them on my own this time.",
+      "textSha256": "2e28a2c69527f2495967167a09b5ee6d2cab38d761bd941e396b31b7f74ddd9f",
+      "asset": "assets/audio/2e28a2c69527f2495967.wav",
+      "bytes": 210044,
+      "durationSeconds": 4.375,
+      "rms": 0.07096,
+      "peak": 0.60339,
+      "fileSha256": "2de88f9d0317f2821151e111a03334e91b73fcfa4bb04a6982e697220c683013"
+    },
+    {
+      "text": "I feel bad saying no, but I don't think I can join you this time.",
+      "textSha256": "3046da9a677ee198f46055346e45e742464e638bd27ab01550909b58349d04a4",
+      "asset": "assets/audio/3046da9a677ee198f460.wav",
+      "bytes": 205244,
+      "durationSeconds": 4.275,
+      "rms": 0.07039,
+      "peak": 0.55542,
+      "fileSha256": "e61886a7e91cf26992912b6f7c32417d8961a9e7cf5c0b2efa48ece61d3ac2f4"
+    },
+    {
+      "text": "I'm reluctant to turn you down, but it looks like I won't be able to make it this time.",
+      "textSha256": "569c9f6bd9f9d05d994c0c44c59dd6001b476660bfce5181921da4551d7b43f2",
+      "asset": "assets/audio/569c9f6bd9f9d05d994c.wav",
+      "bytes": 243644,
+      "durationSeconds": 5.075,
+      "rms": 0.07316,
+      "peak": 0.53537,
+      "fileSha256": "f2d7d55df845184a6e912b4ce885e7f8f5b98776d45f92d60bec1dc5447240db"
+    },
+    {
+      "text": "It was only later that I realized how helpful your advice had been.",
+      "textSha256": "3d07a33bee1c39b63bda6f9c579566b31a812cbccad9d54a88f046bd93a8dc28",
+      "asset": "assets/audio/3d07a33bee1c39b63bda.wav",
+      "bytes": 218444,
+      "durationSeconds": 4.55,
+      "rms": 0.06802,
+      "peak": 0.49686,
+      "fileSha256": "0fe6a3e9ba7c059182b8e17761d2429cbfa3544d184dd289af55b72cafba12a2"
+    },
+    {
+      "text": "Only after some time had passed did I realize how useful your advice had been.",
+      "textSha256": "dafffcd9131a728bbb5c88a527da9da7a2d9e100bcb102ecdead9056cc751457",
+      "asset": "assets/audio/dafffcd9131a728bbb5c.wav",
+      "bytes": 259244,
+      "durationSeconds": 5.4,
+      "rms": 0.0694,
+      "peak": 0.72668,
+      "fileSha256": "0abfd8f07a4399ee61e230dc453ac77e7c7a4641db4198e6aa87b3aa6e1e58a2"
+    }
+  ],
+  "modelSha256": "8fbea51ea711f2af382e88c833d9e288c6dc82ce5e98421ea61c058ce21a34cb"
+}
