@@ -8,10 +8,11 @@ permissions:
 
 jobs:
   compile:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.repository == 'ryamazura-cloud/inkuri-ios-build' && github.actor == 'ryamazura-cloud' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
       - name: Set up matching Flutter SDK
@@ -44,7 +45,7 @@ jobs:
           test -s build/android-dart/x86_64/app.so
           cd build/android-dart
           find . -type f -print0 | sort -z | xargs -0 sha256sum > ../android-dart-sha256.txt
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: inkuri-android-dart-v45
           path: |
