@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'answer_audio_controls.dart';
 import 'domain.dart';
+import 'speech.dart';
 
 class AnswerStudyNote {
   const AnswerStudyNote(this.example, this.explanation, this.usage);
@@ -268,55 +270,230 @@ AnswerStudyNote? studyNoteFor(Question question) {
   return null;
 }
 
-class AnswerStudyDetails extends StatelessWidget {
-  const AnswerStudyDetails({
+const _supplementLabels = {
+  'grammar-be-01': '帰宅を伝える',
+  'grammar-be-02': '重さを明示',
+  'grammar-be-03': '会話的',
+  'grammar-be-04': '同級生と表現',
+  'grammar-verbs-01': '時間を先に',
+  'grammar-verbs-02': '時間を先に',
+  'grammar-verbs-03': '会話的',
+  'grammar-verbs-04': '頻度を強調',
+  'grammar-pronouns-02': '持ち主を示す',
+  'grammar-pronouns-03': '指して伝える',
+  'grammar-pronouns-04': '丁寧な依頼',
+  'work-b-003': '在宅勤務を明示',
+  'daily-i-001': '条件を後ろに',
+  'daily-a-014': '今も続く変化',
+  'travel-i-013': '会話的な依頼',
+  'work-b-014': 'やわらかな依頼',
+  'interest-lifestyle-b-001': '朝一番を強調',
+  'interest-lifestyle-i-002': '目的を明示',
+  'interest-lifestyle-a-001': '時間を確保',
+};
+
+String _alternateLabel(Question question, AnswerExample answer) {
+  if (question.id == 'interest-lifestyle-i-002') return '通勤時間に焦点';
+  if (question.id == 'work-b-003') return '場所に焦点';
+  final explanation = answer.explanation;
+  if (explanation.contains('短縮形')) return '短縮形';
+  if (explanation.contains('より丁寧')) return '丁寧';
+  if (explanation.contains('会話的') || explanation.contains('口語')) {
+    return '会話的';
+  }
+  if (explanation.contains('を強調')) return '強調';
+  return '言い換え';
+}
+
+class AnswerAlternatives extends StatelessWidget {
+  const AnswerAlternatives({
     super.key,
     required this.question,
-    required this.note,
+    required this.speech,
+    required this.enabled,
   });
 
   final Question question;
-  final AnswerStudyNote? note;
+  final SpeechController speech;
+  final bool enabled;
 
   @override
   Widget build(BuildContext context) {
+    const teal = Color(0xFF176B61);
     final theme = Theme.of(context);
-    final firstExplanation = question.answers.first.explanation;
-    final explanation = firstExplanation.isEmpty
-        ? question.note
-        : firstExplanation;
-    final supplement = note;
-    if (explanation.isEmpty && supplement == null)
-      return const SizedBox.shrink();
-    return Container(
-      margin: const EdgeInsets.only(top: 14),
-      padding: const EdgeInsets.all(14),
+    final supplement = studyNoteFor(question);
+    final alternatives = [
+      for (final answer in question.answers.skip(1))
+        (label: _alternateLabel(question, answer), text: answer.text),
+      if (supplement != null &&
+          !question.answers.any((answer) => answer.text == supplement.example))
+        (
+          label: _supplementLabels[question.id] ?? '短縮形',
+          text: supplement.example,
+        ),
+    ];
+    final hasDetails =
+        question.answers.any((answer) => answer.explanation.isNotEmpty) ||
+        question.note.isNotEmpty ||
+        supplement != null;
+    if (alternatives.isEmpty && !hasDetails) return const SizedBox.shrink();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const Padding(
+          padding: EdgeInsets.symmetric(vertical: 16),
+          child: Divider(height: 1, color: Color(0xFFD4E2D9)),
+        ),
+        if (alternatives.isNotEmpty) ...[
+          Text(
+            '別の言い方',
+            style: theme.textTheme.titleSmall?.copyWith(
+              color: teal,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          const SizedBox(height: 6),
+          for (final item in alternatives)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 4),
+                            child: DecoratedBox(
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFE0EEE6),
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 6,
+                                  vertical: 3,
+                                ),
+                                child: Text(
+                                  item.label,
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w700,
+                                    color: teal,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      AnswerAudioControls(
+                        speech: speech,
+                        text: item.text,
+                        enabled: enabled,
+                      ),
+                    ],
+                  ),
+                  Text(
+                    item.text,
+                    style: theme.textTheme.bodyLarge?.copyWith(
+                      fontWeight: FontWeight.w600,
+                      height: 1.5,
+                    ),
+                  ),
+                  AnswerAudioProgress(
+                    speech: speech,
+                    text: item.text,
+                    enabled: enabled,
+                  ),
+                ],
+              ),
+            ),
+        ],
+        if (hasDetails)
+          _AnswerStudyDetails(question: question, supplement: supplement),
+      ],
+    );
+  }
+}
+
+class _AnswerStudyDetails extends StatelessWidget {
+  const _AnswerStudyDetails({required this.question, required this.supplement});
+
+  final Question question;
+  final AnswerStudyNote? supplement;
+
+  @override
+  Widget build(BuildContext context) {
+    const teal = Color(0xFF176B61);
+    final theme = Theme.of(context);
+    final explanations = [
+      for (var i = 0; i < question.answers.length; i++)
+        if (question.answers[i].explanation.isNotEmpty)
+          (
+            title: i == 0 ? '解答例' : '別の言い方 ' + i.toString(),
+            detail: question.answers[i].explanation,
+          ),
+      if (supplement case final note?)
+        (
+          title: _supplementLabels[question.id] ?? '短縮形',
+          detail: note.explanation,
+        ),
+      if (question.note.isNotEmpty) (title: '学習のポイント', detail: question.note),
+    ];
+    return DecoratedBox(
       decoration: BoxDecoration(
         color: const Color(0xFFE7F1EB),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: const Color(0xFFCCDFD5)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      child: ExpansionTile(
+        key: ValueKey(question.id),
+        initiallyExpanded: true,
+        title: Text(
+          '文法・単語の使い分け',
+          style: theme.textTheme.titleSmall?.copyWith(
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        iconColor: teal,
+        collapsedIconColor: teal,
+        shape: const Border(),
+        collapsedShape: const Border(),
+        tilePadding: const EdgeInsets.symmetric(horizontal: 14),
+        childrenPadding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
+        expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('文法・単語の使い分け', style: theme.textTheme.titleSmall),
-          if (explanation.isNotEmpty) ...[
+          for (final item
+              in supplement?.usage ?? const <({String term, String detail})>[])
+            Padding(
+              padding: const EdgeInsets.only(top: 6, bottom: 2),
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: item.term,
+                      style: const TextStyle(
+                        color: teal,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const TextSpan(text: '　'),
+                    TextSpan(text: item.detail),
+                  ],
+                ),
+                style: const TextStyle(fontSize: 13, height: 1.6),
+              ),
+            ),
+          for (final item in explanations) ...[
             const SizedBox(height: 8),
-            if (firstExplanation.isNotEmpty)
-              const Text('ニュアンス・使い方', style: TextStyle(fontSize: 12)),
-            Text(explanation, style: const TextStyle(height: 1.65)),
-          ],
-          if (supplement != null) ...[
-            const SizedBox(height: 12),
-            Text('さらに使える解答例', style: theme.textTheme.titleSmall),
-            const SizedBox(height: 4),
-            Text(supplement.example, style: theme.textTheme.bodyLarge),
-            Text(supplement.explanation, style: theme.textTheme.bodyMedium),
-            for (final item in supplement.usage) ...[
-              const SizedBox(height: 10),
-              Text(item.term, style: theme.textTheme.titleSmall),
-              Text(item.detail, style: const TextStyle(height: 1.6)),
-            ],
+            Text(
+              item.title,
+              style: theme.textTheme.labelMedium?.copyWith(color: teal),
+            ),
+            Text(item.detail, style: const TextStyle(height: 1.6)),
           ],
         ],
       ),

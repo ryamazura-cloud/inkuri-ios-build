@@ -42203,6 +42203,325 @@
       "peak": 0.50911,
       "fileSha256": "49d6248c02b4bf85f1c3e6dc856602dd914b1fcca0311f888fecaaa01dd23130",
       "sourceFileSha256": "ea108336b89f2d93a52dd66e59a4a79e1f55751b7da4fc2be31d140d9d5fe514"
+    },
+    {
+      "text": "After school, we play tennis.",
+      "textSha256": "5a8971e48fa070bb4c962fa7d066d8d8c3fc90f07fe7071f9a6685042e197efd",
+      "asset": "assets/audio/5a8971e48fa070bb4c96.m4a",
+      "bytes": 15357,
+      "durationSeconds": 2.3,
+      "rms": 0.06569,
+      "peak": 0.79572,
+      "fileSha256": "3f121f8ab764a697f4d88735e1f939e7b1bd322050ce8afc826499f1bbc28c8c",
+      "sourceFileSha256": "8117ca132fb5ae210d375a3d3b7fa89faf3da6dda25724f09ecf73e0ff6bc462"
+    },
+    {
+      "text": "Could you get me a taxi for 6 a.m. tomorrow?",
+      "textSha256": "051f5a7243dd0318e48a319c964c078092867fe9fe1c24250ce8521135e9a1b4",
+      "asset": "assets/audio/051f5a7243dd0318e48a.m4a",
+      "bytes": 21939,
+      "durationSeconds": 3.275,
+      "rms": 0.06795,
+      "peak": 0.4783,
+      "fileSha256": "8070fdc445e3b54b7399d09077ca3b417515821e89a9f76b9587bbcd6383aa09",
+      "sourceFileSha256": "543fecce898434646aef9b37f77894617d00b89466a6be861afff67ee5a7867d"
+    },
+    {
+      "text": "Could you give me a bit of time to think?",
+      "textSha256": "b24681fc0657f648e42772bc57b8cf9c6372d7298e75c5b06c10d367881fef9c",
+      "asset": "assets/audio/b24681fc0657f648e427.m4a",
+      "bytes": 16774,
+      "durationSeconds": 2.475,
+      "rms": 0.06786,
+      "peak": 0.49332,
+      "fileSha256": "ffe56d4cf064b1a485592a442b8c69823595acab6719f1ca4549bec39acdfd3b",
+      "sourceFileSha256": "d4f94ffccf35d9b80336cfbe458e250ce968d8cc2de09ad93407a55a0c0eaac6"
+    },
+    {
+      "text": "Could you help us, please?",
+      "textSha256": "badb75e833d147e0db7a5c64eb2ed79471bf76a5a39d1576680687ad12120886",
+      "asset": "assets/audio/badb75e833d147e0db7a.m4a",
+      "bytes": 12884,
+      "durationSeconds": 1.875,
+      "rms": 0.07079,
+      "peak": 0.49924,
+      "fileSha256": "ed4205df35c73958725d40c65371c6346a3ee74a7ffc8091d6e1d47bf99e675d",
+      "sourceFileSha256": "2aa4228c40b6285cb24bce5aec5ab0ae639d4f3e2fc8549fd744a32a57e32edd"
+    },
+    {
+      "text": "Especially on busy days, I want to set aside a little time for myself.",
+      "textSha256": "2c3c335402304643ca034e52e9129f4a219312caa50e420cde5b6c71215ae380",
+      "asset": "assets/audio/2c3c335402304643ca03.m4a",
+      "bytes": 32141,
+      "durationSeconds": 4.775,
+      "rms": 0.06604,
+      "peak": 0.72067,
+      "fileSha256": "7cbe023cfd21d8875fe3af7eaf2871f65252f1197773bd56a4d38bf44fd68a08",
+      "sourceFileSha256": "bc5e4c7d357008200203b4f16495ff853e112d0e5ece5203d9b41f4a9585f73f"
+    },
+    {
+      "text": "Every day, you work here.",
+      "textSha256": "05331b60ae394d793a886d9c9bc356eac4936a0eb2705982de4fd63c3780c807",
+      "asset": "assets/audio/05331b60ae394d793a88.m4a",
+      "bytes": 13251,
+      "durationSeconds": 2.025,
+      "rms": 0.0672,
+      "peak": 0.58853,
+      "fileSha256": "f80d39cd6a7cc5cce2514298506cd4c11856fecea57989ab55b94b11e1ef42fa",
+      "sourceFileSha256": "fa9bd9c898840c2a7720135581ba1e3ff0e298d43b3438a1303f2f6e5a408861"
+    },
+    {
+      "text": "He's my neighbor.",
+      "textSha256": "ac1f4ca7042e5f8f0a2393a0132d2f1363576cf4ce2ab069cee07d24b0729fb3",
+      "asset": "assets/audio/ac1f4ca7042e5f8f0a23.m4a",
+      "bytes": 10645,
+      "durationSeconds": 1.725,
+      "rms": 0.06896,
+      "peak": 0.46545,
+      "fileSha256": "30cf940f501b165f3610ac51613e132276762c0cca9bca0bac8929955f615c29",
+      "sourceFileSha256": "c65aa23ab7b4333ccb5a865da4ff84f66f51d5aef8f6309ff2cd46b3aff228cb"
+    },
+    {
+      "text": "I live close to the station so that I can spend less time commuting.",
+      "textSha256": "677ca2da28cfbec9499978452f40577a8b7a3a15b233ad50aaf6aeea69df95e4",
+      "asset": "assets/audio/677ca2da28cfbec94999.m4a",
+      "bytes": 28593,
+      "durationSeconds": 4.475,
+      "rms": 0.07125,
+      "peak": 0.64789,
+      "fileSha256": "002ecefa301f6a43937c703f78d2477fba69ef34bbd9903ca8b914ee45840f53",
+      "sourceFileSha256": "665ee23ffa1af8db72e262e06f64219f14bd9c5852d8af5220ba44a0902c1866"
+    },
+    {
+      "text": "I open the curtains first thing in the morning.",
+      "textSha256": "85d9cf4288fe5bc096413b33c1c7b93b4ff5ee575ae266d262ca71ffedcd409b",
+      "asset": "assets/audio/85d9cf4288fe5bc09641.m4a",
+      "bytes": 19429,
+      "durationSeconds": 2.85,
+      "rms": 0.06807,
+      "peak": 0.50565,
+      "fileSha256": "0f38d752023c66b401eb0c2472b783201b8f1cb9e3317b4c9cb23b4c1dfc5555",
+      "sourceFileSha256": "f1aee7a0461665173d545b907fb884f715ee7e726f9ec40ef46723c80437de91"
+    },
+    {
+      "text": "I'll stay home if it rains.",
+      "textSha256": "d060c4037a7315e8d9f5bf8d5734b98f2978ab27cee48dbe23055ac96d077382",
+      "asset": "assets/audio/d060c4037a7315e8d9f5.m4a",
+      "bytes": 14065,
+      "durationSeconds": 2.15,
+      "rms": 0.06414,
+      "peak": 0.51401,
+      "fileSha256": "091515defa630037268424e8b2981ea77670292b41af65a8a45badb5c5a40625",
+      "sourceFileSha256": "d4fbd44f165e955b6efe2a21c62d09a7323ece62c75983aac9ae470579fbb05f"
+    },
+    {
+      "text": "I'm a little sleepy.",
+      "textSha256": "0ed9e5782f94c25d5cacdede2fd0337dc41327d363e1612d8454cf124d434828",
+      "asset": "assets/audio/0ed9e5782f94c25d5cac.m4a",
+      "bytes": 11040,
+      "durationSeconds": 1.725,
+      "rms": 0.07158,
+      "peak": 0.81393,
+      "fileSha256": "9a22a505a377464acf6d28ad35883d344a1caabe525ea1556ba20294a3d82aec",
+      "sourceFileSha256": "ce9ff2b7fe9b1c752d1e47894ae85ee5cb081b5221f78a988e1cb37d63aa82fe"
+    },
+    {
+      "text": "I'm home now.",
+      "textSha256": "00e76761cf9e648798efc7562ab72b4b0f80a3db198928fdc9e615c34832be22",
+      "asset": "assets/audio/00e76761cf9e648798ef.m4a",
+      "bytes": 10590,
+      "durationSeconds": 1.625,
+      "rms": 0.06654,
+      "peak": 0.89667,
+      "fileSha256": "943716ff58100ab15da1d3c9d7266ad0926b537e653ffe4c63aa404364934960",
+      "sourceFileSha256": "13b2519d32335689a989c17e2a82530846b293dadc7f16816b5e3a41aa55c04a"
+    },
+    {
+      "text": "I'm not watching TV now.",
+      "textSha256": "25cbb139751332e0073881e3795c1c9918be69ab2be6820ec79cb7a5502878f9",
+      "asset": "assets/audio/25cbb139751332e00738.m4a",
+      "bytes": 14034,
+      "durationSeconds": 2.25,
+      "rms": 0.06855,
+      "peak": 0.58829,
+      "fileSha256": "9f6b670ac6c35c71490faedb87d32ed36474afc394807d083be7f82f4f2f102b",
+      "sourceFileSha256": "59bf9c454acef34e69eb0d554f6bb1584cd8b618f79a9b51769066aea787f025"
+    },
+    {
+      "text": "I'm working remotely from home today.",
+      "textSha256": "a49645f49da9c4805011086f858ee4ff04ff6b7b0b597b9d99d1b0ba3826790e",
+      "asset": "assets/audio/a49645f49da9c4805011.m4a",
+      "bytes": 17203,
+      "durationSeconds": 2.725,
+      "rms": 0.06615,
+      "peak": 0.8562,
+      "fileSha256": "61ff8b271e03d130421ee7922dabf0ff2b0907213ad5174b34216f74e62bc149",
+      "sourceFileSha256": "4529dbcbe54a2f77e6a523c5fa4b14f228a806baaea678bdbcfeb9d6f7cd4309"
+    },
+    {
+      "text": "I've got a blue pen.",
+      "textSha256": "93cbee6ff52cccb39b4ed6274d62a3ea73f335e23a88e9cb199ad63c7a1dbad3",
+      "asset": "assets/audio/93cbee6ff52cccb39b4e.m4a",
+      "bytes": 11311,
+      "durationSeconds": 1.775,
+      "rms": 0.06611,
+      "peak": 0.54718,
+      "fileSha256": "0485ef1d4adaf66d141cd2e27f6d8e1a11369d2f184e7280a3481cb9781b4a8c",
+      "sourceFileSha256": "b8a1137e007bc442b655c48e33679fc3f42999adb414217e517aa4529aadb73d"
+    },
+    {
+      "text": "In the morning, I drink water.",
+      "textSha256": "3634cd4801dcf38347d49132ec1f1b5f24ded6634e07d726fb3c9779d744eb7e",
+      "asset": "assets/audio/3634cd4801dcf38347d4.m4a",
+      "bytes": 15727,
+      "durationSeconds": 2.375,
+      "rms": 0.07197,
+      "peak": 0.77399,
+      "fileSha256": "942e955252b33a1bd93d41bc71b2350d15ac4e42634f645ee90792430b54b38b",
+      "sourceFileSha256": "4ef9a95b9e86f5b7da2b49c592b917357a4d77ab21a3831d43b6a1e878e6c485"
+    },
+    {
+      "text": "It's been easier to get ready in the morning since I started going to bed earlier.",
+      "textSha256": "eed9314d113018d81d01b3c646d85d0a9e8dbb994791d4db6114aa79c206bd6b",
+      "asset": "assets/audio/eed9314d113018d81d01.m4a",
+      "bytes": 32302,
+      "durationSeconds": 4.95,
+      "rms": 0.06758,
+      "peak": 0.48157,
+      "fileSha256": "5c5a5f871f0f898f86b4a00e42e39364c83ea49650bbf2178140bddf4c6fe49b",
+      "sourceFileSha256": "eca6be3f1450f375531a0e5980b0b7167aafdb78662fe85ea4b6d497ad2e58a5"
+    },
+    {
+      "text": "It's easy for me to read this book.",
+      "textSha256": "24e693d554113714ceafa50de467ad61f404932a085cae6d715d88a36b7e7a4b",
+      "asset": "assets/audio/24e693d554113714ceaf.m4a",
+      "bytes": 17460,
+      "durationSeconds": 2.425,
+      "rms": 0.06626,
+      "peak": 0.46783,
+      "fileSha256": "0fae78954615993a30d16b0edc9e7ba031a58240d7a441eb34c217096a2042a4",
+      "sourceFileSha256": "60b86f27ac283c7acdf9b4edb25d9c63e1d71b6914ba955a8da9198d9aab31de"
+    },
+    {
+      "text": "It's important to eat breakfast every day.",
+      "textSha256": "b3439f7a703bf2f6b90395536124a79c480088bbcae6adbda714d3cf10146157",
+      "asset": "assets/audio/b3439f7a703bf2f6b903.m4a",
+      "bytes": 19583,
+      "durationSeconds": 2.9,
+      "rms": 0.07059,
+      "peak": 0.62848,
+      "fileSha256": "28b1bc4ab2b7f530295afae99134b51d8b82f62d0e9bc947f561e9f57ff842ac",
+      "sourceFileSha256": "afad1f4c254a506525859f681ba329ed399cde756f060620fde9f4e9c54b6b68"
+    },
+    {
+      "text": "She's going to move to Canada next month.",
+      "textSha256": "adc7d259365ee9257284eeae4d44e1d7537d704d089f7602040b2c1f47cd4f5b",
+      "asset": "assets/audio/adc7d259365ee9257284.m4a",
+      "bytes": 19203,
+      "durationSeconds": 2.975,
+      "rms": 0.07021,
+      "peak": 0.505,
+      "fileSha256": "48ca4517186704cedca0d8cce5f3a0c9fc77fb8f4446379788134760e36a0c7f",
+      "sourceFileSha256": "27d1c486c7ebebdc9f10ca65d948ca7a963edc83e14ca30e62923bcb2fc96638"
+    },
+    {
+      "text": "That's my red bike.",
+      "textSha256": "417933bea42b5890171050ce39c7931718f9c06f473ffe072ac26441331f0969",
+      "asset": "assets/audio/417933bea42b58901710.m4a",
+      "bytes": 12469,
+      "durationSeconds": 1.9,
+      "rms": 0.06718,
+      "peak": 0.48334,
+      "fileSha256": "5136d1c582ef2ef2644e8613a3c95fd55aca0ff2c02fe3528b398926a953403b",
+      "sourceFileSha256": "06263f021023608b247e9387d66198e6f689e773fae9b74b8cff6b83b9606c5c"
+    },
+    {
+      "text": "They're in the garden.",
+      "textSha256": "0a943c2ee78a1e2d1b23fc680cfd2ee60007aec419dc96a0fe8c283a485d4893",
+      "asset": "assets/audio/0a943c2ee78a1e2d1b23.m4a",
+      "bytes": 11386,
+      "durationSeconds": 1.775,
+      "rms": 0.06495,
+      "peak": 0.38602,
+      "fileSha256": "6ff63e07a1a776854a37cbac9c284448f9b4d6742592a7e00012c170918f408d",
+      "sourceFileSha256": "8b435f8b8cb560ba014b66b6e749eb97113ad542829cd72407523175dc9e03b6"
+    },
+    {
+      "text": "They're swimming in the river.",
+      "textSha256": "97bbfffa31cf4cb9730972f43e9e925ecf2437fce7b236364b956f1e77c85963",
+      "asset": "assets/audio/97bbfffa31cf4cb97309.m4a",
+      "bytes": 12107,
+      "durationSeconds": 1.95,
+      "rms": 0.06659,
+      "peak": 0.40414,
+      "fileSha256": "ed48dc4d3338a1cf6af7b0dccef7315073a6f3ff32a83cbcb279053dd907ddd9",
+      "sourceFileSha256": "9cbae63de77406dc0fb07165827e126bcd2383894f90f33774ad2e447a6680b9"
+    },
+    {
+      "text": "This bag is hers.",
+      "textSha256": "73def89ac69985ccb01613a70db8134367cc02d57b8d1de7ad383f4c15fcf74e",
+      "asset": "assets/audio/73def89ac69985ccb016.m4a",
+      "bytes": 11314,
+      "durationSeconds": 1.8,
+      "rms": 0.0659,
+      "peak": 0.47952,
+      "fileSha256": "1146f0bd16a39aa5e8a70003bf1d02aa120a576a28ffd560b5a95039ac322b8d",
+      "sourceFileSha256": "1298fb41167ad307b1daccd5ac46b3ef7a521acdf34d61f0f9f37af6174e1696"
+    },
+    {
+      "text": "This box is lightweight.",
+      "textSha256": "9f54f29fa7be1129d96860dd6927c4a963f85c060ef9589e98e04c128ef05597",
+      "asset": "assets/audio/9f54f29fa7be1129d968.m4a",
+      "bytes": 12949,
+      "durationSeconds": 1.975,
+      "rms": 0.06692,
+      "peak": 0.48779,
+      "fileSha256": "c434214b32f3f34f845f23f4c19f14f44c63b72e99e02a46c8840712b510a71a",
+      "sourceFileSha256": "4c6ca4b723537c9573a4055d79c3e5fff8ddd94ae616358e59051c35d0a0373b"
+    },
+    {
+      "text": "We are classmates.",
+      "textSha256": "90052bdf258ab26140942474d4193a56a6c3f7b5970852780cd291feb0cfa362",
+      "asset": "assets/audio/90052bdf258ab2614094.m4a",
+      "bytes": 10151,
+      "durationSeconds": 1.625,
+      "rms": 0.07027,
+      "peak": 0.51416,
+      "fileSha256": "5a3e1a893ba01506a40175cbe5a5fa91ce03819bc99466c2679bfa1bc5b0095f",
+      "sourceFileSha256": "a4fd8842d7efd5acdde45a162c585cc16ce2826c04495354cf432abd89022e0a"
+    },
+    {
+      "text": "We're not going to eat out today.",
+      "textSha256": "f289427b53cf87fb492d423d8c4add40a1829b58615f99f980d9a3cbe3266468",
+      "asset": "assets/audio/f289427b53cf87fb492d.m4a",
+      "bytes": 14902,
+      "durationSeconds": 2.3,
+      "rms": 0.07178,
+      "peak": 0.42896,
+      "fileSha256": "5a094c15480556a0efa84e3be81bfc2d7b6fd002186882511a2bb38cab22f168",
+      "sourceFileSha256": "f2b93e43cee958a5a5efb9932cb372dc53da4c6577c47cd2fd2672ab14062161"
+    },
+    {
+      "text": "We're waiting for the bus.",
+      "textSha256": "fcbb6dc37d6b3441dafa6173388932d12b47f15e4b72f6288b102083e2838f85",
+      "asset": "assets/audio/fcbb6dc37d6b3441dafa.m4a",
+      "bytes": 12618,
+      "durationSeconds": 1.95,
+      "rms": 0.0654,
+      "peak": 0.42099,
+      "fileSha256": "953e5da3983df219e5e5edd334153405d3aa6fb0dd829db5a190c7b4b4f1ded8",
+      "sourceFileSha256": "7755f4216e4d272ceef48ac3de40a8d07591c9603af80c4e25bde9711149437a"
+    },
+    {
+      "text": "You're kind.",
+      "textSha256": "5b20f62f17ebf8a08d7ba92e1c873c92183a9945056c1d5dc393c44cc783b7cf",
+      "asset": "assets/audio/5b20f62f17ebf8a08d7b.m4a",
+      "bytes": 10001,
+      "durationSeconds": 1.6,
+      "rms": 0.06571,
+      "peak": 0.51593,
+      "fileSha256": "ccd48baa6a30c1b7a6f46d856d1a36a38dd7a79efcd8589aba31b17c66e8c4f9",
+      "sourceFileSha256": "240c95247129c60ee7d78eb798dad615030bc6ab72b51c1555aae344555623bc"
     }
   ],
   "modelSha256": "8fbea51ea711f2af382e88c833d9e288c6dc82ce5e98421ea61c058ce21a34cb",
@@ -42212,5 +42531,6 @@
     "profile": "AAC-LC",
     "bitRate": 48000,
     "sourceFormat": "PCM16 mono 24000 Hz WAV"
-  }
+  },
+  "supplementAudioGeneratedAt": "2026-11-24T15:11:40.661Z"
 }

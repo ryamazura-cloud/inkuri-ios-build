@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:crypto/crypto.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:phrase_flow/answer_study_notes.dart';
 import 'package:phrase_flow/bundled_speech.dart';
 import 'package:phrase_flow/domain.dart';
 import 'package:phrase_flow/speech.dart';
@@ -107,12 +108,19 @@ void main() {
         ...Question.decode(File('assets/questions.json').readAsStringSync()),
         ...Question.decode(File('assets/grammar.json').readAsStringSync()),
       ];
-      final texts = questions
-          .expand((q) => q.answers.map((a) => a.text))
+      final supplementTexts = questions
+          .map(studyNoteFor)
+          .nonNulls
+          .map((note) => note.example)
           .toSet();
-      expect(texts.length, 3836);
+      expect(supplementTexts.length, 29);
+      final texts = {
+        ...questions.expand((q) => q.answers.map((a) => a.text)),
+        ...supplementTexts,
+      };
+      expect(texts.length, 3865);
       expect(catalog.clips.keys.toSet(), texts);
-      expect(catalog.clips.values.toSet().length, 3836);
+      expect(catalog.clips.values.toSet().length, 3865);
       expect(raw['audioFormat'], 'AAC-LC mono 24000 Hz M4A 48 kbps');
       expect(
         Directory(

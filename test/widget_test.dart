@@ -179,7 +179,7 @@ void main() {
       }
       expect(find.text('別の言い方 1'), findsOneWidget);
       expect(find.text('別の言い方 2'), findsOneWidget);
-      expect(find.text('ニュアンス・使い方'), findsNWidgets(3));
+      expect(find.text('文法・単語の使い分け'), findsOneWidget);
       expect(find.text('学習のポイント'), findsOneWidget);
       await tapText(tester, 'できた');
       expect((await store.load()).entries[question.id]!.successes, 1);
@@ -196,7 +196,7 @@ void main() {
     expect(find.text('できた'), findsNothing);
     await tapText(tester, '答えを表示');
     expect(find.text(q.answers.first.text), findsOneWidget);
-    expect(find.text('ニュアンス・使い方'), findsNothing);
+    expect(find.text('文法・単語の使い分け'), findsOneWidget);
     await tapText(tester, 'まだ難しい');
     expect(find.text('今日の一歩、完了。'), findsOneWidget);
     await tapText(tester, 'ホームに戻る');

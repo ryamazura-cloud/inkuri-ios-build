@@ -170,7 +170,7 @@ jobs:
               assert exported.is_file() and hashlib.sha256(exported.read_bytes()).digest() == hashlib.sha256(file.read_bytes()).digest(), 'Bundled asset mismatch: '+str(file)
           audio = len(list((assets/'audio').rglob('*.m4a')))
           characters = len(list((assets/'characters').rglob('*.jpg')))
-          assert audio == 3836 and characters == 85, 'Bundled asset count mismatch'
+          assert audio == 3865 and characters == 85, 'Bundled asset count mismatch'
           ipa = next(pathlib.Path('build/ios/ipa').glob('*.ipa'))
           report = dict(bundle=info['CFBundleIdentifier'], version=info['CFBundleShortVersionString'], build=info['CFBundleVersion'], sha256=hashlib.sha256(ipa.read_bytes()).hexdigest(), bytes=ipa.stat().st_size, signature_verified=True, distribution_entitlements_verified=True, firebase_app_matches=True, admob_app_matches=True, non_exempt_encryption=False, assets_checked=len(files), audio_clips=audio, character_images=characters)
           pathlib.Path('build/ios/ipa/IPA-VERIFICATION.json').write_text(json.dumps(report, indent=2))

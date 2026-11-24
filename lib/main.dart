@@ -2154,69 +2154,36 @@ class _TrainingPageState extends State<TrainingPage>
           Semantics(
             liveRegion: true,
             child: _surface([
-              for (var i = 0; i < q.answers.length; i++) ...[
-                if (i > 0)
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 20),
-                    child: Divider(height: 1),
-                  ),
-                Text(
-                  i == 0 ? '解答例' : '別の言い方 $i',
-                  style: const TextStyle(
-                    color: teal,
-                    fontWeight: FontWeight.w600,
-                  ),
+              const Text(
+                '解答例',
+                style: TextStyle(color: teal, fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                q.answers.first.text,
+                key: _tutorialAnswer,
+                style: const TextStyle(
+                  fontSize: 25,
+                  height: 1.5,
+                  fontWeight: FontWeight.w600,
+                  color: ink,
                 ),
-                const SizedBox(height: 12),
-                Text(
-                  q.answers[i].text,
-                  key: i == 0 ? _tutorialAnswer : null,
-                  style: TextStyle(
-                    fontSize: i == 0 ? 25 : 21,
-                    height: 1.5,
-                    fontWeight: FontWeight.w600,
-                    color: ink,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                AnswerAudioControls(
+              ),
+              const SizedBox(height: 12),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: AnswerAudioControls(
                   speech: speech,
-                  text: q.answers[i].text,
+                  text: q.answers.first.text,
                   enabled: !saving,
-                  showSpeed: i == 0 || speech.activeText == q.answers[i].text,
                 ),
-                if (i == 0)
-                  AnswerStudyDetails(question: q, note: studyNoteFor(q)),
-                if (i > 0 && q.answers[i].explanation.isNotEmpty) ...[
-                  const SizedBox(height: 12),
-                  const Text(
-                    'ニュアンス・使い方',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: teal,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    q.answers[i].explanation,
-                    style: const TextStyle(height: 1.7),
-                  ),
-                ],
-              ],
-              if (q.note.isNotEmpty &&
-                  q.answers.first.explanation.isNotEmpty) ...[
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 20),
-                  child: Divider(height: 1),
-                ),
-                const Text(
-                  '学習のポイント',
-                  style: TextStyle(color: teal, fontWeight: FontWeight.w600),
-                ),
-                const SizedBox(height: 8),
-                Text(q.note, style: const TextStyle(height: 1.6)),
-              ],
+              ),
+              AnswerAudioProgress(
+                speech: speech,
+                text: q.answers.first.text,
+                enabled: !saving,
+              ),
+              AnswerAlternatives(question: q, speech: speech, enabled: !saving),
             ]),
           ),
           const SizedBox(height: 24),
