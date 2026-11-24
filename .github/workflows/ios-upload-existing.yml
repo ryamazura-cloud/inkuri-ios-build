@@ -27,7 +27,7 @@ concurrency:
 jobs:
   upload:
     if: ${{ github.event_name == 'workflow_dispatch' && github.repository == 'ryamazura-cloud/inkuri-ios-build' && github.actor == 'ryamazura-cloud' && github.ref == 'refs/heads/main' }}
-    runs-on: macos-26
+    runs-on: macos-26-intel
     timeout-minutes: 45
     environment: app-store-upload
     env:
@@ -48,7 +48,7 @@ jobs:
           [[ "$EXPECTED_SHA256" =~ ^[0-9a-f]{64}$ ]]
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
-          name: inkuri-app-store-1.0-${{ inputs.build_number }}
+          name: inkuri-app-store-1.1-${{ inputs.build_number }}
           run-id: ${{ inputs.source_run_id }}
           github-token: ${{ github.token }}
           path: ${{ runner.temp }}/inkuri-upload
@@ -73,7 +73,7 @@ jobs:
           assert len(apps) == 1, 'Expected one app'
           app = apps[0]
           info = plistlib.loads((app / 'Info.plist').read_bytes())
-          assert (info['CFBundleIdentifier'], info['CFBundleShortVersionString'], info['CFBundleVersion']) == ('biz.wisemap.encre', '1.0.0', os.environ['EXPECTED_BUILD']), 'App identity mismatch'
+          assert (info['CFBundleIdentifier'], info['CFBundleShortVersionString'], info['CFBundleVersion']) == ('biz.wisemap.encre', '1.1.0', os.environ['EXPECTED_BUILD']), 'App identity mismatch'
           assert info['GADApplicationIdentifier'] == 'ca-app-pub-2142000020431433~3837222433', 'AdMob app mismatch'
           firebase = plistlib.loads((app / 'GoogleService-Info.plist').read_bytes())
           assert firebase['BUNDLE_ID'] == 'biz.wisemap.encre' and firebase['PROJECT_ID'] == 'encre-ab3d8', 'Firebase mismatch'
@@ -105,7 +105,7 @@ jobs:
           set -euo pipefail
           xcrun altool --validate-app --type ios --file "$INKURI_IPA" --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
           xcrun altool --upload-app --type ios --file "$INKURI_IPA" --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
-          echo "Uploaded version 1.0.0 ($EXPECTED_BUILD). Apple processing and TestFlight verification remain pending." >> "$GITHUB_STEP_SUMMARY"
+          echo "Uploaded version 1.1.0 ($EXPECTED_BUILD). Apple processing and TestFlight verification remain pending." >> "$GITHUB_STEP_SUMMARY"
       - name: Remove temporary upload authentication
         if: always()
         run: |
