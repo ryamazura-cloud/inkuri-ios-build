@@ -134,6 +134,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.textContaining('友人・予定'), findsWidgets);
       await tapText(tester, '答えを表示');
+      expect(find.text('文法・単語の使い分け'), findsOneWidget);
       for (final answer in question.answers) {
         expect(find.text(answer.text), findsOneWidget);
       }

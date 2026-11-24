@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'domain.dart';
+
 class AnswerStudyNote {
   const AnswerStudyNote(this.example, this.explanation, this.usage);
 
@@ -9,6 +11,112 @@ class AnswerStudyNote {
 }
 
 const answerStudyNotes = {
+  'grammar-be-01': AnswerStudyNote("I'm home now.", '帰宅したことを伝える場面でもよく使う表現です。', [
+    (
+      term: 'at home / home',
+      detail: 'I’m at home は今いる場所を伝えます。I’m home! は帰宅を告げるひと言としても使います。',
+    ),
+  ]),
+  'grammar-be-02': AnswerStudyNote(
+    'This box is lightweight.',
+    'lightweight で、重さが軽いことをはっきり伝えます。',
+    [
+      (
+        term: 'light / lightweight',
+        detail: 'light には「明るい」などの意味もあります。lightweight は物の軽さに焦点を当てる表現です。',
+      ),
+      (
+        term: 'this box / these boxes',
+        detail: '箱が一つなら This box is ...。複数なら These boxes are ... です。',
+      ),
+    ],
+  ),
+  'grammar-be-03': AnswerStudyNote(
+    "You're kind.",
+    'You are を短くした形です。ふだんの会話で使えます。',
+    [
+      (
+        term: 'kind / nice',
+        detail: 'kind は相手を気遣う親切さ、nice は感じのよさなどにも使える広い表現です。',
+      ),
+    ],
+  ),
+  'grammar-be-04':
+      AnswerStudyNote('We are classmates.', 'classmates は同じクラスで学ぶ人を指します。', [
+        (
+          term: 'in the same class / classmates',
+          detail: 'in the same class は所属するクラスが同じこと、classmates は人同士の関係を伝えます。',
+        ),
+      ]),
+  'grammar-verbs-01': AnswerStudyNote(
+    'In the morning, I drink water.',
+    '朝にすることを話すときは in the morning を先に置く言い方もできます。',
+    [
+      (
+        term: 'in the morning / every morning',
+        detail:
+            'in the morning は朝という時間帯、every morning は毎朝という頻度を表します。every morning に in は付けません。',
+      ),
+      (
+        term: 'water / a glass of water',
+        detail: 'water は量を指定しません。コップ一杯と伝える場合は a glass of water です。',
+      ),
+    ],
+  ),
+  'grammar-verbs-02': AnswerStudyNote(
+    'After school, we play tennis.',
+    'after school を先に置くと、放課後にすることを伝えやすくなります。',
+    [
+      (
+        term: 'play tennis / play the piano',
+        detail:
+            'スポーツ名 tennis の前には通常 the を付けません。楽器の演奏では play the piano のように the を付ける言い方が一般的です。',
+      ),
+    ],
+  ),
+  'grammar-verbs-03': AnswerStudyNote(
+    "I've got a blue pen.",
+    'have got も「持っている」を表し、会話でよく使われます。',
+    [
+      (
+        term: 'a blue pen / the blue pen',
+        detail: 'どのペンか指定せず一本を指すときは a。相手も分かる特定のペンなら the を使えます。',
+      ),
+    ],
+  ),
+  'grammar-verbs-04': AnswerStudyNote(
+    'Every day, you work here.',
+    'every day を先に置いて、頻度を強調する語順です。',
+    [
+      (
+        term: 'every day / everyday',
+        detail:
+            'every day は「毎日」。everyday は everyday English のように名詞の前で「日常の」という意味になります。',
+      ),
+    ],
+  ),
+  'grammar-pronouns-02':
+      AnswerStudyNote('This bag is hers.', 'hers だけで「彼女のもの」を表せます。', [
+        (
+          term: 'her bag / hers',
+          detail: 'her は her bag のように名詞の前。hers は単独で使い、hers bag とは言いません。',
+        ),
+      ]),
+  'grammar-pronouns-03': AnswerStudyNote(
+    "That's my red bike.",
+    '指しながら話す場面では、my red bike と言えます。',
+    [(term: 'mine / my', detail: 'mine は単独で「私のもの」。my は my bike のように名詞に付けます。')],
+  ),
+  'grammar-pronouns-04': AnswerStudyNote(
+    'Could you help us, please?',
+    'Could you ...? を使うと、相手に丁寧に頼めます。',
+    [
+      (
+        term: 'we / us',
+        detail: 'we は動作の主語、us は動作を受ける相手です。help us では us を使います。',
+      ),
+    ],
+  ),
   'work-b-003': AnswerStudyNote(
     "I'm working remotely from home today.",
     'remotely を加えると、出社せずに仕事をしていることが明確になります。',
@@ -132,40 +240,86 @@ const answerStudyNotes = {
   ),
 };
 
-class AnswerStudyDetails extends StatelessWidget {
-  const AnswerStudyDetails({super.key, required this.note});
+AnswerStudyNote? studyNoteFor(Question question) {
+  final curated = answerStudyNotes[question.id];
+  if (curated != null) return curated;
+  if (!question.isGrammar || question.answers.length != 1) return null;
 
-  final AnswerStudyNote note;
+  // Change the opening only when it is followed by a complement.
+  final answer = question.answers.single.text;
+  const openings = {
+    'I am ': "I'm ",
+    'You are ': "You're ",
+    'We are ': "We're ",
+    'They are ': "They're ",
+    'He is ': "He's ",
+    'She is ': "She's ",
+    'It is ': "It's ",
+  };
+  for (final entry in openings.entries) {
+    if (answer.startsWith(entry.key)) {
+      return AnswerStudyNote(
+        entry.value + answer.substring(entry.key.length),
+        '短縮形は日常会話でよく使います。短縮しても、この文の意味は同じです。',
+        const [],
+      );
+    }
+  }
+  return null;
+}
+
+class AnswerStudyDetails extends StatelessWidget {
+  const AnswerStudyDetails({
+    super.key,
+    required this.question,
+    required this.note,
+  });
+
+  final Question question;
+  final AnswerStudyNote? note;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const SizedBox(height: 12),
-        Text('さらに使える解答例', style: theme.textTheme.titleSmall),
-        const SizedBox(height: 4),
-        Text(note.example, style: theme.textTheme.bodyLarge),
-        Text(note.explanation, style: theme.textTheme.bodyMedium),
-        const SizedBox(height: 8),
-        Card(
-          margin: EdgeInsets.zero,
-          child: ExpansionTile(
-            leading: const Icon(Icons.lightbulb_outline),
-            title: const Text('文法・単語の使い分け'),
-            expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
-            childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-            children: [
-              for (final item in note.usage) ...[
-                const SizedBox(height: 8),
-                Text(item.term, style: theme.textTheme.titleSmall),
-                Text(item.detail),
-              ],
+    final firstExplanation = question.answers.first.explanation;
+    final explanation = firstExplanation.isEmpty
+        ? question.note
+        : firstExplanation;
+    final supplement = note;
+    if (explanation.isEmpty && supplement == null)
+      return const SizedBox.shrink();
+    return Container(
+      margin: const EdgeInsets.only(top: 14),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFFE7F1EB),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: const Color(0xFFCCDFD5)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('文法・単語の使い分け', style: theme.textTheme.titleSmall),
+          if (explanation.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            if (firstExplanation.isNotEmpty)
+              const Text('ニュアンス・使い方', style: TextStyle(fontSize: 12)),
+            Text(explanation, style: const TextStyle(height: 1.65)),
+          ],
+          if (supplement != null) ...[
+            const SizedBox(height: 12),
+            Text('さらに使える解答例', style: theme.textTheme.titleSmall),
+            const SizedBox(height: 4),
+            Text(supplement.example, style: theme.textTheme.bodyLarge),
+            Text(supplement.explanation, style: theme.textTheme.bodyMedium),
+            for (final item in supplement.usage) ...[
+              const SizedBox(height: 10),
+              Text(item.term, style: theme.textTheme.titleSmall),
+              Text(item.detail, style: const TextStyle(height: 1.6)),
             ],
-          ),
-        ),
-      ],
+          ],
+        ],
+      ),
     );
   }
 }

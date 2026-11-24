@@ -172,6 +172,7 @@ void main() {
         expect(find.text(session[i].japanese), findsOneWidget);
         await tapText(t, '答えを表示');
         expect(find.text(session[i].answers.first.text), findsOneWidget);
+        expect(find.text('文法・単語の使い分け'), findsOneWidget);
         await tapText(t, i == 0 ? 'まだ難しい' : 'できた');
       }
       await tapText(t, 'ホームに戻る');

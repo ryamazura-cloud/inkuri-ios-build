@@ -2185,7 +2185,9 @@ class _TrainingPageState extends State<TrainingPage>
                   enabled: !saving,
                   showSpeed: i == 0 || speech.activeText == q.answers[i].text,
                 ),
-                if (q.answers[i].explanation.isNotEmpty) ...[
+                if (i == 0)
+                  AnswerStudyDetails(question: q, note: studyNoteFor(q)),
+                if (i > 0 && q.answers[i].explanation.isNotEmpty) ...[
                   const SizedBox(height: 12),
                   const Text(
                     'ニュアンス・使い方',
@@ -2202,9 +2204,8 @@ class _TrainingPageState extends State<TrainingPage>
                   ),
                 ],
               ],
-              if (answerStudyNotes[q.id] case final supplement?)
-                AnswerStudyDetails(note: supplement),
-              if (q.note.isNotEmpty) ...[
+              if (q.note.isNotEmpty &&
+                  q.answers.first.explanation.isNotEmpty) ...[
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
                   child: Divider(height: 1),
