@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:phrase_flow/domain.dart';
@@ -8,7 +7,7 @@ import 'widget_test.dart' show MemoryStore;
 
 void main() {
   testWidgets(
-    'iOS requests review once after three ten-question sets are saved',
+    'iOS requests review once at home after 30 answers across two days',
     (tester) async {
       final questions = List.generate(
         50,
@@ -16,9 +15,13 @@ void main() {
           AnswerExample('Hello.'),
         ], ''),
       );
-      final store = MemoryStore()
-        ..raw = LearningData().withInterests(['lifestyle']).encode();
+      final yesterday = DateTime.now().subtract(const Duration(days: 1));
+      final data = LearningData()
+          .withInterests(['lifestyle'])
+          .rate(questions.first.id, true, yesterday);
+      final store = MemoryStore()..raw = data.encode();
       var requests = 0;
+      tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.resumed);
       await tester.pumpWidget(
         PhraseFlowApp(
           store: store,
@@ -27,7 +30,7 @@ void main() {
             final saved = await store.load();
             expect(
               saved.entries.values.fold(0, (n, entry) => n + entry.attempts),
-              30,
+              31,
             );
             requests++;
           },
@@ -41,9 +44,10 @@ void main() {
           await tap(tester, '答えを表示');
           expect(requests, 0);
           await tap(tester, 'できた');
-          expect(requests, set == 2 && index == 9 ? 1 : 0);
+          expect(requests, 0);
         }
         await tap(tester, 'ホームに戻る');
+        expect(requests, set == 2 ? 1 : 0);
       }
       await tap(tester, 'スキルツリーを見る');
       await tap(tester, 'レベル1 家事勉強中の学習へ');

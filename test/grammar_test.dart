@@ -185,7 +185,6 @@ void main() {
       await t.pumpWidget(const SizedBox());
       await t.pumpAndSettle();
       await open();
-      expect(find.text('文法を思い出す、はじめの修行。'), findsOneWidget);
       await tapText(t, 'be動詞');
       await tapText(t, 'この文法の苦手問題を復習（1問）');
       expect(

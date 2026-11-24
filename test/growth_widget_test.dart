@@ -28,12 +28,10 @@ Future<void> tap(WidgetTester tester, String label) async {
 }
 
 void main() {
-  testWidgets('store review is requested once after the 30th saved answer', (
-    tester,
-  ) async {
+  testWidgets('store review waits for a second learning day', (tester) async {
     var progress = LearningData().withInterests(['lifestyle']);
     for (var i = 0; i < 29; i++) {
-      progress = progress.rate(question.id, true, DateTime(2026, 11, 8));
+      progress = progress.rate(question.id, true, DateTime.now());
     }
     final store = MemoryStore()..raw = progress.encode();
     var requests = 0;
@@ -42,21 +40,19 @@ void main() {
         store: store,
         loadCatalog: () async => [question],
         requestStoreReview: () async {
-          expect((await store.load()).entries[question.id]!.attempts, 30);
           requests++;
         },
       ),
     );
     await tester.pumpAndSettle();
-    for (final expected in [0, 1]) {
+    for (var set = 0; set < 2; set++) {
       await tap(tester, 'スキルツリーを見る');
       await tap(tester, 'レベル1 家事勉強中の学習へ');
       await tap(tester, '答えを表示');
-      expect(requests, expected);
       await tap(tester, 'できた');
-      expect(requests, 1);
-      expect(find.text('今日の取り組みをシェア'), findsNothing);
+      expect(requests, 0);
       await tap(tester, 'ホームに戻る');
+      expect(requests, 0);
     }
   });
 

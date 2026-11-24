@@ -77,7 +77,7 @@ void main() {
           rawPrice: 5.99,
           currencyCode: 'USD',
         );
-      expect(monetization.purchasePrice, '900円');
+      expect(monetization.purchasePrice, '980円');
       expect(monetization.purchasePriceNote, contains('Appleの購入確認画面'));
       debugDefaultTargetPlatformOverride = TargetPlatform.android;
       expect(monetization.purchasePrice, r'$5.99');

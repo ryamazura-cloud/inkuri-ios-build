@@ -13,8 +13,24 @@ class TrainingModeSwitch extends StatelessWidget {
   final TrainingMode mode;
   final ValueChanged<TrainingMode>? onChanged;
   final bool forceSegmented;
+  static bool compact(BuildContext context) =>
+      MediaQuery.sizeOf(context).width < 360 ||
+      MediaQuery.sizeOf(context).height < 550 ||
+      MediaQuery.textScalerOf(context).scale(14) > 18;
+
+  static const adventureDescription = '好きなテーマで英作文';
+  static const grammarDescription = '文法を単元ごとに練習';
+  static const commonXpDescription = 'どちらのモードで学んでも、EXPは共通レベルに加算されます。';
+
   @override
   Widget build(BuildContext context) {
+    if (forceSegmented || compact(context)) {
+      return _CompactTrainingModeSwitch(
+        mode: mode,
+        onChanged: onChanged,
+        forceSegmented: forceSegmented,
+      );
+    }
     Widget option(TrainingMode value, String title, String subtitle) {
       final selected = mode == value;
       final color = selected ? Colors.white : const Color(0xFF176B61);
@@ -51,8 +67,16 @@ class TrainingModeSwitch extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        final adventure = option(TrainingMode.adventure, '冒険モード', '好きなテーマで英作文');
-        final grammar = option(TrainingMode.grammar, '修行モード', '文法を単元ごとに練習');
+        final adventure = option(
+          TrainingMode.adventure,
+          '冒険モード',
+          adventureDescription,
+        );
+        final grammar = option(
+          TrainingMode.grammar,
+          '修行モード',
+          grammarDescription,
+        );
         final stack =
             constraints.maxWidth < 310 ||
             MediaQuery.textScalerOf(context).scale(14) > 19;
@@ -80,12 +104,97 @@ class TrainingModeSwitch extends StatelessWidget {
                 ],
               ),
             const SizedBox(height: 8),
-            const Text('どちらのモードで学んでも、EXPは共通レベルに加算されます。'),
+            const Text(commonXpDescription),
           ],
         );
       },
     );
   }
+}
+
+class _CompactTrainingModeSwitch extends StatelessWidget {
+  const _CompactTrainingModeSwitch({
+    super.key,
+    required this.mode,
+    required this.onChanged,
+    this.forceSegmented = false,
+  });
+  final TrainingMode mode;
+  final ValueChanged<TrainingMode>? onChanged;
+  final bool forceSegmented;
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, constraints) {
+      if (forceSegmented &&
+          (constraints.maxWidth < 300 ||
+              MediaQuery.textScalerOf(context).scale(14) > 18)) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            OutlinedButton.icon(
+              onPressed: onChanged == null
+                  ? null
+                  : () => onChanged!(TrainingMode.adventure),
+              icon: const Icon(Icons.account_tree_outlined),
+              label: const Text('冒険モード'),
+            ),
+            const SizedBox(height: 4),
+            OutlinedButton.icon(
+              onPressed: onChanged == null
+                  ? null
+                  : () => onChanged!(TrainingMode.grammar),
+              icon: const Icon(Icons.school_outlined),
+              label: const Text('修行モード'),
+            ),
+          ],
+        );
+      }
+      if (!forceSegmented &&
+          (constraints.maxWidth < 300 ||
+              MediaQuery.textScalerOf(context).scale(14) > 18)) {
+        return DropdownButtonFormField<TrainingMode>(
+          initialValue: mode,
+          key: ValueKey('${mode.name}-${onChanged == null}'),
+          isExpanded: true,
+          decoration: const InputDecoration(
+            labelText: '学習モード',
+            border: OutlineInputBorder(),
+          ),
+          items: const [
+            DropdownMenuItem(
+              value: TrainingMode.adventure,
+              child: Text('冒険モード'),
+            ),
+            DropdownMenuItem(value: TrainingMode.grammar, child: Text('修行モード')),
+          ],
+          onChanged: onChanged == null
+              ? null
+              : (mode) {
+                  if (mode != null) onChanged!(mode);
+                },
+        );
+      }
+      return SegmentedButton<TrainingMode>(
+        showSelectedIcon: false,
+        segments: const [
+          ButtonSegment(
+            value: TrainingMode.adventure,
+            icon: Icon(Icons.account_tree_outlined),
+            label: Text('冒険モード'),
+          ),
+          ButtonSegment(
+            value: TrainingMode.grammar,
+            icon: Icon(Icons.school_outlined),
+            label: Text('修行モード'),
+          ),
+        ],
+        selected: {mode},
+        onSelectionChanged: onChanged == null
+            ? null
+            : (values) => onChanged!(values.single),
+      );
+    },
+  );
 }
 
 class GrammarPanel extends StatefulWidget {

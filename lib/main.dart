@@ -1158,6 +1158,15 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
 
   List<Widget> _home() {
     return [
+      if (!_tutorialRunning && TrainingModeSwitch.compact(context))
+        const Padding(
+          padding: EdgeInsets.only(bottom: 12),
+          child: Text(
+            '冒険：好きなテーマで英作文。修行：文法を単元ごとに練習。'
+            '\n'
+            'どちらのモードで学んでも、EXPは共通レベルに加算されます。',
+          ),
+        ),
       if (_showUpdateNotice && !_tutorialRunning) ...[
         Card(
           child: Padding(
