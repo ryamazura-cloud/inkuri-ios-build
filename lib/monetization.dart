@@ -48,9 +48,13 @@ class Monetization extends ChangeNotifier {
 
   bool get _android => defaultTargetPlatform == TargetPlatform.android;
   bool get usesTestAds => !isProduction || (!_android && _sandboxApp);
-  String get purchasePrice => _android ? product?.price ?? '' : '900円';
+  String get purchasePrice => _android
+      ? product?.price ?? ''
+      : product?.currencyCode == 'JPY'
+      ? product!.price
+      : '980円';
   String get purchasePriceNote =>
-      _android ? '' : '日本での価格は900円（買い切り）です。お支払い前にAppleの購入確認画面で確定価格をご確認ください。';
+      _android ? '' : '日本での通常価格は980円（買い切り）です。お支払い前にAppleの購入確認画面で確定価格をご確認ください。';
 
   Future<void> refreshAppleEnvironment() async {
     if (_android || appleVerifier == null) return;

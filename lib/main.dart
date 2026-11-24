@@ -8,6 +8,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'domain.dart';
 import 'store.dart';
 import 'speech.dart';
+import 'answer_audio_controls.dart';
+import 'answer_study_notes.dart';
 import 'bundled_speech.dart';
 import 'activity.dart';
 import 'learning_dashboard.dart';
@@ -234,10 +236,7 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
     if (mounted) setState(() {});
   }
 
-  Future<void> _update(
-    LearningData Function(LearningData) change, {
-    bool rated = false,
-  }) {
+  Future<void> _update(LearningData Function(LearningData) change) {
     final action = _writes.then((_) async {
       var next = _withLevelReward(data, change(data));
       if (identical(next, data)) return;
@@ -252,7 +251,6 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
       data = next;
       if (mounted) {
         setState(() {});
-        if (rated) _scheduleStoreReview();
       }
     });
     _writes = action.catchError((Object _) {});
@@ -263,10 +261,18 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
     final request = widget.requestStoreReview;
     if (request == null || _storeReviewScheduled || _tutorialRunning) return;
     final attempts = data.entries.values.fold(0, (sum, e) => sum + e.attempts);
-    if (attempts < 30) return;
+    if (attempts < 30 ||
+        data.days.values.where((day) => day.questions > 0).length < 2) {
+      return;
+    }
     _storeReviewScheduled = true;
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
+      if (ModalRoute.of(context)?.isCurrent != true ||
+          WidgetsBinding.instance.lifecycleState != AppLifecycleState.resumed) {
+        _storeReviewScheduled = false;
+        return;
+      }
       try {
         await request();
       } catch (_) {
@@ -665,10 +671,7 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
     required bool normal,
   }) async {
     final now = DateTime.now();
-    await _update(
-      (current) => current.rate(question.id, success, now),
-      rated: true,
-    );
+    await _update((current) => current.rate(question.id, success, now));
     if (normal) unawaited(widget.analytics?.answered(now));
   }
 
@@ -831,9 +834,10 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
     final labels = stageLabels(catalog, progress: data);
     final normal = challenge == null && !review;
     if (normal) unawaited(widget.analytics?.startedSet(DateTime.now()));
-    await Navigator.of(context).push<void>(
-      MaterialPageRoute(
+    final completed = await Navigator.of(context).push<bool>(
+      MaterialPageRoute<bool>(
         builder: (_) => TrainingPage(
+          returnCompletion: true,
           studyData: () => data,
           reviewGoal: review ? data.reviewGoal : null,
           reviewProgress: review
@@ -869,7 +873,7 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
                           total,
                           DateTime.now(),
                         );
-                }, rated: true),
+                }),
           growth: () => GrowthProgress(data),
           onTime: (elapsed) => _update((current) => current.addTime(elapsed)),
           completionBanner: widget.monetization == null
@@ -881,7 +885,9 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
         ),
       ),
     );
-    if (mounted) setState(() => page = 0);
+    if (!mounted) return;
+    setState(() => page = 0);
+    if (completed == true && challenge == null) _scheduleStoreReview();
   }
 
   Future<bool?> _showPracticePlan({bool exhausted = false}) => showDialog<bool>(
@@ -1540,6 +1546,7 @@ class TrainingPage extends StatefulWidget {
     required this.questions,
     required this.onRate,
     this.speechEngine,
+    this.returnCompletion = false,
     this.onTime,
     this.now,
     this.growth,
@@ -1554,6 +1561,7 @@ class TrainingPage extends StatefulWidget {
     this.studyData,
   });
   final SpeechEngine? speechEngine;
+  final bool returnCompletion;
   final List<Question> questions;
   final Future<void> Function(Question, bool) onRate;
   final Future<void> Function(Map<String, int>)? onTime;
@@ -1824,7 +1832,11 @@ class _TrainingPageState extends State<TrainingPage>
         await _flushTime();
         if (mounted) {
           _hasExited = true;
-          Navigator.pop(context);
+          if (widget.returnCompletion) {
+            Navigator.pop(context, complete);
+          } else {
+            Navigator.pop(context);
+          }
         }
       } catch (_) {
         if (mounted) {
@@ -2158,26 +2170,11 @@ class _TrainingPageState extends State<TrainingPage>
                   ),
                 ),
                 const SizedBox(height: 12),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Semantics(
-                    label: '${q.answers[i].text} の音声',
-                    child: OutlinedButton.icon(
-                      onPressed: saving
-                          ? null
-                          : () => speech.toggle(q.answers[i].text),
-                      icon: Icon(
-                        speech.activeText == q.answers[i].text
-                            ? Icons.stop
-                            : Icons.volume_up_outlined,
-                      ),
-                      label: Text(
-                        speech.activeText == q.answers[i].text
-                            ? '音声を停止'
-                            : '音声を再生',
-                      ),
-                    ),
-                  ),
+                AnswerAudioControls(
+                  speech: speech,
+                  text: q.answers[i].text,
+                  enabled: !saving,
+                  showSpeed: i == 0 || speech.activeText == q.answers[i].text,
                 ),
                 if (q.answers[i].explanation.isNotEmpty) ...[
                   const SizedBox(height: 12),
@@ -2196,6 +2193,8 @@ class _TrainingPageState extends State<TrainingPage>
                   ),
                 ],
               ],
+              if (answerStudyNotes[q.id] case final supplement?)
+                AnswerStudyDetails(note: supplement),
               if (q.note.isNotEmpty) ...[
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),

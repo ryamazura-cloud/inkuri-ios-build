@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       build_number:
-        description: Unused App Store Connect build number for version 1.0
+        description: Unused App Store Connect build number for version 1.1
         required: true
         type: string
       upload_to_app_store:
@@ -20,6 +20,7 @@ on:
         options:
           - macos-26
           - macos-26-intel
+          - xcode-27
 
 permissions:
   contents: read
@@ -130,7 +131,7 @@ jobs:
         run: |
           set -euo pipefail
           [[ "$BUILD_NUMBER" =~ ^[1-9][0-9]*$ ]]
-          flutter build ipa --release --no-pub --build-name 1.0.0 --build-number "$BUILD_NUMBER" --export-options-plist="$RUNNER_TEMP/ExportOptions.plist" \
+          flutter build ipa --release --no-pub --build-name 1.1.0 --build-number "$BUILD_NUMBER" --export-options-plist="$RUNNER_TEMP/ExportOptions.plist" \
             --dart-define=INKURI_IOS_MONETIZATION_PRODUCTION=true \
             --dart-define=INKURI_ADMOB_HOME_BANNER=ca-app-pub-2142000020431433/1508627906 \
             --dart-define=INKURI_ADMOB_HISTORY_BANNER=ca-app-pub-2142000020431433/5429505703 \
@@ -155,7 +156,7 @@ jobs:
           firebase = plistlib.loads((app/'GoogleService-Info.plist').read_bytes())
           entitlements = plistlib.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'ipa-entitlements.plist').read_bytes())
           assert info['CFBundleIdentifier'] == 'biz.wisemap.encre', 'Bundle mismatch'
-          assert info['CFBundleShortVersionString'] == '1.0.0', 'Version mismatch'
+          assert info['CFBundleShortVersionString'] == '1.1.0', 'Version mismatch'
           assert info['CFBundleVersion'] == os.environ['BUILD_NUMBER'], 'Build mismatch'
           assert info['GADApplicationIdentifier'] == 'ca-app-pub-2142000020431433~3837222433', 'AdMob app mismatch'
           assert info.get('ITSAppUsesNonExemptEncryption') is False, 'Encryption declaration mismatch'
@@ -177,7 +178,7 @@ jobs:
           PY
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: inkuri-app-store-1.0-${{ inputs.build_number }}
+          name: inkuri-app-store-1.1-${{ inputs.build_number }}
           path: |
             build/ios/ipa/*.ipa
             build/ios/ipa/IPA-VERIFICATION.json

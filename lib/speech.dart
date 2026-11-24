@@ -11,6 +11,14 @@ abstract class SpeechEngine {
   Future<void> stop();
 }
 
+abstract interface class PlaybackControls {
+  Future<void> pause();
+  Future<void> resume();
+  Future<void> setRate(double rate);
+  Stream<Duration> get position;
+  Stream<Duration> get duration;
+}
+
 class DeviceSpeechEngine implements SpeechEngine {
   DeviceSpeechEngine({TargetPlatform? platform, bool? web})
     : platform = platform ?? defaultTargetPlatform,
@@ -117,8 +125,26 @@ class DeviceSpeechEngine implements SpeechEngine {
 /// Each request owns a generation: completion of an interrupted utterance must
 /// never clear the playback state for a newer request.
 class SpeechController extends ChangeNotifier {
-  SpeechController(this.engine);
+  SpeechController(this.engine) {
+    final controls = playback;
+    if (controls != null) {
+      _positionSubscription = controls.position.listen((value) {
+        position = value;
+        if (!_disposed) notifyListeners();
+      });
+      _durationSubscription = controls.duration.listen((value) {
+        duration = value;
+        if (!_disposed) notifyListeners();
+      });
+    }
+  }
   final SpeechEngine engine;
+  PlaybackControls? get playback =>
+      engine is PlaybackControls ? engine as PlaybackControls : null;
+  StreamSubscription<Duration>? _positionSubscription, _durationSubscription;
+  Duration position = Duration.zero, duration = Duration.zero;
+  bool paused = false, preparing = false, _changingPlayback = false;
+  double rate = 1;
   String? activeText;
   String? error;
   int _generation = 0;
@@ -126,13 +152,54 @@ class SpeechController extends ChangeNotifier {
   bool _current(int generation) => !_disposed && _generation == generation;
 
   Future<void> toggle(String text) async {
-    if (_disposed) return;
-    if (activeText == text) {
-      await stop();
-      return;
+    if (_disposed || _changingPlayback) return;
+    if (activeText != text) return _play(text);
+    final controls = playback;
+    if (controls == null) return stop();
+    await _adjust(() async {
+      if (paused) {
+        await controls.resume();
+      } else {
+        await controls.pause();
+      }
+      if (activeText == text) paused = !paused;
+    });
+  }
+
+  Future<void> restart(String text) async {
+    if (!_disposed && !preparing && !_changingPlayback) await _play(text);
+  }
+
+  Future<void> setRate(double value) async {
+    final controls = playback;
+    if (_disposed || controls == null || preparing || _changingPlayback) return;
+    await _adjust(() async {
+      await controls.setRate(value);
+      rate = value;
+    });
+  }
+
+  Future<void> _adjust(Future<void> Function() change) async {
+    final generation = _generation;
+    _changingPlayback = true;
+    try {
+      await change();
+    } catch (_) {
+      if (_current(generation)) {
+        error = '音声の設定を変更できませんでした。もう一度お試しください。';
+      }
+    } finally {
+      _changingPlayback = false;
+      if (!_disposed) notifyListeners();
     }
+  }
+
+  Future<void> _play(String text) async {
     final generation = ++_generation;
     activeText = text;
+    paused = false;
+    preparing = true;
+    position = duration = Duration.zero;
     error = null;
     notifyListeners();
     try {
@@ -140,7 +207,10 @@ class SpeechController extends ChangeNotifier {
       if (!_current(generation)) return;
       await engine.stop();
       if (!_current(generation)) return;
-      await engine.speak(text);
+      final playbackFuture = engine.speak(text);
+      preparing = false;
+      notifyListeners();
+      await playbackFuture;
       if (!_current(generation)) return;
       activeText = null;
       notifyListeners();
@@ -153,6 +223,7 @@ class SpeechController extends ChangeNotifier {
       }
       if (!_current(generation)) return;
       activeText = null;
+      preparing = paused = false;
       error = '音声を再生できませんでした。音量をご確認のうえ、もう一度お試しください。学習はそのまま続けられます。';
       notifyListeners();
     }
@@ -162,6 +233,8 @@ class SpeechController extends ChangeNotifier {
     if (_disposed) return;
     ++_generation;
     activeText = null;
+    preparing = paused = false;
+    position = duration = Duration.zero;
     error = null;
     notifyListeners();
     try {
@@ -175,6 +248,8 @@ class SpeechController extends ChangeNotifier {
   void dispose() {
     _disposed = true;
     ++_generation;
+    unawaited(_positionSubscription?.cancel());
+    unawaited(_durationSubscription?.cancel());
     unawaited(engine.stop().catchError((Object _) {}));
     super.dispose();
   }

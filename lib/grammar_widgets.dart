@@ -14,78 +14,78 @@ class TrainingModeSwitch extends StatelessWidget {
   final ValueChanged<TrainingMode>? onChanged;
   final bool forceSegmented;
   @override
-  Widget build(BuildContext context) => LayoutBuilder(
-    builder: (context, constraints) {
-      if (forceSegmented &&
-          (constraints.maxWidth < 300 ||
-              MediaQuery.textScalerOf(context).scale(14) > 18)) {
+  Widget build(BuildContext context) {
+    Widget option(TrainingMode value, String title, String subtitle) {
+      final selected = mode == value;
+      final color = selected ? Colors.white : const Color(0xFF176B61);
+      final style = OutlinedButton.styleFrom(
+        foregroundColor: color,
+        backgroundColor: selected ? const Color(0xFF176B61) : Colors.white,
+        padding: const EdgeInsets.all(12),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      );
+      return Semantics(
+        selected: selected,
+        child: OutlinedButton(
+          style: style,
+          onPressed: onChanged == null ? null : () => onChanged!(value),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  if (selected) ...[
+                    const Icon(Icons.check, size: 16),
+                    const SizedBox(width: 4),
+                  ],
+                  Expanded(child: Text(title)),
+                ],
+              ),
+              const SizedBox(height: 3),
+              Text(subtitle, style: const TextStyle(fontSize: 12)),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final adventure = option(TrainingMode.adventure, '冒険モード', '好きなテーマで英作文');
+        final grammar = option(TrainingMode.grammar, '修行モード', '文法を単元ごとに練習');
+        final stack =
+            constraints.maxWidth < 310 ||
+            MediaQuery.textScalerOf(context).scale(14) > 19;
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            OutlinedButton.icon(
-              onPressed: onChanged == null
-                  ? null
-                  : () => onChanged!(TrainingMode.adventure),
-              icon: const Icon(Icons.account_tree_outlined),
-              label: const Text('冒険モード'),
+            Text(
+              '現在のモード：${mode == TrainingMode.adventure ? '冒険' : '修行'}モード',
+              style: const TextStyle(
+                fontWeight: FontWeight.w700,
+                color: Color(0xFF176B61),
+              ),
             ),
-            const SizedBox(height: 4),
-            OutlinedButton.icon(
-              onPressed: onChanged == null
-                  ? null
-                  : () => onChanged!(TrainingMode.grammar),
-              icon: const Icon(Icons.school_outlined),
-              label: const Text('修行モード'),
-            ),
+            const SizedBox(height: 8),
+            if (stack) ...[
+              adventure,
+              const SizedBox(height: 8),
+              grammar,
+            ] else
+              Row(
+                children: [
+                  Expanded(child: adventure),
+                  const SizedBox(width: 8),
+                  Expanded(child: grammar),
+                ],
+              ),
+            const SizedBox(height: 8),
+            const Text('どちらのモードで学んでも、EXPは共通レベルに加算されます。'),
           ],
         );
-      }
-      if (!forceSegmented &&
-          (constraints.maxWidth < 300 ||
-              MediaQuery.textScalerOf(context).scale(14) > 18)) {
-        return DropdownButtonFormField<TrainingMode>(
-          initialValue: mode,
-          key: ValueKey('${mode.name}-${onChanged == null}'),
-          isExpanded: true,
-          decoration: const InputDecoration(
-            labelText: '学習モード',
-            border: OutlineInputBorder(),
-          ),
-          items: const [
-            DropdownMenuItem(
-              value: TrainingMode.adventure,
-              child: Text('冒険モード'),
-            ),
-            DropdownMenuItem(value: TrainingMode.grammar, child: Text('修行モード')),
-          ],
-          onChanged: onChanged == null
-              ? null
-              : (mode) {
-                  if (mode != null) onChanged!(mode);
-                },
-        );
-      }
-      return SegmentedButton<TrainingMode>(
-        showSelectedIcon: false,
-        segments: const [
-          ButtonSegment(
-            value: TrainingMode.adventure,
-            icon: Icon(Icons.account_tree_outlined),
-            label: Text('冒険モード'),
-          ),
-          ButtonSegment(
-            value: TrainingMode.grammar,
-            icon: Icon(Icons.school_outlined),
-            label: Text('修行モード'),
-          ),
-        ],
-        selected: {mode},
-        onSelectionChanged: onChanged == null
-            ? null
-            : (values) => onChanged!(values.single),
-      );
-    },
-  );
+      },
+    );
+  }
 }
 
 class GrammarPanel extends StatefulWidget {
