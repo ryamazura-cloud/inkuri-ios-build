@@ -8,11 +8,12 @@ class TrainingModeSwitch extends StatelessWidget {
     super.key,
     required this.mode,
     required this.onChanged,
-    this.forceSegmented = false,
+    this.adventureKey,
+    this.grammarKey,
   });
   final TrainingMode mode;
   final ValueChanged<TrainingMode>? onChanged;
-  final bool forceSegmented;
+  final GlobalKey? adventureKey, grammarKey;
   static bool compact(BuildContext context) =>
       MediaQuery.sizeOf(context).width < 360 ||
       MediaQuery.sizeOf(context).height < 550 ||
@@ -24,12 +25,8 @@ class TrainingModeSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (forceSegmented || compact(context)) {
-      return _CompactTrainingModeSwitch(
-        mode: mode,
-        onChanged: onChanged,
-        forceSegmented: forceSegmented,
-      );
+    if (compact(context)) {
+      return _CompactTrainingModeSwitch(mode: mode, onChanged: onChanged);
     }
     Widget option(TrainingMode value, String title, String subtitle) {
       final selected = mode == value;
@@ -41,6 +38,7 @@ class TrainingModeSwitch extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
       );
       return Semantics(
+        key: value == TrainingMode.adventure ? adventureKey : grammarKey,
         selected: selected,
         child: OutlinedButton(
           style: style,
@@ -114,44 +112,16 @@ class TrainingModeSwitch extends StatelessWidget {
 
 class _CompactTrainingModeSwitch extends StatelessWidget {
   const _CompactTrainingModeSwitch({
-    super.key,
     required this.mode,
     required this.onChanged,
-    this.forceSegmented = false,
   });
   final TrainingMode mode;
   final ValueChanged<TrainingMode>? onChanged;
-  final bool forceSegmented;
   @override
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, constraints) {
-      if (forceSegmented &&
-          (constraints.maxWidth < 300 ||
-              MediaQuery.textScalerOf(context).scale(14) > 18)) {
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            OutlinedButton.icon(
-              onPressed: onChanged == null
-                  ? null
-                  : () => onChanged!(TrainingMode.adventure),
-              icon: const Icon(Icons.account_tree_outlined),
-              label: const Text('冒険モード'),
-            ),
-            const SizedBox(height: 4),
-            OutlinedButton.icon(
-              onPressed: onChanged == null
-                  ? null
-                  : () => onChanged!(TrainingMode.grammar),
-              icon: const Icon(Icons.school_outlined),
-              label: const Text('修行モード'),
-            ),
-          ],
-        );
-      }
-      if (!forceSegmented &&
-          (constraints.maxWidth < 300 ||
-              MediaQuery.textScalerOf(context).scale(14) > 18)) {
+      if (constraints.maxWidth < 300 ||
+          MediaQuery.textScalerOf(context).scale(14) > 18) {
         return DropdownButtonFormField<TrainingMode>(
           initialValue: mode,
           key: ValueKey('${mode.name}-${onChanged == null}'),
@@ -220,7 +190,12 @@ class _GrammarPanelState extends State<GrammarPanel> {
   @override
   Widget build(BuildContext context) {
     final groups = widget.catalog.units.map((u) => u.group).toSet();
-    final selectedGroup = groups.contains(group) ? group : groups.firstOrNull;
+    final guidedGroup = widget.catalog.units
+        .where((unit) => unit.id == widget.guidedUnitId)
+        .firstOrNull
+        ?.group;
+    final selectedGroup =
+        guidedGroup ?? (groups.contains(group) ? group : groups.firstOrNull);
     final visible = widget.catalog.units
         .where((u) => u.group == selectedGroup)
         .toList();
@@ -237,6 +212,7 @@ class _GrammarPanelState extends State<GrammarPanel> {
         ),
         const SizedBox(height: 16),
         DropdownButtonFormField<String>(
+          key: ValueKey(selectedGroup),
           initialValue: selectedGroup,
           isExpanded: true,
           decoration: const InputDecoration(

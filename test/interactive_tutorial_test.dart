@@ -20,15 +20,18 @@ void main() {
     File('assets/grammar.json').readAsStringSync(),
   );
   for (final configuration in [
-    (success: true, width: 411.0, scale: 1.0),
-    (success: false, width: 320.0, scale: 1.0),
-    (success: false, width: 411.0, scale: 2.0),
+    (success: true, width: 411.0, height: 790.0, scale: 1.0, compact: false),
+    (success: false, width: 320.0, height: 568.0, scale: 1.0, compact: true),
+    (success: false, width: 320.0, height: 568.0, scale: 2.0, compact: true),
   ]) {
     final success = configuration.success;
     testWidgets(
       'first-run ${configuration.width}px scale ${configuration.scale} saves one ${success ? 'success' : 'review'} then explains growth and history before reminders',
       (tester) async {
-        tester.view.physicalSize = Size(configuration.width, 950);
+        tester.view.physicalSize = Size(
+          configuration.width,
+          configuration.height,
+        );
         tester.view.devicePixelRatio = 1;
         tester.platformDispatcher.textScaleFactorTestValue =
             configuration.scale;
@@ -60,12 +63,38 @@ void main() {
           await tester.tap(find.text('操作を試す'));
           await tester.pumpAndSettle();
           expect(find.text('興味のあるテーマで、冒険しよう'), findsOneWidget);
-          await coachTap(tester, '冒険モード');
-          await coachTap(tester, '修行モード');
+          if (configuration.compact) {
+            final dropdown = find.byType(DropdownButtonFormField<TrainingMode>);
+            expect(dropdown, findsOneWidget);
+            expect(
+              tester
+                  .getRect(find.bySemanticsLabel('学習モードの切り替えをタップ'))
+                  .contains(tester.getCenter(dropdown)),
+              isTrue,
+            );
+            for (var index = 0; index < 2; index++) {
+              final next = find.widgetWithText(FilledButton, '次へ');
+              await tester.tap(next);
+              await tester.pumpAndSettle();
+            }
+          } else {
+            expect(find.text('現在のモード：冒険モード'), findsOneWidget);
+            for (final mode in ['冒険モード', '修行モード']) {
+              final card = find.widgetWithText(OutlinedButton, mode);
+              final spot = find.bySemanticsLabel(mode + 'をタップ');
+              expect(
+                tester.getRect(spot).contains(tester.getCenter(card)),
+                isTrue,
+              );
+              await coachTap(tester, mode);
+            }
+            expect(find.text('現在のモード：修行モード'), findsOneWidget);
+          }
           await coachTap(tester, 'be動詞');
           await coachTap(tester, '10問で修行する');
           expect(find.text('1 / 10'), findsOneWidget);
           await coachTap(tester, '答えを表示');
+          expect(find.textContaining('倍率ボタンで速度を選べます'), findsOneWidget);
           await tester.tap(find.text('自己評価へ'));
           await tester.pumpAndSettle();
           await coachTap(tester, success ? 'できた' : 'まだ難しい');

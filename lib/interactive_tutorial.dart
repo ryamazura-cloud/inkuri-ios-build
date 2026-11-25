@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class TutorialWhenReady extends StatefulWidget {
   const TutorialWhenReady({
@@ -28,10 +29,9 @@ class _TutorialWhenReadyState extends State<TutorialWhenReady> {
 }
 
 class TutorialSpot {
-  const TutorialSpot(this.key, this.value, this.label, {this.fraction});
+  const TutorialSpot(this.key, this.value, this.label);
   final GlobalKey key;
   final String value, label;
-  final Rect? fraction;
 }
 
 /// Each tap closes the coach before the caller invokes the real screen action.
@@ -44,6 +44,8 @@ class InteractiveTutorial {
     required String title,
     required String description,
     required List<TutorialSpot> spots,
+    GlobalKey? scrollKey,
+    ScrollController? scrollController,
     String? nextLabel,
     double alignment = .15,
   }) async {
@@ -69,7 +71,21 @@ class InteractiveTutorial {
     if (!context.mounted) return null;
     await WidgetsBinding.instance.endOfFrame;
     if (!context.mounted) return null;
-    final target = spots.first.key.currentContext;
+    final anchor = scrollKey ?? spots.first.key;
+    while (anchor.currentContext == null &&
+        scrollController != null &&
+        scrollController.hasClients) {
+      final position = scrollController.position;
+      final next = math.min(
+        position.pixels + position.viewportDimension,
+        position.maxScrollExtent,
+      );
+      if (next <= position.pixels) break;
+      scrollController.jumpTo(next);
+      await WidgetsBinding.instance.endOfFrame;
+      if (!context.mounted) return null;
+    }
+    final target = anchor.currentContext;
     if (target == null) {
       canceled = true;
       return null;
@@ -124,16 +140,13 @@ class _Coach extends StatelessWidget {
             final box = spot.key.currentContext?.findRenderObject();
             if (box is! RenderBox || !box.hasSize || !box.attached) continue;
             var rect = box.localToGlobal(Offset.zero) & box.size;
-            final part = spot.fraction;
-            if (part != null) {
-              rect = Rect.fromLTWH(
-                rect.left + rect.width * part.left,
-                rect.top + rect.height * part.top,
-                rect.width * part.width,
-                rect.height * part.height,
+            final RenderObject? viewport = RenderAbstractViewport.maybeOf(box);
+            rect = rect.inflate(5).intersect(screen.deflate(4));
+            if (viewport is RenderBox && viewport.hasSize) {
+              rect = rect.intersect(
+                viewport.localToGlobal(Offset.zero) & viewport.size,
               );
             }
-            rect = rect.inflate(5).intersect(screen.deflate(4));
             if (!rect.isEmpty) targets.add((spot, rect));
           }
           final bounds = targets.isEmpty

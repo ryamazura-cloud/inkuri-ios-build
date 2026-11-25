@@ -205,6 +205,8 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
   bool _storeReviewScheduled = false;
   bool _showUpdateNotice = false;
   final _tutorialMode = GlobalKey();
+  final _tutorialAdventureMode = GlobalKey();
+  final _tutorialGrammarMode = GlobalKey();
   final _tutorialGrowth = GlobalKey();
   final _tutorialGrammar = GlobalKey();
   final _tutorialStart = GlobalKey();
@@ -466,13 +468,34 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
     }
   }
 
-  Rect _tutorialModeFraction(bool grammarMode) {
-    final width = MediaQuery.sizeOf(context).width.clamp(0, 680) - 48;
-    final vertical =
-        width < 300 || MediaQuery.textScalerOf(context).scale(14) > 18;
-    return vertical
-        ? Rect.fromLTWH(0, grammarMode ? .5 : 0, 1, .5)
-        : Rect.fromLTWH(grammarMode ? .5 : 0, 0, .5, 1);
+  Future<bool> _guideTrainingMode(
+    InteractiveTutorial tour,
+    TrainingMode target, {
+    required String title,
+    required String description,
+  }) async {
+    final compact = TrainingModeSwitch.compact(context);
+    final isAdventure = target == TrainingMode.adventure;
+    final label = isAdventure ? '冒険モード' : '修行モード';
+    final spot = compact
+        ? TutorialSpot(_tutorialMode, target.name, '学習モードの切り替え')
+        : TutorialSpot(
+            isAdventure ? _tutorialAdventureMode : _tutorialGrammarMode,
+            target.name,
+            label,
+          );
+    final choice = await tour.point(
+      context,
+      title: title,
+      description: compact
+          ? description + ' この欄からモードを切り替えられます。「次へ」で' + label + 'に進みます。'
+          : description + ' 「' + label + '」のカードをタップしてください。',
+      spots: [spot],
+      nextLabel: compact ? '次へ' : null,
+    );
+    if (choice == null || !mounted) return false;
+    await _changeMode(target);
+    return mounted && mode == target;
   }
 
   Future<void> _runTutorial() async {
@@ -485,96 +508,72 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
       page = 0;
     });
     try {
-      await _changeMode(TrainingMode.adventure);
-      if (!mounted) return;
-      if (await tour.point(
-                context,
-                title: '興味のあるテーマで、冒険しよう',
-                description:
-                    '冒険モードでは、旅行や料理など好きなカテゴリーを選べます。「スキルツリーを見る」から練習を始め、挑戦問題に合格すると次の段階へ進めます。まずは「冒険モード」をタップしてみましょう。',
-                spots: [
-                  TutorialSpot(
-                    _tutorialMode,
-                    'adventure',
-                    '冒険モード',
-                    fraction: _tutorialModeFraction(false),
-                  ),
-                ],
-              ) !=
-              null &&
-          mounted) {
-        if (await tour.point(
+      if (await _guideTrainingMode(
+            tour,
+            TrainingMode.adventure,
+            title: '興味のあるテーマで、冒険しよう',
+            description:
+                '冒険モードでは、旅行や料理など好きなカテゴリーを選べます。「スキルツリーを見る」から練習を始め、挑戦に合格すると次の段階へ進めます。',
+          ) &&
+          await _guideTrainingMode(
+            tour,
+            TrainingMode.grammar,
+            title: '文法を思い出すなら、修行モード',
+            description: '修行モードでは、学年と文法を選んで練習します。どちらのモードでもEXPは共通レベルに加算されます。',
+          )) {
+        if (mounted &&
+            mode == TrainingMode.grammar &&
+            await tour.point(
                   context,
-                  title: '文法を思い出すなら、修行モード',
+                  title: 'まずは「be動詞」から',
                   description:
-                      '修行モードは、中学英文法を一つずつ練習するモードです。学年と文法を選んで始められます。「修行モード」をタップしてください。',
-                  spots: [
-                    TutorialSpot(
-                      _tutorialMode,
-                      'grammar',
-                      '修行モード',
-                      fraction: _tutorialModeFraction(true),
-                    ),
-                  ],
+                      '「学年をえらぶ」で中学1〜3年生の文法を切り替えられます。今回は中学1年生文法の「be動詞」を開いて、1問だけ試してみましょう。',
+                  spots: [TutorialSpot(_tutorialGrammar, 'be', 'be動詞')],
+                  scrollController: _homeScroll,
                 ) !=
                 null &&
             mounted) {
-          await _changeMode(TrainingMode.grammar);
-          if (mounted &&
-              mode == TrainingMode.grammar &&
-              await tour.point(
-                    context,
-                    title: 'まずは「be動詞」から',
+          final selected = await Navigator.of(context).push<GrammarStudyChoice>(
+            MaterialPageRoute(
+              builder: (_) => TutorialWhenReady(
+                onReady: (ctx) async {
+                  final result = await tour.point(
+                    ctx,
+                    title: '文法メモを確認して、練習へ',
                     description:
-                        '「学年をえらぶ」で中学1〜3年生の文法を切り替えられます。今回は中学1年生文法の「be動詞」を開いて、1問だけ試してみましょう。',
-                    spots: [TutorialSpot(_tutorialGrammar, 'be', 'be動詞')],
-                  ) !=
-                  null &&
-              mounted) {
-            final selected = await Navigator.of(context).push<GrammarStudyChoice>(
-              MaterialPageRoute(
-                builder: (_) => TutorialWhenReady(
-                  onReady: (ctx) async {
-                    final result = await tour.point(
+                        '使い方や文の形を確認できます。通常は10問のセットです。今回は最初の1問を解き、2問目で途中終了する操作を試します。',
+                    spots: [TutorialSpot(_tutorialStart, 'start', '10問で修行する')],
+                  );
+                  if (ctx.mounted) {
+                    Navigator.pop(
                       ctx,
-                      title: '文法メモを確認して、練習へ',
-                      description:
-                          '使い方や文の形を確認できます。通常は10問のセットです。今回は最初の1問を解き、2問目で途中終了する操作を試します。',
-                      spots: [
-                        TutorialSpot(_tutorialStart, 'start', '10問で修行する'),
-                      ],
+                      result == null
+                          ? null
+                          : (questions: unit.questions, review: false),
                     );
-                    if (ctx.mounted) {
-                      Navigator.pop(
-                        ctx,
-                        result == null
-                            ? null
-                            : (questions: unit.questions, review: false),
-                      );
-                    }
-                  },
-                  child: GrammarLessonPage(
-                    unit: unit,
-                    data: data,
-                    startButtonKey: _tutorialStart,
-                  ),
+                  }
+                },
+                child: GrammarLessonPage(
+                  unit: unit,
+                  data: data,
+                  startButtonKey: _tutorialStart,
                 ),
               ),
+            ),
+          );
+          if (selected != null && mounted && !tour.canceled) {
+            final trainingRoute = MaterialPageRoute<void>(
+              builder: (_) => TrainingPage(
+                questions: unit.questions,
+                tutorial: tour,
+                onRate: (q, success) => _rate(q, success, normal: false),
+                onTime: (elapsed) =>
+                    _update((current) => current.addTime(elapsed)),
+                growth: () => GrowthProgress(data),
+              ),
             );
-            if (selected != null && mounted && !tour.canceled) {
-              final trainingRoute = MaterialPageRoute<void>(
-                builder: (_) => TrainingPage(
-                  questions: unit.questions,
-                  tutorial: tour,
-                  onRate: (q, success) => _rate(q, success, normal: false),
-                  onTime: (elapsed) =>
-                      _update((current) => current.addTime(elapsed)),
-                  growth: () => GrowthProgress(data),
-                ),
-              );
-              await Navigator.of(context).push<void>(trainingRoute);
-              await trainingRoute.completed;
-            }
+            await Navigator.of(context).push<void>(trainingRoute);
+            await trainingRoute.completed;
           }
         }
       }
@@ -587,6 +586,7 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
           description:
               '今の練習で${GrowthProgress(data).xp - beforeXp} EXPがたまりました。「できた」は10 EXP、「まだ難しい」でも5 EXP。どちらのモードでも共通の経験値がたまり、レベルと役職（ランク）が成長します。',
           spots: [TutorialSpot(_tutorialGrowth, 'growth', '共通レベル・役職')],
+          scrollController: _homeScroll,
           nextLabel: '次へ',
         );
       }
@@ -1078,7 +1078,8 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
                     padding: const EdgeInsets.fromLTRB(24, 12, 24, 0),
                     child: TrainingModeSwitch(
                       key: _tutorialMode,
-                      forceSegmented: _tutorialRunning,
+                      adventureKey: _tutorialAdventureMode,
+                      grammarKey: _tutorialGrammarMode,
                       mode: mode,
                       onChanged: modeSaving ? null : _changeMode,
                     ),
@@ -1158,7 +1159,7 @@ class _StudyHomeState extends State<StudyHome> with WidgetsBindingObserver {
 
   List<Widget> _home() {
     return [
-      if (!_tutorialRunning && TrainingModeSwitch.compact(context))
+      if (TrainingModeSwitch.compact(context))
         const Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Text(
@@ -1607,6 +1608,7 @@ class _TrainingPageState extends State<TrainingPage>
   final _tutorialAnswer = GlobalKey();
   final _tutorialDone = GlobalKey();
   final _tutorialHard = GlobalKey();
+  final _tutorialRatings = GlobalKey();
   final _tutorialExit = GlobalKey();
   DateTime get _now => (widget.now ?? DateTime.now)();
 
@@ -1675,7 +1677,7 @@ class _TrainingPageState extends State<TrainingPage>
         context,
         title: '解答例と比べてみましょう',
         description:
-            '答えられなかった英文は、解答を見ずに言えるまで3〜5回を目安に繰り返し、口になじませましょう。音声ボタンで読み方も確認できます。',
+            '▶で音声を再生し、再生中は同じボタンで一時停止できます。倍率ボタンで速度を選べます。下には「別の言い方」と「文法・単語の使い分け」があります。言えなかった英文は3〜5回、声に出して練習しましょう。',
         spots: [TutorialSpot(_tutorialAnswer, 'answer', '解答例')],
         nextLabel: '自己評価へ',
       );
@@ -1690,6 +1692,7 @@ class _TrainingPageState extends State<TrainingPage>
             TutorialSpot(_tutorialDone, 'done', 'できた'),
             TutorialSpot(_tutorialHard, 'hard', 'まだ難しい'),
           ],
+          scrollKey: _tutorialRatings,
           alignment: .45,
         );
         if (!mounted) return;
@@ -2154,29 +2157,34 @@ class _TrainingPageState extends State<TrainingPage>
           Semantics(
             liveRegion: true,
             child: _surface([
-              const Text(
-                '解答例',
-                style: TextStyle(color: teal, fontWeight: FontWeight.w600),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                q.answers.first.text,
+              Column(
                 key: _tutorialAnswer,
-                style: const TextStyle(
-                  fontSize: 25,
-                  height: 1.5,
-                  fontWeight: FontWeight.w600,
-                  color: ink,
-                ),
-              ),
-              const SizedBox(height: 12),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: AnswerAudioControls(
-                  speech: speech,
-                  text: q.answers.first.text,
-                  enabled: !saving,
-                ),
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Text(
+                    '解答例',
+                    style: TextStyle(color: teal, fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    q.answers.first.text,
+                    style: const TextStyle(
+                      fontSize: 25,
+                      height: 1.5,
+                      fontWeight: FontWeight.w600,
+                      color: ink,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: AnswerAudioControls(
+                      speech: speech,
+                      text: q.answers.first.text,
+                      enabled: !saving,
+                    ),
+                  ),
+                ],
               ),
               AnswerAudioProgress(
                 speech: speech,
@@ -2187,18 +2195,24 @@ class _TrainingPageState extends State<TrainingPage>
             ]),
           ),
           const SizedBox(height: 24),
-          FilledButton.icon(
-            key: _tutorialDone,
-            onPressed: saving ? null : () => _answer(true),
-            icon: const Icon(Icons.check),
-            label: const Text('できた'),
-          ),
-          const SizedBox(height: 12),
-          OutlinedButton.icon(
-            key: _tutorialHard,
-            onPressed: saving ? null : () => _answer(false),
-            icon: const Icon(Icons.bookmark_add_outlined),
-            label: const Text('まだ難しい'),
+          Column(
+            key: _tutorialRatings,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FilledButton.icon(
+                key: _tutorialDone,
+                onPressed: saving ? null : () => _answer(true),
+                icon: const Icon(Icons.check),
+                label: const Text('できた'),
+              ),
+              const SizedBox(height: 12),
+              OutlinedButton.icon(
+                key: _tutorialHard,
+                onPressed: saving ? null : () => _answer(false),
+                icon: const Icon(Icons.bookmark_add_outlined),
+                label: const Text('まだ難しい'),
+              ),
+            ],
           ),
           const SizedBox(height: 8),
           const Text(
